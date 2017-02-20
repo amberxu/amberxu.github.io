@@ -4,6 +4,8 @@ h1 {
   font-size: 56px;
   line-height: 43px;
   font-weight: 700;
+  vertical-align: baseline;
+  letter-spacing: 3px;
 }
 
 @media screen and (max-width: 736px) {
@@ -25,6 +27,7 @@ h2 {
   font-size: 26px;
   line-height: 36px;
   font-weight: 700;
+  vertical-align: baseline;
 }
 
 h3 {
@@ -35,6 +38,7 @@ h3 {
   font-size: 21px;
   line-height: 31px;
   font-weight: 700;
+  vertical-align: baseline;
 }
 
 h4 {
@@ -45,6 +49,7 @@ h4 {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+  vertical-align: baseline;
 }
 
 h5 {
@@ -54,6 +59,7 @@ h5 {
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
+  vertical-align: baseline;
 }
 
 h6 {
@@ -64,6 +70,7 @@ h6 {
   font-size: 14px;
   line-height: 20px;
   font-weight: 700;
+  vertical-align: baseline;
 }
 
 p {
@@ -72,6 +79,7 @@ p {
   color: #333333;
   font-size: 16px;
   line-height: 29px;
+  vertical-align: baseline;
 }
 
 a {
@@ -83,6 +91,7 @@ ul {
   margin-top: 10px;
   margin-bottom: 10px;
   padding-left: 40px;
+  vertical-align: baseline;
 }
 
 ol {
@@ -91,6 +100,7 @@ ol {
   padding-left: 40px;
   font-family: "freight-sans-pro", Helvetica, sans-serif;
   color: #F69D00;
+  vertical-align: baseline;
 }
 
 li {
