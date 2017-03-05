@@ -12,7 +12,7 @@ h1 {
     line-height: 20px;
    }
    .subtitle.medium {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 10px;
    }
 }
@@ -199,7 +199,7 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  max-height: 680px;
+  max-height: 780px;
   min-height: auto;
   padding-top: 20%;
   padding-bottom: 20%;
@@ -245,8 +245,8 @@ figcaption {
   font-family: "freight-sans-pro", Helvetica, sans-serif;
   color: #fff;
   padding-top: 10px;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .subtitle.top-border {
@@ -305,7 +305,7 @@ figcaption {
   margin-bottom: 0px;
   padding-top: 0px;
   padding-bottom: 0px;
-  background-image: url('../images/join-team.jpg');
+  background-image: url('../images/join-team-option2.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -660,9 +660,10 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  width: 32%;
-  height: 400px;
-  margin-right: 1.33%;
+  width: 28%;
+  height: 340px;
+  margin-right: 1%;
+  margin-left: 1%;
   margin-bottom: 27px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -690,8 +691,8 @@ figcaption {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: -webkit-linear-gradient(270deg, transparent 48%, #3A2841);
-  background-image: linear-gradient(180deg, transparent 48%, #3A2841);
+  background-image: -webkit-linear-gradient(270deg, transparent 28%, #3A2841);
+  background-image: linear-gradient(180deg, transparent 28%, #3A2841);
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
 }
@@ -873,8 +874,8 @@ figcaption {
 
 .testimonial-text {
   font-family: "freight-sans-pro", Helvetica, sans-serif;
-  font-size: 26px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 /*.testimonial-top-line {
@@ -922,6 +923,8 @@ figcaption {
   flex-direction: column;
   border: 4px solid #fff;
   border-radius: 50%;
+  margin:auto;
+  margin-top: 15px;
 }
 
 .testimonial-picture._1 {
@@ -1140,7 +1143,6 @@ figcaption {
 .social-icons {
   display: inline-block;
   margin-top: 10px;
-  margin-bottom: 20px;
 }
 
 .social-icon {
@@ -1149,14 +1151,14 @@ figcaption {
 }
 
 .social-icon:hover {
-  background-color: #d7e7fa;
+  background-color: #F69D00;
 }
 
 .social-icon.facebook {
   display: inline-block;
   width: 46px;
   height: 39px;
-  border: 1px solid #cadff9;
+  border: 1px solid #F69D00;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   background-image: url('../images/Facebook.png');
@@ -1169,9 +1171,7 @@ figcaption {
   display: inline-block;
   width: 46px;
   height: 39px;
-  border-top: 1px solid #cadff9;
-  border-right: 1px solid #cadff9;
-  border-bottom: 1px solid #cadff9;
+  border: 1px solid #F69D00;
   background-image: url('../images/Twitter.png');
   background-position: 50% 50%;
   background-size: 16px;
@@ -1182,9 +1182,7 @@ figcaption {
   display: inline-block;
   width: 46px;
   height: 39px;
-  border-top: 1px solid #cadff9;
-  border-right: 1px solid #cadff9;
-  border-bottom: 1px solid #cadff9;
+  border: 1px solid #F69D00;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   background-image: url('../images/Email.png');
@@ -1194,7 +1192,8 @@ figcaption {
 }
 
 .post-preview-image {
-  position: relative;
+  position: rew
+lative;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1291,7 +1290,7 @@ figcaption {
 .hero-inner-pages {
   padding-top: 125px;
   padding-bottom: 125px;
-  background-image: url('../images/Dual-Tone-Startup.jpg');
+  background-image: url('../images/join-team.jpg');
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1673,7 +1672,7 @@ html.w-mod-js *[data-ix="show-go-up"] {
 
 @media (max-width: 991px) {
   .nav-link {
-    background-color: #0057c5;
+    background-color: #3A2841;
   }
   .content-wrapper {
     -webkit-box-orient: vertical;
@@ -1763,7 +1762,7 @@ html.w-mod-js *[data-ix="show-go-up"] {
   }
   .menu-button.w--open {
     width: 60px;
-    background-color: #0057c5;
+    background-color: #3A2841;
   }
   .burger-menu {
     text-align: right;
@@ -1971,7 +1970,7 @@ html.w-mod-js *[data-ix="show-go-up"] {
   }
   ._50-percent-column.how-we-work-3 {
     width: 100%;
-    border-bottom: 1px solid #d7e7fa;
+    border-bottom: 1px solid #dddddd;
     border-right-style: none;
   }
   ._50-percent-column.how-we-work-4 {
@@ -2012,4 +2011,8 @@ html.w-mod-js *[data-ix="show-go-up"] {
   }
 }
 
+.onepage {
+  font-weight: bold;
+  background-color:rgba(246, 141, 0, 0.2);
+}
 
