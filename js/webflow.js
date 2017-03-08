@@ -3645,12 +3645,12 @@
         config.delay = parseInt(data.el.attr('data-delay'), 10) || 2000;
         config.timerMax = parseInt(data.el.attr('data-autoplay-limit'), 10);
         // Disable timer on first touch or mouse down
-        var touchEvents = 'mousedown' + namespace + ' touchstart' + namespace;
-        if (!designer) {
-          data.el.off(touchEvents).one(touchEvents, function() {
-            stopTimer(data);
-          });
-        }
+        // var touchEvents = 'mousedown' + namespace + ' touchstart' + namespace;
+        // if (!designer) {
+        //   data.el.off(touchEvents).one(touchEvents, function() {
+        //     stopTimer(data);
+        //   });
+        // }
       }
 
       // Use edge buffer to help calculate page count

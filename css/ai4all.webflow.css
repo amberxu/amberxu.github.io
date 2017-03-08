@@ -6,16 +6,9 @@ h1 {
   font-weight: 700;
 }
 
-@media screen and (max-width: 736px) {
-   h1 {
-    font-size: 30px;
-    line-height: 20px;
-   }
-   .subtitle.medium {
-    font-size: 18px;
-    line-height: 10px;
-   }
-}
+
+
+
 
 h2 {
   margin-top: 10px;
@@ -35,9 +28,10 @@ h3 {
   font-family: "freight-sans-pro", Helvetica, sans-serif;
   color: #3A2841;
   font-size: 21px;
-  line-height: 31px;
+  line-height: 24px;
   font-weight: 700;
 }
+
 
 h4 {
   margin-top: 10px;
@@ -124,6 +118,44 @@ figcaption {
   margin-bottom: 30px;
   font-family: "freight-sans-pro", Helvetica, sans-serif;
   text-align: center;
+}
+
+
+.subtitle {
+  font-family: "freight-sans-pro", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 31px;
+}
+
+.subtitle.medium {
+  font-family: "freight-sans-pro", Helvetica, sans-serif;
+  color: #fff;
+  padding-top: 10px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.subtitle.top-border {
+  margin-top: 15px;
+}
+
+.subtitle.less-bottom-border {
+  margin-bottom: 5px;
+}
+
+@media screen and (max-width: 736px) {
+   h1 {
+    font-size:26px;
+   }
+
+   h2, h3 {
+    font-size: 24px;
+    line-height: 28px;
+   }
+   .subtitle.medium {
+    font-size: 16px;
+    line-height: 18px;
+   }
 }
 
 .navbar {
@@ -235,27 +267,6 @@ figcaption {
   text-align: center;
 }
 
-.subtitle {
-  font-family: "freight-sans-pro", Helvetica, sans-serif;
-  font-size: 18px;
-  line-height: 31px;
-}
-
-.subtitle.medium {
-  font-family: "freight-sans-pro", Helvetica, sans-serif;
-  color: #fff;
-  padding-top: 10px;
-  font-size: 20px;
-  line-height: 24px;
-}
-
-.subtitle.top-border {
-  margin-top: 15px;
-}
-
-.subtitle.less-bottom-border {
-  margin-bottom: 5px;
-}
 
 .scroll-down {
   position: absolute;
@@ -638,7 +649,6 @@ figcaption {
 .cta {
   margin-bottom: 20px;
   color: #fff;
-  font-size: 33px;
 }
 
 .turned-around-text {
@@ -1421,8 +1431,8 @@ lative;
   top: 0px;
   right: 0px;
   bottom: 0px;
-  background-image: -webkit-linear-gradient(270deg, transparent, #F69D00);
-  background-image: linear-gradient(180deg, transparent, #F69D00);
+  background-image: -webkit-linear-gradient(270deg, transparent, #3A2841);
+  background-image: linear-gradient(180deg, transparent, #3A2841);
 }
 
 .social-links-on-hover {
