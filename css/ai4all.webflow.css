@@ -143,9 +143,11 @@ figcaption {
   margin-bottom: 5px;
 }
 
+
+
 @media screen and (max-width: 736px) {
    h1 {
-    font-size:26px;
+    font-size: 36px;
    }
 
    h2, h3 {
@@ -154,7 +156,16 @@ figcaption {
    }
    .subtitle.medium {
     font-size: 16px;
-    line-height: 18px;
+    line-height: 20px;
+   }
+   .lessspace {
+    margin-top: -16px;
+   }
+}
+
+@media screen and (max-width: 416px) {
+   h1 {
+    font-size: 26px;
    }
 }
 
