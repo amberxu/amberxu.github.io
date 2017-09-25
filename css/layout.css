@@ -210,6 +210,7 @@ table.bigger-padding tr > td {
 }
 
 .sidebar-wrap {
+  padding-top: 45px;
   padding-left: 0;
 }
 
@@ -229,6 +230,28 @@ table.bigger-padding tr > td {
 
 .people-profile-card-w-img {
   height: 320px;
+}
+
+.content-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.jumptarget {
+  position: relative;
+  border-top: 62px solid transparent;
+  margin: -30px 0 0;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.jumptarget:before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+  right: 0;
 }
 
 /*------------------------------------------------------------------
@@ -403,7 +426,11 @@ fieldset[disabled] .btn-theme {
 ------------------------------------------------------------------*/
 /* Navbar */
 .header .navbar {
+  width: 100%;
+  position: fixed;
   margin-bottom: 0;
+  z-index: 1001;
+  background-color: #fff;
 }
 
 /* Navbar Toggle */
@@ -515,10 +542,6 @@ fieldset[disabled] .btn-theme {
 .header .nav-item {
   position: relative;
   display: block;
-}
-
-.header .nav-item:last-child .nav-item-child {
-  padding-right: 0;
 }
 
 .header .nav-item-child {
@@ -636,16 +659,16 @@ fieldset[disabled] .btn-theme {
   bottom: 10px;
   display: inline-block;
   z-index: 9;
-  width: 40px;
-  height: 40px;
-  font-size: 11px;
-  font-weight: 400;
+  width: 60px;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 700;
   color: #fff;
   text-align: center;
   line-height: 3;
   letter-spacing: 1px;
   text-transform: uppercase;
-  background: #333;
+  background: #c46d30;
   border-radius: 3px;
   visibility: hidden;
   opacity: 0;
@@ -672,7 +695,7 @@ fieldset[disabled] .btn-theme {
 /* The Button Becomes Visible */
 .back-to-top.back-to-top-is-visible {
   visibility: visible;
-  opacity: .6;
+  opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -682,7 +705,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .back-to-top.back-to-top-is-visible:hover {
-  opacity: 1;
+  opacity: 0.9;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -690,11 +713,11 @@ fieldset[disabled] .btn-theme {
 
 /* If the user keeps scrolling down, the button is out of focus and becomes less visible */
 .back-to-top.back-to-top-fade-out {
-  opacity: .4;
+  opacity: 1;
 }
 
 .back-to-top.back-to-top-fade-out:hover {
-  opacity: 1;
+  opacity: 0.9;
   transition-duration: 300ms;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
@@ -932,7 +955,7 @@ fieldset[disabled] .btn-theme {
   	[Content]
 ------------------------------------------------------------------*/
 .content {
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 
@@ -942,12 +965,12 @@ fieldset[disabled] .btn-theme {
 }
 
 .content-md {
-  padding-top: 80px;
+  padding-top: 120px;
   padding-bottom: 80px;
 }
 
 .content-lg {
-  padding-top: 100px;
+  padding-top: 160px;
   padding-bottom: 100px;
 }
 
