@@ -67,9 +67,7 @@ var AppRoutingModule = (function () {
 AppRoutingModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* RouterModule */].forRoot(appRoutes
-            // { enableTracing: true } // <-- for debugging
-            )
+            __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* RouterModule */].forRoot(appRoutes)
         ],
         exports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_router__["d" /* RouterModule */]
@@ -102,7 +100,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header class=\"header\">\n  <nav class=\"navbar\" role=\"navigation\">\n    <div class=\"container\">\n      <div class=\"menu-container\">\n        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".nav-collapse\">\n          <span class=\"sr-only\">Toggle navigation</span>\n          <span class=\"toggle-icon\"></span>\n        </button>\n        <div class=\"navbar-logo\">\n          <a class=\"navbar-logo-wrap\"\n             routerLink=\"home\"\n             routerLinkActive=\"active\">\n            <img src=\"assets/img/SVLLogo.svg\" alt=\"SVL\" style=\"width:60px;\">\n          </a>\n        </div>\n      </div>\n\n      <div class=\"collapse navbar-collapse nav-collapse\">\n        <div class=\"menu-container\">\n          <ul class=\"navbar-nav navbar-nav-right\">\n            <li class=\"nav-item\" *ngFor=\"let section of sections\">\n              <a routerLink=\"/{{section.id}}\"\n                 routerLinkActive=\"active\"\n                 class=\"nav-item-child\">{{section.name}}</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </nav>\n</header>\n\n<router-outlet></router-outlet>\n\n<footer>\n  <div class=\"content-footer container\">\n    <div class=\"row\">\n      <div class=\"col-xs-6\">\n        <h2>Contact us</h2>\n        <p class=\"margin-b-0\">Admin: Tin Tin Wisniewski\n          <br>Email: tintinyw at cs dot stanford dot edu\n          <br>Phone: (650) 723-3819\n          <br>Fax: (650) 725-1449\n        </p>\n      </div>\n      <div class=\"col-xs-6 text-right\">\n        <h2>-</h2>\n        <p class=\"margin-b-0\">\n          <br>Computer Science Department\n          <br>Stanford University\n          <br>353 Serra Mall, Stanford, CA 94305-9025.\n        </p>\n      </div>\n    </div>\n  </div>\n</footer>\n\n"
+module.exports = "<header class=\"header\">\n  <nav class=\"navbar\" role=\"navigation\">\n    <div class=\"container\">\n      <div class=\"menu-container\">\n        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".nav-collapse\">\n          <span class=\"sr-only\">Toggle navigation</span>\n          <span class=\"toggle-icon\"></span>\n        </button>\n        <div class=\"navbar-logo\">\n          <a class=\"navbar-logo-wrap\"\n             [routerLink]=\"['/home']\"\n             routerLinkActive=\"active\">\n            <img src=\"assets/img/SVLLogo.svg\" alt=\"SVL\" style=\"width:60px;\">\n          </a>\n        </div>\n      </div>\n\n      <div class=\"collapse navbar-collapse nav-collapse\">\n        <div class=\"menu-container\">\n          <ul class=\"navbar-nav navbar-nav-right\">\n            <li class=\"nav-item\" *ngFor=\"let section of sections\">\n              <a routerLink=\"/{{section.id}}\"\n                 routerLinkActive=\"active\"\n                 class=\"nav-item-child\">{{section.name}}</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n    </div>\n  </nav>\n</header>\n\n<router-outlet></router-outlet>\n\n<footer>\n  <div class=\"content-footer container\">\n    <div class=\"row\">\n      <div class=\"col-xs-6\">\n        <h2>Contact us</h2>\n        <p class=\"margin-b-0\">Admin: Tin Tin Wisniewski\n          <br>Email: tintinyw at cs dot stanford dot edu\n          <br>Phone: (650) 723-3819\n          <br>Fax: (650) 725-1449\n        </p>\n      </div>\n      <div class=\"col-xs-6 text-right\">\n        <h2>-</h2>\n        <p class=\"margin-b-0\">\n          <br>Computer Science Department\n          <br>Stanford University\n          <br>353 Serra Mall, Stanford, CA 94305-9025.\n        </p>\n      </div>\n    </div>\n  </div>\n</footer>\n\n"
 
 /***/ }),
 
@@ -152,6 +150,10 @@ var AppComponent = (function () {
             }
             if (!(event instanceof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* NavigationEnd */])) {
                 return;
+            }
+            var collapse = document.querySelector('.collapse');
+            if (collapse) {
+                collapse.classList.remove('in');
             }
             window.scrollTo(0, 0);
         });
