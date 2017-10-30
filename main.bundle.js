@@ -186,22 +186,25 @@ var _a;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_useful_swiper__ = __webpack_require__("../../../../angular2-useful-swiper/lib/swiper.module.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_angular2_useful_swiper___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_angular2_useful_swiper__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__publications_publications_filter_pipe__ = __webpack_require__("../../../../../src/app/publications/publications-filter.pipe.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__people_people_component__ = __webpack_require__("../../../../../src/app/people/people.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__publications_publications_component__ = __webpack_require__("../../../../../src/app/publications/publications.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__research_research_component__ = __webpack_require__("../../../../../src/app/research/research.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__resources_resources_component__ = __webpack_require__("../../../../../src/app/resources/resources.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__teaching_teaching_component__ = __webpack_require__("../../../../../src/app/teaching/teaching.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__not_found_component__ = __webpack_require__("../../../../../src/app/not-found.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__teaching_teaching_filter_pipe__ = __webpack_require__("../../../../../src/app/teaching/teaching-filter.pipe.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__app_routing_module__ = __webpack_require__("../../../../../src/app/app-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__contact_contact_component__ = __webpack_require__("../../../../../src/app/contact/contact.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__home_home_component__ = __webpack_require__("../../../../../src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__people_people_component__ = __webpack_require__("../../../../../src/app/people/people.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__publications_publications_component__ = __webpack_require__("../../../../../src/app/publications/publications.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__research_research_component__ = __webpack_require__("../../../../../src/app/research/research.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__resources_resources_component__ = __webpack_require__("../../../../../src/app/resources/resources.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__teaching_teaching_component__ = __webpack_require__("../../../../../src/app/teaching/teaching.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__not_found_component__ = __webpack_require__("../../../../../src/app/not-found.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -226,26 +229,28 @@ var AppModule = (function () {
 AppModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_9__home_home_component__["a" /* HomeComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__people_people_component__["a" /* PeopleComponent */],
-            __WEBPACK_IMPORTED_MODULE_12__research_research_component__["a" /* ResearchComponent */],
-            __WEBPACK_IMPORTED_MODULE_5__publications_publications_filter_pipe__["a" /* PublicationsFilterPipe */],
-            __WEBPACK_IMPORTED_MODULE_11__publications_publications_component__["a" /* PublicationsComponent */],
-            __WEBPACK_IMPORTED_MODULE_13__resources_resources_component__["a" /* ResourcesComponent */],
-            __WEBPACK_IMPORTED_MODULE_14__teaching_teaching_component__["a" /* TeachingComponent */],
-            __WEBPACK_IMPORTED_MODULE_8__contact_contact_component__["a" /* ContactComponent */],
-            __WEBPACK_IMPORTED_MODULE_15__not_found_component__["a" /* PageNotFoundComponent */]
+            __WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__home_home_component__["a" /* HomeComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__people_people_component__["a" /* PeopleComponent */],
+            __WEBPACK_IMPORTED_MODULE_13__research_research_component__["a" /* ResearchComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__publications_publications_filter_pipe__["a" /* PublicationsFilterByAuthorPipe */],
+            __WEBPACK_IMPORTED_MODULE_5__publications_publications_filter_pipe__["b" /* SectionsFilterByNamePipe */],
+            __WEBPACK_IMPORTED_MODULE_12__publications_publications_component__["a" /* PublicationsComponent */],
+            __WEBPACK_IMPORTED_MODULE_14__resources_resources_component__["a" /* ResourcesComponent */],
+            __WEBPACK_IMPORTED_MODULE_6__teaching_teaching_filter_pipe__["a" /* CoursesFilterByProfessorPipe */],
+            __WEBPACK_IMPORTED_MODULE_15__teaching_teaching_component__["a" /* TeachingComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__contact_contact_component__["a" /* ContactComponent */],
+            __WEBPACK_IMPORTED_MODULE_16__not_found_component__["a" /* PageNotFoundComponent */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormsModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_4_angular2_useful_swiper__["SwiperModule"],
-            __WEBPACK_IMPORTED_MODULE_7__app_routing_module__["a" /* AppRoutingModule */]
+            __WEBPACK_IMPORTED_MODULE_8__app_routing_module__["a" /* AppRoutingModule */]
         ],
         providers: [],
-        bootstrap: [__WEBPACK_IMPORTED_MODULE_6__app_component__["a" /* AppComponent */]]
+        bootstrap: [__WEBPACK_IMPORTED_MODULE_7__app_component__["a" /* AppComponent */]]
     })
 ], AppModule);
 
@@ -291,7 +296,7 @@ ContactComponent = __decorate([
 /***/ "../../../../../src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"overflow-h\">\n  <div class=\"content-md container\">\n\n    <div class=\"row margin-b-40\">\n      <div class=\"col-sm-9\">\n        <span>WELCOME TO</span>\n        <h2>Stanford Vision and Learning Lab</h2>\n        <p>The Stanford Vision and Learning Lab (SVL) at Stanford is directed by Professors Silvio Savarese, L.Fei Fei, and Juan Carlos Niebles. We are tackling fundamental open problems in computer vision research and are intrigued by visual functionalities that give rise to semantically meaningful interpretations of the visual world.</p>\n      </div>\n    </div>\n\n    <!-- Team -->\n    <div class=\"row\">\n\n      <div class=\"col-sm-4 sm-margin-b-50\">\n        <div class=\"bg-color-white margin-b-20\">\n          <div class=\"wow zoomIn\" data-wow-duration=\".3\" data-wow-delay=\".1s\">\n            <img class=\"img-responsive\" src=\"assets/img/770x860/01.jpg\" alt=\"Team Image\">\n          </div>\n        </div>\n        <h4><a href=\"http://cvgl.stanford.edu/silvio/\">Silvio Savarese</a></h4>\n        <p><br>Associate Professor <br>Director, <br>Sail-Toyota Center For AI Research</p>\n        <a class=\"link\" href=\"http://cvgl.stanford.edu/silvio/\">Read More</a>\n      </div>\n\n      <div class=\"col-sm-4 sm-margin-b-50\">\n        <div class=\"bg-color-white margin-b-20\">\n          <div class=\"wow zoomIn\" data-wow-duration=\".3\" data-wow-delay=\".1s\">\n            <img class=\"img-responsive\" src=\"assets/img/770x860/02.jpg\" alt=\"Team Image\">\n          </div>\n        </div>\n        <h4><a href=\"http://vision.stanford.edu/L.FeiFeili/\">L.Fei Fei</a><span class=\"margin-l-20\"><br>(publishes under Li Fei-Fei)</span></h4>\n        <p>Associate Professor <br>Director, <br>Stanford AI Lab</p>\n        <a class=\"link\" href=\"http://vision.stanford.edu/L.FeiFeili/\">Read More</a>\n      </div>\n\n      <div class=\"col-sm-4 sm-margin-b-50\">\n        <div class=\"bg-color-white margin-b-20\">\n          <div class=\"wow zoomIn\" data-wow-duration=\".3\" data-wow-delay=\".1s\">\n            <img class=\"img-responsive\" src=\"assets/img/770x860/03.jpg\" alt=\"Team Image\">\n          </div>\n        </div>\n        <h4><a href=\"http://www.niebles.net/\">Juan Carlos Niebles</a></h4>\n        <p><br>Senior Research Scientist, <br>Associate Director, <br>Sail-Toyota Center For AI Research</p>\n        <a class=\"link\" href=\"http://www.niebles.net/\">Read More</a>\n      </div>\n      <!-- End Team -->\n    </div>\n    <!--// end row -->\n  </div>\n</div>\n\n\n<div class=\"bg-color-sky-light\">\n  <div class=\"content-md container\">\n\n    <div class=\"row margin-b-40\">\n      <div class=\"col-sm-9\">\n        <h2>About SVL</h2>\n        <p>Our research addresses the theoretical foundations and practical applications of computational vision. We are focused on discovering and proposing the fundamental principles, algorithms and implementations for solving high-level visual perception and cognition problems involving computational geometry, automated image and video analysis, and visual reasoning. At the same time, our curiosity leads us to study the underlying neural mechanisms that enable the human visual system to perform high level visual tasks with amazing speed and efficiency.</p>\n      </div>\n    </div>\n    <!--// end row -->\n\n    <div class=\"masonry-grid\">\n      <div class=\"masonry-grid-sizer col-xs-6 col-sm-6 col-md-1\"></div>\n      <div class=\"masonry-grid-item col-xs-12 col-sm-6 col-md-8\">\n        <!-- Work -->\n        <div class=\"work\">\n          <div class=\"work-overlay\">\n            <img class=\"full-width img-responsive\" src=\"assets/img/800x400/01.jpg\" alt=\"SVL Group Image\">\n          </div>\n          <div class=\"work-content\">\n            <h3 class=\"color-white margin-b-5\">Our Group</h3>\n            <p class=\"color-white margin-b-0\">Join us today and we would love to meet you</p>\n          </div>\n          <a class=\"content-wrapper-link\" href=\"people.html\"></a>\n        </div>\n      </div>\n\n      <div class=\"masonry-grid-item col-xs-6 col-sm-6 col-md-4\">\n        <div class=\"work\">\n          <div class=\"work-overlay\">\n            <img class=\"full-width img-responsive\" src=\"assets/img/397x400/01.jpg\" alt=\"Portfolio Image\">\n          </div>\n          <div class=\"work-content\">\n            <h3 class=\"color-white margin-b-5\">At CVPR</h3>\n            <p class=\"color-white margin-b-0\">SVL receives V100 award from NVIDIA CEO Jensen Huang at CVPR 2017</p>\n          </div>\n          <a class=\"content-wrapper-link\" href=\"https://blogs.nvidia.com/blog/2017/07/22/tesla-v100-cvpr-nvail/\"></a>\n        </div>\n      </div>\n\n      <div class=\"masonry-grid-item col-xs-6 col-sm-6 col-md-4\">\n        <div class=\"work\">\n          <div class=\"work-overlay\">\n            <img class=\"full-width img-responsive\" src=\"assets/img/397x300/01.jpg\" alt=\"Portfolio Image\">\n          </div>\n          <div class=\"work-content\">\n            <h3 class=\"color-white margin-b-5\">At ICML 2017</h3>\n            <p class=\"color-white margin-b-0\">SVL receives V100 award from NVIDIA CEO Jensen Huang at ICML 2017</p>\n          </div>\n          <a class=\"content-wrapper-link\" href=\"https://blogs.nvidia.com/blog/2017/08/07/ai-researchers-tesla-v100-nvail-isml/\"></a>\n        </div>\n      </div>\n\n      <div class=\"masonry-grid-item col-xs-6 col-sm-6 col-md-4\">\n        <div class=\"work\">\n          <div class=\"work-overlay\">\n            <img class=\"full-width img-responsive\" src=\"assets/img/397x300/02.jpg\" alt=\"Portfolio Image\">\n          </div>\n          <div class=\"work-content\">\n            <h3 class=\"color-white margin-b-5\">At ICCV 2017</h3>\n            <p class=\"color-white margin-b-0\">6 papers accepted at ICCV 2017</p>\n          </div>\n          <a class=\"content-wrapper-link\" href=\"http://iccv2017.thecvf.com/\"></a>\n        </div>\n      </div>\n\n      <div class=\"masonry-grid-item col-xs-6 col-sm-6 col-md-4\">\n        <div class=\"work\">\n          <div class=\"work-overlay\">\n            <img class=\"full-width img-responsive\" src=\"assets/img/397x300/03.jpg\" alt=\"Portfolio Image\">\n          </div>\n          <div class=\"work-content\">\n            <h3 class=\"color-white margin-b-5\">At CVPR 2017</h3>\n            <p class=\"color-white margin-b-0\">13 papers accepted at CVPR 2017</p>\n          </div>\n          <a class=\"content-wrapper-link\" href=\"http://openaccess.thecvf.com/CVPR2017.py\"></a>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Clients -->\n\n<div class=\"content-md container\">\n  <div class=\"row margin-b-40\">\n    <div class=\"col-md-12 col-xs-12\">\n      <h2>Press Coverage</h2>\n      <div class=\"col-md-6 col-xs-12\">\n        <a href=\"https://techcrunch.com/2017/06/20/tesla-hires-deep-learning-expert-andrej-karpathy-to-lead-autopilot-vision/\"><img src=\"assets/img/clients/01.png\" alt=\"Clients Logo\"></a>\n        <p>SVL Alumnus hired as Vice President of AI at Tesla. “Tesla hires deep learning expert Andrej Karpathy to lead Autopilot vision”</p>\n      </div>\n      <div class=\"col-md-6 col-xs-12\">\n        <a href=\"https://qz.com/1034972/the-data-that-changed-the-direction-of-ai-research-and-possibly-the-world/\"><img src=\"assets/img/clients/02.png\" alt=\"Clients Logo\"></a>\n        <p>L.Fei Fei of SVL and her work on ImageNet is featured in Quartz. “The data that transformed AI research—and possibly the world”</p>\n      </div>\n    </div>\n  </div>\n</div>\n\n<div class=\"bg-color-sky-light\">\n  <div class=\"content-md container\">\n      <h2>Hightlighted Projects</h2>\n    <div class=\"row margin-b-40\">\n        <swiper [config]=\"config\">\n          <div class=\"swiper-wrapper col-md-6 col-xs-12\">\n            <div class=\"swiper-slide\">\n                  <p class=\"name-title article-seprates\">JackRabbot</p>\n                  <p>Our work at the SVL is making practical a new generation of autonomous agents that can operate safely alongside humans in dynamic crowded environments such as terminals, malls, or campuses. The Stanford “Jackrabbot”, which takes it name from the nimble yet shy Jackrabbit, is a self-navigating automated electric delivery cart capable of carrying small payloads.</p>\n                  <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/jackrabbot/\">Link</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/jackrabbot/cvgl_files/quartz_jr.mp4\">Video</a></p>\n            </div>\n            <div class=\"swiper-slide\">\n                <p class=\"name-title article-seprates\">ActivityNet: A Large-Scale Video Benchmark for Human Activity Understanding</p>\n                <p>Our benchmark aims at covering a wide range of complex human activities that are of interest to people in their daily living. We illustrate three scenarios in which ActivityNet can be used to compare algorithms for human activity understanding: global video classification, trimmed activity classification and activity detection.</p>\n                <p>Check out our <a class=\"link-sytle\" href=\"http://activity-net.org/\">Link</a> and <a class=\"link-sytle\" href=\"http://www.niebles.net/images/anet_cvpr15b.jpg\">Video</a></p>               \n            </div>  \n            <div class=\"swiper-slide\">\n                <p class=\"name-title article-seprates\">AI-Assisted Care</p>\n                <p>The Partnership in AI-Assisted Care (PAC) is an interdisciplinary collaboration between the School of Medicine and the Computer Science department focusing on cutting edge computer vision and machine learning technologies to solve some of healthcare's most important problems.</p>\n                <p>Check out our <a class=\"link-sytle\" href=\"https://aicare.stanford.edu/\">Link</a> and <a class=\"link-sytle\" href=\"https://aicare.stanford.edu/projects/hand_hygiene/video/dispenser.mp4\">Video</a></p>\n            </div>      \n            <div class=\"swiper-slide\">\n                <p class=\"name-title article-seprates\">Visual Genome</p>\n                <p>Short Description: To achieve success at cognitive tasks, models need to understand the interactions and relationships between objects in an image. Visual Genome is a new dataset to connect dense, structured image concepts to language.</p>\n                <p>Check out our <a class=\"link-sytle\" href=\"http://visualgenome.org/\">Link</a> and <a class=\"link-sytle\" href=\"http://visualgenome.org/static/images/front-page/interconnected_images.png\">Image</a></p>\n            </div>    \n          </div>\n        </swiper>\n      <div class=\"col-md-6 col-xs-12\">\n        <h2>Join The Lab</h2>\n        <p>We are always looking for outstanding prospective PhD candidates. If you are interested in joining the Stanford Vision and Learning Lab as a PhD candidate, please apply for admission to the department, indicating in your application your interest in the Stanford Vision and Learning Lab, Computer Science Department. If you are interested in a Postdoctoral Researcher position, please contact Prof. Savarese or Prof. L.Fei Fei.</p>\n      </div>\n    </div>\n  </div>\n</div>\n\n\n"
+module.exports = "<div class=\"overflow-h\">\n  <div class=\"content-md container\">\n\n    <div class=\"row margin-b-40\">\n      <div class=\"col-sm-9\">\n        <span>WELCOME TO</span>\n        <h2>Stanford Vision and Learning Lab</h2>\n        <p>The Stanford Vision and Learning Lab (SVL) at Stanford is directed by Professors Silvio Savarese, L.Fei Fei, and Juan Carlos Niebles. We are tackling fundamental open problems in computer vision research and are intrigued by visual functionalities that give rise to semantically meaningful interpretations of the visual world.</p>\n        <!-- <P><strong>Here are our highlight projects:</strong></P> -->\n      </div>\n    </div>\n    <div class=\"row margin-b-40\">\n      <swiper [config]=\"config\">\n        <div class=\"swiper-wrapper col-md-6 col-xs-12\">\n          <div class=\"swiper-slide\">\n                <div class=\"col-md-5 col-xs-12\">\n                    <a href=\"https://doi.org/10.1109/CVPR.2015.7298698\"><img class=\"img-responsive article-seprates\" src=\"assets/img/JackRabbot.jpg\"></a>\n                </div>\n                <div class=\"col-md-7 col-xs-12\">\n                    <p class=\"name-title article-seprates\">JackRabbot</p>\n                    <p>Our work at the SVL is making practical a new generation of autonomous agents that can operate safely alongside humans in dynamic crowded environments such as terminals, malls, or campuses. The Stanford “Jackrabbot”, which takes it name from the nimble yet shy Jackrabbit, is a self-navigating automated electric delivery cart capable of carrying small payloads.</p>\n                    <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/jackrabbot/\">Link</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/jackrabbot/cvgl_files/quartz_jr.mp4\">Video</a></p>   \n                </div>              \n          </div>\n          \n          <div class=\"swiper-slide\">\n              <div class=\"col-md-5 col-xs-12\">\n                  <a href=\"https://doi.org/10.1109/CVPR.2015.7298698\"><img class=\"img-responsive article-seprates\" src=\"http://www.niebles.net/images/anet_cvpr15b.jpg\"></a>\n              </div>\n              <div class=\"col-md-7 col-xs-12\">\n                <p class=\"name-title article-seprates\">ActivityNet: A Large-Scale Video Benchmark for Human Activity Understanding</p>\n                <p>Our benchmark aims at covering a wide range of complex human activities that are of interest to people in their daily living. We illustrate three scenarios in which ActivityNet can be used to compare algorithms for human activity understanding: global video classification, trimmed activity classification and activity detection.</p>\n                <p>Check out our <a class=\"link-sytle\" href=\"http://activity-net.org/\">Link</a> and <a class=\"link-sytle\" href=\"http://www.niebles.net/images/anet_cvpr15b.jpg\">Video</a></p>               \n              </div>\n          </div>  \n\n          <div class=\"swiper-slide\">\n              <div class=\"col-md-5 col-xs-12\">\n                  <a href=\"https://doi.org/10.1109/CVPR.2015.7298698\"><img class=\"img-responsive article-seprates\" src=\"assets/img/AI-Assisted.jpg\"></a>\n              </div>\n              <div class=\"col-md-7 col-xs-12\">\n                  <p class=\"name-title article-seprates\">AI-Assisted Care</p>\n                  <p>The Partnership in AI-Assisted Care (PAC) is an interdisciplinary collaboration between the School of Medicine and the Computer Science department focusing on cutting edge computer vision and machine learning technologies to solve some of healthcare's most important problems.</p>\n                  <p>Check out our <a class=\"link-sytle\" href=\"https://aicare.stanford.edu/\">Link</a> and <a class=\"link-sytle\" href=\"https://aicare.stanford.edu/projects/hand_hygiene/video/dispenser.mp4\">Video</a></p>\n                </div>\n          </div>      \n\n          <div class=\"swiper-slide\">\n              <div class=\"col-md-5 col-xs-12\">\n                  <a href=\"https://doi.org/10.1109/CVPR.2015.7298698\"><img class=\"img-responsive article-seprates\" src=\"http://visualgenome.org/static/images/front-page/interconnected_images.png\"></a>\n              </div>\n              <div class=\"col-md-7 col-xs-12\">\n                  <p class=\"name-title article-seprates\">Visual Genome</p>\n                  <p>Short Description: To achieve success at cognitive tasks, models need to understand the interactions and relationships between objects in an image. Visual Genome is a new dataset to connect dense, structured image concepts to language.</p>\n                  <p>Check out our <a class=\"link-sytle\" href=\"http://visualgenome.org/\">Link</a> and <a class=\"link-sytle\" href=\"http://visualgenome.org/static/images/front-page/interconnected_images.png\">Image</a></p>\n              </div>  \n        </div>  \n        </div>\n      </swiper>\n    </div>\n  </div>\n\n\n<div class=\"bg-color-sky-light\">\n  <div class=\"content-md container\">\n\n    <div class=\"row margin-b-40\">\n      <div class=\"col-sm-9\">\n        <h2>About SVL</h2>\n        <p>Our research addresses the theoretical foundations and practical applications of computational vision. We are focused on discovering and proposing the fundamental principles, algorithms and implementations for solving high-level visual perception and cognition problems involving computational geometry, automated image and video analysis, and visual reasoning. At the same time, our curiosity leads us to study the underlying neural mechanisms that enable the human visual system to perform high level visual tasks with amazing speed and efficiency.</p>\n      </div>\n    </div>\n    <!--// end row -->\n\n    <div class=\"masonry-grid\">\n      <div class=\"masonry-grid-sizer col-xs-6 col-sm-6 col-md-1\"></div>\n      <div class=\"masonry-grid-item col-xs-12 col-sm-6 col-md-8\">\n        <!-- Work -->\n        <div class=\"work\">\n          <div class=\"work-overlay\">\n            <img class=\"full-width img-responsive\" src=\"assets/img/800x400/01.jpg\" alt=\"SVL Group Image\">\n          </div>\n          <div class=\"work-content\">\n            <h3 class=\"color-white margin-b-5\">Our Group</h3>\n            <p class=\"color-white margin-b-0\">Join us today and we would love to meet you</p>\n          </div>\n          <a class=\"content-wrapper-link\" href=\"people.html\"></a>\n        </div>\n      </div>\n\n      <div class=\"masonry-grid-item col-xs-6 col-sm-6 col-md-4\">\n        <div class=\"work\">\n          <div class=\"work-overlay\">\n            <img class=\"full-width img-responsive\" src=\"assets/img/397x400/01.jpg\" alt=\"Portfolio Image\">\n          </div>\n          <div class=\"work-content\">\n            <h3 class=\"color-white margin-b-5\">At CVPR</h3>\n            <p class=\"color-white margin-b-0\">SVL receives V100 award from NVIDIA CEO Jensen Huang at CVPR 2017</p>\n          </div>\n          <a class=\"content-wrapper-link\" href=\"https://blogs.nvidia.com/blog/2017/07/22/tesla-v100-cvpr-nvail/\"></a>\n        </div>\n      </div>\n\n      <div class=\"masonry-grid-item col-xs-6 col-sm-6 col-md-4\">\n        <div class=\"work\">\n          <div class=\"work-overlay\">\n            <img class=\"full-width img-responsive\" src=\"assets/img/397x300/01.jpg\" alt=\"Portfolio Image\">\n          </div>\n          <div class=\"work-content\">\n            <h3 class=\"color-white margin-b-5\">At ICML 2017</h3>\n            <p class=\"color-white margin-b-0\">SVL receives V100 award from NVIDIA CEO Jensen Huang at ICML 2017</p>\n          </div>\n          <a class=\"content-wrapper-link\" href=\"https://blogs.nvidia.com/blog/2017/08/07/ai-researchers-tesla-v100-nvail-isml/\"></a>\n        </div>\n      </div>\n\n      <div class=\"masonry-grid-item col-xs-6 col-sm-6 col-md-4\">\n        <div class=\"work\">\n          <div class=\"work-overlay\">\n            <img class=\"full-width img-responsive\" src=\"assets/img/397x300/02.jpg\" alt=\"Portfolio Image\">\n          </div>\n          <div class=\"work-content\">\n            <h3 class=\"color-white margin-b-5\">At ICCV 2017</h3>\n            <p class=\"color-white margin-b-0\">6 papers accepted at ICCV 2017</p>\n          </div>\n          <a class=\"content-wrapper-link\" href=\"http://iccv2017.thecvf.com/\"></a>\n        </div>\n      </div>\n\n      <div class=\"masonry-grid-item col-xs-6 col-sm-6 col-md-4\">\n        <div class=\"work\">\n          <div class=\"work-overlay\">\n            <img class=\"full-width img-responsive\" src=\"assets/img/397x300/03.jpg\" alt=\"Portfolio Image\">\n          </div>\n          <div class=\"work-content\">\n            <h3 class=\"color-white margin-b-5\">At CVPR 2017</h3>\n            <p class=\"color-white margin-b-0\">13 papers accepted at CVPR 2017</p>\n          </div>\n          <a class=\"content-wrapper-link\" href=\"http://openaccess.thecvf.com/CVPR2017.py\"></a>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- Clients -->\n<div class=\"content-md container\">\n  <div class=\"row margin-b-40\">\n    <div class=\"col-md-12 col-xs-12\">\n      <h2>Press Coverage</h2>\n      <div class=\"col-md-6 col-xs-12\">\n        <a href=\"https://techcrunch.com/2017/06/20/tesla-hires-deep-learning-expert-andrej-karpathy-to-lead-autopilot-vision/\"><img src=\"assets/img/clients/01.png\" alt=\"Clients Logo\"></a>\n        <p>SVL Alumnus hired as Vice President of AI at Tesla. “Tesla hires deep learning expert Andrej Karpathy to lead Autopilot vision”</p>\n      </div>\n      <div class=\"col-md-6 col-xs-12\">\n        <a href=\"https://qz.com/1034972/the-data-that-changed-the-direction-of-ai-research-and-possibly-the-world/\"><img src=\"assets/img/clients/02.png\" alt=\"Clients Logo\"></a>\n        <p>L.Fei Fei of SVL and her work on ImageNet is featured in Quartz. “The data that transformed AI research—and possibly the world”</p>\n      </div>\n    </div>\n  </div>\n</div>\n\n<div class=\"bg-color-sky-light\">\n  <div class=\"content-md container\">\n     <!-- <div class=\"col-md-6 col-xs-12\"> -->\n       <h2>Join The Lab</h2>\n    <!-- Team -->\n    <div class=\"row\">\n      <div class=\"col-sm-4 sm-margin-b-50\">\n        <div class=\"bg-color-white margin-b-20\">\n          <div class=\"wow zoomIn\" data-wow-duration=\".3\" data-wow-delay=\".1s\">\n            <img class=\"img-responsive\" src=\"assets/img/770x860/01.jpg\" alt=\"Team Image\">\n          </div>\n        </div>\n        <h4><a href=\"http://cvgl.stanford.edu/silvio/\">Silvio Savarese</a></h4>\n        <p><br>Associate Professor <br>Director, <br>Sail-Toyota Center For AI Research</p>\n        <a class=\"link\" href=\"http://cvgl.stanford.edu/silvio/\">Read More</a>\n      </div>\n\n      <div class=\"col-sm-4 sm-margin-b-50\">\n        <div class=\"bg-color-white margin-b-20\">\n          <div class=\"wow zoomIn\" data-wow-duration=\".3\" data-wow-delay=\".1s\">\n            <img class=\"img-responsive\" src=\"assets/img/770x860/02.jpg\" alt=\"Team Image\">\n          </div>\n        </div>\n        <h4><a href=\"http://vision.stanford.edu/L.FeiFeili/\">Fei Fei Li</a><span class=\"margin-l-20\"><br>(publishes under L.Fei-Fei)</span></h4>\n        <p>Associate Professor <br>Director, <br>Stanford AI Lab</p>\n        <a class=\"link\" href=\"http://vision.stanford.edu/L.FeiFeili/\">Read More</a>\n      </div>\n\n      <div class=\"col-sm-4 sm-margin-b-50\">\n        <div class=\"bg-color-white margin-b-20\">\n          <div class=\"wow zoomIn\" data-wow-duration=\".3\" data-wow-delay=\".1s\">\n            <img class=\"img-responsive\" src=\"assets/img/770x860/03.jpg\" alt=\"Team Image\">\n          </div>\n        </div>\n        <h4><a href=\"http://www.niebles.net/\">Juan Carlos Niebles</a></h4>\n        <p><br>Senior Research Scientist, <br>Associate Director, <br>Sail-Toyota Center For AI Research</p>\n        <a class=\"link\" href=\"http://www.niebles.net/\">Read More</a>\n      </div>\n      <!-- End Team -->\n      <div class=\"content-md col-sm-9\">\n      <p>We are always looking for outstanding prospective PhD candidates. If you are interested in joining the Stanford Vision and Learning Lab as a PhD candidate, please apply for admission to the department, indicating in your application your interest in the Stanford Vision and Learning Lab, Computer Science Department. If you are interested in a Postdoctoral Researcher position, please contact Prof. Savarese or Prof. L.Fei Fei.</p>\n      </div>\n    </div>\n    </div>\n  </div>\n<!-- </div> -->\n\n"
 
 /***/ }),
 
@@ -361,7 +366,7 @@ PageNotFoundComponent = __decorate([
 /***/ "../../../../../src/app/people/people.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"bg-color-sky-light section-separator\">\n  <div class=\"content container\">\n    <div class=\"row\">\n      <div id=\"sidebar\" class=\"sidebar-wrap col-md-3 col-xs-10 sm-margin-b-30\">\n        <div class=\"sidebar\">\n          <ul class=\"list-unstyled sidenav-position\">\n            <li class=\"side-nav\"><a [routerLink]=\"['/people']\"\n                                    fragment=\"faculty\"\n                                    (click)=\"onAnchorClick()\">Faculty</a></li>\n            <li *ngFor=\"let group of people.groups\"\n                class=\"side-nav\">\n              <a [routerLink]=\"['/people']\"\n                 fragment=\"{{groupHref(group)}}\"\n                 (click)=\"onAnchorClick()\">{{group.name}}</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n\n      <div id=\"content\" class=\"content col-md-9 sm-margin-b-30\">\n        <div>\n          <h2 id=\"faculty\">Faculty</h2>\n          <ul class=\"row list-unstyled\">\n            <li class=\"col-md-4 col-xs-4\">\n              <img class=\"people-image\" src=\"assets/img/770x860/01.jpg\">\n              <p><a  class=\"name-title\" href=\"http://cvgl.stanford.edu/silvio/\">Silvio Savarese</a></p>\n              <p>Associate Professor \n                <br>Director, \n                <br>Sail-Toyota Center For AI Research \n\n              </p>\n              <p>Computer Science Department\n                <br>Office: Room 154 Gates Bldg</p>\n              <p><i class=\"margin-r-10 color-base icon-call-out\"></i>(650) 725-3860</p>\n              <p><i class=\"margin-r-10 color-base icon-envelope\"></i>ssilvio at stanford dot edu</p>\n            </li>\n\n            <li class=\"col-md-4 col-xs-4\">\n              <img class=\"people-image\" src=\"assets/img/770x860/02.jpg\">\n              <p><a class=\"name-title\" href=\"http://vision.stanford.edu/L.FeiFeili/\">L.Fei Fei</a></p>\n              <span>(publishes under Li Fei-Fei)</span>\n              <br>\n              <p>Associate Professor \n                <br>Director, Stanford AI Lab\n              </p>\n              <p>Computer Science Department\n                <br>Office: Room 246 Gates Bldg</p>\n              <p><i class=\"margin-r-10 color-base icon-call-out\"></i>(650) 725-3860</p>\n              <p><i class=\"margin-r-10 color-base icon-envelope\"></i>L.FeiFeili at cs dot stanford dot edu</p>\n            </li>\n\n            <li class=\"col-md-4 col-xs-4\">\n              <img class=\"people-image\" src=\"assets/img/770x860/03.jpg\">\n              <p><a  class=\"name-title\" href=\"http://www.niebles.net/\">Juan Carlos Niebles</a></p>\n              <P>Senior Research Scientist\n                <br>Associate Director, \n                <br>Sail-Toyota Center For AI Research</P>\n              <p>Computer Science Department\n                <br>Office:Room 243 Gates Bldg\n              </p>\n              <p><i class=\"margin-r-10 color-base icon-call-out\"></i>(650) 725-3860</p>\n              <p><i class=\"margin-r-10 color-base icon-envelope\"></i>jniebles at cs dot stanford dot edu</p>\n            </li>\n          </ul>\n        </div>\n\n        <div *ngFor=\"let group of people.groups\">\n          <h2 id=\"{{groupHref(group)}}\" class=\"jumptarget top-seprates\">{{group.name}}</h2>\n          <div class=\"row list-unstyled\">\n            <div *ngFor=\"let member of group.members\"\n                 class=\"col-md-4 col-xs-4 people-profile-card{{member.img ? '-w-img' : ''}}\">\n              <img *ngIf=\"member.img\" class=\"people-profile-image\" src=\"{{member.img}}\">\n              <p class=\"name-title\">{{member.name}}</p>\n              <span *ngIf=\"member.desc\" class=\"text-uppercase small-padding-top\">{{member.desc}}</span>\n              <span *ngIf=\"member.job\" class=\"text-uppercase small-padding-top\">{{member.job}}</span>\n              <br *ngIf=\"member.email\"><span *ngIf=\"member.email\">{{member.email}}</span>\n              <p *ngIf=\"member.web\"><a class=\"link-sytle\" href=\"{{member.web}}\">Website</a></p>\n          </div>\n        </div>\n      </div>\n      \n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"bg-color-sky-light section-separator\">\n  <div class=\"content container\">\n    <div class=\"row\">\n      <div id=\"sidebar\" class=\"sidebar-wrap col-md-3 col-xs-10 sm-margin-b-30\">\n        <div class=\"sidebar\">\n          <ul class=\"list-unstyled sidenav-position\">\n            <li class=\"side-nav\"><a [routerLink]=\"['/people']\"\n                                    fragment=\"faculty\"\n                                    (click)=\"onAnchorClick()\">Faculty</a></li>\n            <li *ngFor=\"let group of people.groups\"\n                class=\"side-nav\">\n              <a [routerLink]=\"['/people']\"\n                 fragment=\"{{groupHref(group)}}\"\n                 (click)=\"onAnchorClick()\">{{group.name}}</a>\n            </li>\n          </ul>\n        </div>\n      </div>\n\n      <div id=\"content\" class=\"content col-md-9 sm-margin-b-30\">\n        <div>\n          <h2 id=\"faculty\">Faculty</h2>\n          <ul class=\"row list-unstyled\">\n            <li class=\"col-md-4 col-xs-4\">\n              <img class=\"people-image\" src=\"assets/img/770x860/01.jpg\">\n              <p><a  class=\"name-title\" href=\"http://cvgl.stanford.edu/silvio/\">Silvio Savarese</a></p>\n              <p>Associate Professor \n                <br>Director, \n                <br>Sail-Toyota Center For AI Research \n\n              </p>\n              <p>Computer Science Department\n                <br>Office: Room 154 Gates Bldg</p>\n              <p><i class=\"margin-r-10 color-base icon-call-out\"></i>(650) 725-3860</p>\n              <p><i class=\"margin-r-10 color-base icon-envelope\"></i>ssilvio at stanford dot edu</p>\n            </li>\n\n            <li class=\"col-md-4 col-xs-4\">\n              <img class=\"people-image\" src=\"assets/img/770x860/02.jpg\">\n              <p><a class=\"name-title\" href=\"http://vision.stanford.edu/feifeili/\">Fei-Fei Li</a></p>\n              <span>(publishes under L.Fei-Fei)</span>\n              <br>\n              <p>Associate Professor \n                <br>Director, Stanford AI Lab\n              </p>\n              <p>Computer Science Department\n                <br>Office: Room 246 Gates Bldg</p>\n              <p><i class=\"margin-r-10 color-base icon-call-out\"></i>(650) 725-3860</p>\n              <p><i class=\"margin-r-10 color-base icon-envelope\"></i>feifeili at cs dot stanford dot edu</p>\n            </li>\n\n            <li class=\"col-md-4 col-xs-4\">\n              <img class=\"people-image\" src=\"assets/img/770x860/03.jpg\">\n              <p><a  class=\"name-title\" href=\"http://www.niebles.net/\">Juan Carlos Niebles</a></p>\n              <P>Senior Research Scientist\n                <br>Associate Director, \n                <br>Sail-Toyota Center For AI Research</P>\n              <p>Computer Science Department\n                <br>Office:Room 243 Gates Bldg\n              </p>\n              <p><i class=\"margin-r-10 color-base icon-call-out\"></i>(650) 725-3860</p>\n              <p><i class=\"margin-r-10 color-base icon-envelope\"></i>jniebles at cs dot stanford dot edu</p>\n            </li>\n          </ul>\n        </div>\n\n        <div *ngFor=\"let group of people.groups\">\n          <h2 id=\"{{groupHref(group)}}\" class=\"jumptarget top-seprates\">{{group.name}}</h2>\n          <div class=\"row list-unstyled\">\n            <div *ngFor=\"let member of group.members\"\n                 class=\"col-md-4 col-xs-4 people-profile-card{{member.img ? '-w-img' : ''}}\">\n              <img *ngIf=\"member.img\" class=\"people-profile-image\" src=\"{{member.img}}\">\n              <p class=\"name-title\">{{member.name}}</p>\n              <span *ngIf=\"member.desc\" class=\"text-uppercase small-padding-top\">{{member.desc}}</span>\n              <span *ngIf=\"member.job\" class=\"text-uppercase small-padding-top\">{{member.job}}</span>\n              <br *ngIf=\"member.email\"><span *ngIf=\"member.email\">{{member.email}}</span>\n              <p *ngIf=\"member.web\"><a class=\"link-sytle\" href=\"{{member.web}}\">Website</a></p>\n          </div>\n        </div>\n      </div>\n      \n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -1343,7 +1348,8 @@ PeopleService = __decorate([
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PublicationsFilterPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PublicationsFilterByAuthorPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return SectionsFilterByNamePipe; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1353,29 +1359,54 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 
 /**
- * Filters a list of Publications by author name.
+ * Filters a list of Publications by author.
  * Takes a string for the author name that defaults to 'All'.
  * Usage:
- *   value | publicationsFilter:authorName
+ *   value | publicationsFilterByAuthor:authorName
  * Example:
- *   {{ publications | publicationsFilter:'L.Fei Fei' }}
- *   returns all publications only for L.Fei Fei.
+ *   {{ publications | publicationsFilterByAuthor:'Fei-Fei Li' }}
+ *   returns all publications only for Fei-Fei Li.
  */
-var PublicationsFilterPipe = (function () {
-    function PublicationsFilterPipe() {
+var PublicationsFilterByAuthorPipe = (function () {
+    function PublicationsFilterByAuthorPipe() {
     }
-    PublicationsFilterPipe.prototype.transform = function (value, authorName) {
+    PublicationsFilterByAuthorPipe.prototype.transform = function (value, authorName) {
         if (authorName == 'All')
             return value;
         return value.filter(function (publication) {
             return publication.authors.indexOf(authorName) > -1;
         });
     };
-    return PublicationsFilterPipe;
+    return PublicationsFilterByAuthorPipe;
 }());
-PublicationsFilterPipe = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'publicationsFilter' })
-], PublicationsFilterPipe);
+PublicationsFilterByAuthorPipe = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'publicationsFilterByAuthor' })
+], PublicationsFilterByAuthorPipe);
+
+/**
+ * Filters a list of Publications by name.
+ * Takes a string for the section name that defaults to 'All'.
+ * Usage:
+ *   value | sectionsFilterByName:sectionName
+ * Example:
+ *   {{ sections | sectionsFilterByName:'Publications 2017' }}
+ *   returns all sections with 'Publications 2017' name.
+ */
+var SectionsFilterByNamePipe = (function () {
+    function SectionsFilterByNamePipe() {
+    }
+    SectionsFilterByNamePipe.prototype.transform = function (value, sectionName) {
+        if (sectionName == 'All')
+            return value;
+        return value.filter(function (section) {
+            return section.name == sectionName;
+        });
+    };
+    return SectionsFilterByNamePipe;
+}());
+SectionsFilterByNamePipe = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'sectionsFilterByName' })
+], SectionsFilterByNamePipe);
 
 //# sourceMappingURL=publications-filter.pipe.js.map
 
@@ -1384,7 +1415,7 @@ PublicationsFilterPipe = __decorate([
 /***/ "../../../../../src/app/publications/publications.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"bg-color-sky-light section-seperator\">\n  <div class=\"content container\">\n    <div class=\"row\">\n      <div id=\"sidebar\" class=\"sidebar-wrap col-md-3 col-xs-10 sm-margin-b-30\">\n        <ul class=\"sidebar list-unstyled sidenav-position\">\n          <li *ngFor=\"let section of sections\" class=\"side-nav\">\n            <a [routerLink]=\"['/publications']\"\n               fragment=\"{{sectionHref(section)}}\"\n               (click)=\"onAnchorClick()\">{{section.name}}</a>\n          </li>\n          <li class=\"side-nav\">\n            <a (click)=\"onBackToTop()\">Back To Top</a></li>\n        </ul>\n      </div>\n\n      <div id=\"content\" class=\"content col-md-9 col-xs-12 sm-margin-b-30\">\n        <form class=\"filterstyle\">\n          <div class=\"filteroption\"><input [(ngModel)]=\"author\"\n                 type=\"radio\"\n                 name=\"author\"\n                 value=\"All\">All</div>\n          <div class=\"filteroption\"><input [(ngModel)]=\"author\"\n                 type=\"radio\"\n                 name=\"author\"\n                 value=\"L.Fei Fei\">L.Fei Fei</div> \n          <div class=\"filteroption\"><input [(ngModel)]=\"author\"\n                 type=\"radio\"\n                 name=\"author\"\n                 value=\"Juan Carlos Niebles\">Juan Carlos Niebles</div> \n          <div class=\"filteroption\"><input [(ngModel)]=\"author\"\n                 type=\"radio\"\n                 name=\"author\"\n                 value=\"Silvio Savarese\">Silvio Savarese</div> \n        </form>\n\n        <ul class=\"row list-unstyled\">\n          <li *ngFor=\"let section of sections\">\n            <h2 id=\"{{sectionHref(section)}}\">{{section.name}}</h2>\n            <ul class=\"list-unstyled\">\n              <li *ngFor=\"let publication of section.publications | publicationsFilter:author\"\n                  class=\"publication-list\">\n                <div class=\"row top-seprates\">\n                  <div class=\"col-md-3 col-xs-3\">\n                    <img *ngIf=\"publication.image != ''\"\n                         class=\"img-responsive article-seprates\"\n                         src=\"/assets/img/pub/{{publication.image}}\">\n                  </div>\n                  <div class=\"col-md-9 col-xs-9\">\n                    <p><b>{{publication.title}}</b></p>\n                    <p *ngIf=\"publication.info != ''\"><em>{{publication.info}}</em></p>\n                    <p>{{publication.authorsText}}</p>\n                    <div [innerHtml]=\"publicationHtml(publication)\"></div>\n                  </div>\n                </div>\n              </li>\n            </ul>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n\n"
+module.exports = "<div class=\"bg-color-sky-light section-seperator\">\n  <div class=\"content container\">\n    <div class=\"row\">\n      <div id=\"sidebar\" class=\"sidebar-wrap col-md-3 col-xs-10 sm-margin-b-30\">\n        <form>\n          <ul class=\"sidebar list-unstyled sidenav-position\">\n            <li class=\"side-nav\">\n              <label>\n                <input [(ngModel)]=\"section\"\n                     type=\"radio\"\n                     name=\"section\"\n                     value=\"All\"><div>All Publications</div>\n              </label>\n            </li>\n            <li *ngFor=\"let s of sections\" class=\"side-nav\">\n              <label>\n                <input [(ngModel)]=\"section\"\n                       type=\"radio\"\n                       name=\"section\"\n                       value=\"{{s.name}}\"><div>{{s.name}}</div>\n              </label>\n            </li>\n          </ul>\n        </form>\n      </div>\n\n      <div id=\"content\" class=\"content col-md-9 col-xs-12 sm-margin-b-30\">\n        <form class=\"filterstyle\">\n          <div class=\"filteroption\"><input [(ngModel)]=\"author\"\n                 type=\"radio\"\n                 name=\"author\"\n                 value=\"All\">All Authors</div>\n          <div class=\"filteroption\"><input [(ngModel)]=\"author\"\n                 type=\"radio\"\n                 name=\"author\"\n                 value=\"Fei-Fei Li\">L.Fei-Fei</div>\n          <div class=\"filteroption\"><input [(ngModel)]=\"author\"\n                 type=\"radio\"\n                 name=\"author\"\n                 value=\"Juan Carlos Niebles\">Juan Carlos Niebles</div>\n          <div class=\"filteroption\"><input [(ngModel)]=\"author\"\n                 type=\"radio\"\n                 name=\"author\"\n                 value=\"Silvio Savarese\">Silvio Savarese</div>\n        </form>\n\n        <ul class=\"row list-unstyled\">\n          <li *ngFor=\"let s of sections | sectionsFilterByName:section\">\n            <h2 id=\"{{sectionHref(s)}}\">{{s.name}}</h2>\n            <ul class=\"list-unstyled\">\n              <li *ngFor=\"let publication of s.publications | publicationsFilterByAuthor:author\"\n                  class=\"publication-list\">\n                <div class=\"row top-seprates\">\n                  <div class=\"col-md-3 col-xs-3\">\n                    <img *ngIf=\"publication.image != ''\"\n                         class=\"img-responsive article-seprates\"\n                         src=\"/assets/img/pub/{{publication.image}}\">\n                  </div>\n                  <div class=\"col-md-9 col-xs-9\">\n                    <p><b>{{publication.title}}</b></p>\n                    <p *ngIf=\"publication.info != ''\"><em>{{publication.info}}</em></p>\n                    <p>{{publication.authorsText}}</p>\n                    <div [innerHtml]=\"publicationHtml(publication)\"></div>\n                  </div>\n                </div>\n              </li>\n            </ul>\n          </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n\n"
 
 /***/ }),
 
@@ -1415,6 +1446,7 @@ var PublicationsComponent = (function () {
         this.publicationsService = publicationsService;
         this.route = route;
         this.author = __WEBPACK_IMPORTED_MODULE_2__publications__["a" /* ALL */];
+        this.section = __WEBPACK_IMPORTED_MODULE_2__publications__["a" /* ALL */];
     }
     PublicationsComponent.prototype.onAnchorClick = function () {
         this.route.fragment.subscribe(function (f) {
@@ -1571,7 +1603,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Timnit Gebru, Judy Hoffman, Li Fei-Fei.",
                 image: "",
                 title: "Fine-grained Recognition in the Wild: A Multi-Task Domain Adaptation Approach",
@@ -1582,7 +1614,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Yuke Zhu*, Daniel Gordon*, Eric Kolve, Dieter Fox, Li Fei-Fei, Abhinav Gupta, Roozbeh Mottaghi, Ali Farhadi.",
                 image: "",
                 title: "Visual Semantic Planning using Deep Successor Representations",
@@ -1593,7 +1625,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "Ranjay Krishna, Kenji Hata, Frederic Ren, Li Fei-Fei, Juan Carlos Niebles.",
                 image: "",
                 title: "Dense-Captioning Events in Videos",
@@ -1607,7 +1639,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Justin Johnson, Bharath Hariharan, Laurens van der Maaten, Judy Hoffman, Li Fei-Fei, C. Lawrence Zitnick, Ross Girshick.",
                 image: "pubimg/johnson2017iccv.png",
                 title: "Inferring and Executing Programs for Visual Reasoning",
@@ -1621,7 +1653,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Agrim Gupta, Justin Johnson, Alexandre Alahi, Li Fei-Fei.",
                 image: "pubimg/gupta2017iccv.png",
                 title: "Characterizing and Improving Stability in Neural Style Transfer.",
@@ -1632,7 +1664,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "Ajay Mandlekar*, Yuke Zhu*, Animesh Garg*, Li Fei-Fei, Silvio Savarese.",
                 image: "pubimg/mandlekar2017iros.png",
                 title: "Adversarially Robust Policy Learning through Active Construction of Physically-Plausible Perturbations.",
@@ -1643,7 +1675,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "A. Alahi, J. Wilson, L. Fei-Fei S. Savarese,",
                 image: "",
                 title: "Unsupervised Camera Localization in Crowded Spaces",
@@ -1755,7 +1787,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Albert Haque, Michelle Guo, Alexandre Alahi, Serena Yeung, Zelun Luo, Alisha Rege, Amit Singh, Jeffrey Jopling, Lance Downing, William Beninati, Terry Platchek, Arnold Milstein, Li Fei-Fei.",
                 image: "pubimg/haque2017mlhc.png",
                 title: "Towards Vision-Based Smart Hospitals: A System for Tracking and Monitoring Hand Hygiene Compliance.",
@@ -1769,7 +1801,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "De-An Huang, Joseph J. Lim, Li Fei-Fei, and Juan Carlos Niebles.",
                 image: "pubimg/huang2017cvpr.png",
                 title: "Unsupervised Visual-Linguistic Reference Resolution in Instructional Videos.",
@@ -1783,7 +1815,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Danfei Xu, Yuke Zhu, Christopher B. Choy, Li Fei-Fei.",
                 image: "pubimg/xu2017cvpr.png",
                 title: "Scene Graph Generation by Iterative Message Passing.",
@@ -1797,7 +1829,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Yuke Zhu, Joseph J. Lim, Li Fei-Fei.",
                 image: "pubimg/zhu2017cvpr.png",
                 title: "Knowledge Acquisition for Visual Question Answering via Iterative Querying.",
@@ -1808,7 +1840,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Serena Yeung, Vignesh Ramanathan, Olga Russakovsky, Liyue Shen, Greg Mori, Li Fei-Fei.",
                 image: "pubimg/yeung2017cvpr.png",
                 title: "Learning to learn from noisy web videos.",
@@ -1830,7 +1862,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Justin Johnson, Bharath Hariharan, Laurens van der Maaten, Li Fei-Fei, C. Lawrence Zitnick, Ross Girshick.",
                 image: "pubimg/johnson2017cvpr.png",
                 title: "CLEVR: A Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning.",
@@ -1844,7 +1876,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Jonathan Krause, Justin Johnson, Ranjay Krishna, Li Fei-Fei.",
                 image: "pubimg/krause2017cvpr.png",
                 title: "A Hierarchical Approach for Generating Descriptive Image Paragraphs.",
@@ -1858,7 +1890,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Zelun Luo, Boya Peng, De-An Huang, Alexandre Alahi, Li Fei-Fei.",
                 image: "pubimg/luo2017cvpr.png",
                 title: "Unsupervised Learning of Long-Term Motion Dynamics for Videos.",
@@ -1869,7 +1901,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Katsuyuki Nakamura, Serena Yeung, Alexandre Alahi, Li Fei-Fei.",
                 image: "pubimg/nakamura2017cvpr.png",
                 title: "Jointly Learning Energy Expenditures and Activities using Egocentric Multimodal Signals.",
@@ -1880,7 +1912,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Alexandre Alahi, Vignesh Ramanathan, Li Fei-Fei.",
                 image: "pubimg/alahi2017gcbcv2.png",
                 title: "Tracking Millions of Humans in Crowded Space.",
@@ -1891,7 +1923,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "Alexandre Alahi, Vignesh Ramanathan, Kratarth Goel, Alexandre Robicquet, Amir Abbas Sadeghian, Li Fei-Fei, Silvio Savarese.",
                 image: "pubimg/alahi2017gcbcv.png",
                 title: "Learning to Predict Human Behaviour in Crowded Scenes.",
@@ -1902,7 +1934,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Timnit Gebru, Jonathan Krause, Yilun Wang, Duyun Chen, Jia Deng, Li Fei-Fei.",
                 image: "pubimg/gebru2017aaai.jpg",
                 title: "Fine-Grained Car Detection for Visual Census Estimation.",
@@ -1913,7 +1945,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Timnit Gebru, Jonathan Krause, Jia Deng, Li Fei-Fei.",
                 image: "pubimg/gebru2017chi.jpg",
                 title: "Scalable Annotation of Fine-Grained Objects Without Experts.",
@@ -1924,7 +1956,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "Alexandre Alahi, Judson Wilson, Li Fei-Fei, Silvio Savarese.",
                 image: "pubimg/alahi2017icra.png",
                 title: "Unsupervised Camera Localization in Crowded Spaces.",
@@ -1935,7 +1967,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Yuke Zhu, Roozbeh Mottaghi, Eric Kolve, Joseph J. Lim, Abhinav Gupta, Li Fei-Fei, Ali Farhadi.",
                 image: "pubimg/icra2017.png",
                 title: "Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning.",
@@ -1946,7 +1978,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Ranjay Krishna, Yuke Zhu, Oliver Groth, Justin Johnson, Kenji Hata, Joshua Kravitz, Stephanie Chen, Yannis Kalantidis, Li Jia-Li, David Ayman Shamma, Michael Bernstrein, Li Fei-Fei.",
                 image: "pubimg/visualgenome.png",
                 title: "Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations.",
@@ -1960,7 +1992,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Kenji Hata, Ranjay Krishna, Li Fei-Fei, Michael Bernstein.",
                 image: "pubimg/hata2017cscw.png",
                 title: "A Glimpse Far into the Future: Understanding Long-term Crowd Worker Accuracy.",
@@ -2067,7 +2099,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Guido Pusiol, Andre Esteva, Scott S. Hall, Michael Frank, Arnold Milstein, Li Fei-Fei.",
                 image: "pubimg/pusiol2016miccai.png",
                 title: "Vision-Based Classification of Developmental Disorders Using Eye-Movements.",
@@ -2078,7 +2110,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Cewu Lu*, Ranjay Krishna*, Michael Bernstein, Li Fei-Fei.",
                 image: "pubimg/lu2016eccv.png",
                 title: "Visual Relationship Detection with Language Priors.",
@@ -2092,7 +2124,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "De-An Huang, Li Fei-Fei, Juan Carlos Niebles.",
                 image: "ectc-1.png",
                 title: "Connectionist Temporal Modeling for Weakly Supervised Action Labeling.",
@@ -2112,7 +2144,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Albert Haque, Boya Peng*, Zelun Luo*, Alexandre Alahi, Serena Yeung, Li Fei-Fei.",
                 image: "pubimg/haque2016eccv.jpg",
                 title: "Towards Viewpoint Invariant 3D Human Pose Estimation.",
@@ -2126,7 +2158,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Justin Johnson, Alexandre Alahi, and Li Fei-Fei.",
                 image: "pubimg/johnson2016eccv.jpg",
                 title: "Perceptual Losses for Real-time Style Transfer and Single Image Super-Resolution.",
@@ -2137,7 +2169,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Amy Bearman, Olga Russakovsky, Vittorio Ferrari and Li Fei-Fei.",
                 image: "pubimg/bearman2016eccv.png",
                 title: "What's the point: Semantic segmentation with point supervision.",
@@ -2148,7 +2180,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Jonathan Krause, Benjamin Sapp, Andrew Howard, Howard Zhou, Alexander Toshev, Tom Duerig, James Philbin, Li Fei-Fei.",
                 image: "pubimg/krause2016eccv.jpg",
                 title: "The Unreasonable Effectiveness of Noisy Data for Fine-Grained Recognition.",
@@ -2159,7 +2191,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Andrej Karpathy*, Justin Johnson*, Li Fei-Fei.",
                 image: "pubimg/KarpathyICLR2016.png",
                 title: "Visualizing and Understanding Recurrent Networks.",
@@ -2170,7 +2202,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Albert Haque, Alexandre Alahi, Li Fei-Fei.",
                 image: "pubimg/haque2016cvpr.png",
                 title: "Recurrent Attention Models for Depth-Based Person Identification.",
@@ -2184,7 +2216,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Serena Yeung, Olga Russakovsky, Greg Mori, Li Fei-Fei.",
                 image: "pubimg/yeung2016cvpr.png",
                 title: "End-to-end Learning of Action Detection from Frame Glimpses in Videos.",
@@ -2198,7 +2230,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "Alexandre Alahi*, Kratarth Goel*, Vignesh Ramanathan, Alexandre Robicquet, Li Fei-Fei, Silvio Savarese.",
                 image: "pubimg/alahi2016cvpr.png",
                 title: "Social LSTM: Human Trajectory Prediction in Crowded Spaces.",
@@ -2209,7 +2241,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Vignesh Ramanathan, Jonathan Huang, Sami Abu-El-Haija, Alexander Gorban, Kevin Murphy, Li Fei-Fei.",
                 image: "pubimg/ramanathan2016cvpr.png",
                 title: "Detecting Events and Key Actors in Multi-person Videos.",
@@ -2223,7 +2255,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Justin Johnson*, Andrej Karpathy*, Li Fei-Fei.",
                 image: "pubimg/densecap.svg",
                 title: "DenseCap: Fully Convolutional Localization Networks for Dense Captioning.",
@@ -2237,7 +2269,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Yuke Zhu, Oliver Groth, Michael Bernstein, Li Fei-Fei.",
                 image: "pubimg/visual7w.png",
                 title: "Visual7W: Grounded Question Answering in Images.",
@@ -2251,7 +2283,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Christopher Baldassano, Diane M. Beck, Li Fei-Fei.",
                 image: "pubimg/chris16.png",
                 title: "Human-object Interactions are More than the Sum of Their Parts.",
@@ -2262,7 +2294,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Marius Cătălin Iordan, Michelle R. Greene, Diane M. Beck, Li Fei-Fei.",
                 image: "pubimg/catalin16.jpg",
                 title: "Typicality Sharpens Category Representations in Object-Selective Cortex.",
@@ -2273,7 +2305,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Ranjay Krishna, Kenji Hata, Stephanie Chen, Joshua Kravitz, David A. Shamma, Li Fei-Fei, Michael S. Bernstein.",
                 image: "pubimg/krishna2016chi.jpg",
                 title: "Embracing Error to Enable Rapid Crowdsourcing.",
@@ -2295,7 +2327,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Michelle R. Greene, Christopher Baldassano, Diane M. Beck, Li Fei-Fei.",
                 image: "pubimg/JEPGIcon.png",
                 title: "Visual Scenes Are Categorized by Function.",
@@ -2306,7 +2338,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Marie E. Vachovsky, Grace Wu, Sorathan Chaturapruek, Olga Russakovsky, Rick Sommer, Li Fei-Fei.",
                 image: "pubimg/sailors.jpg",
                 title: "Towards More Gender Diversity in CS through an Artificial Intelligence Summer Program for High School Girls.",
@@ -2512,7 +2544,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "A. Alahi*, K. Goel*, V. Ramanathan, A. Robicquet, L. Fei-Fei, S. Savarese,",
                 image: "",
                 title: "Social LSTM: Human Trajectory Prediction in Crowded Spaces",
@@ -2853,7 +2885,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Michelle R. Greene, Abraham P. Botros, Diane M. Beck, Li Fei-Fei.",
                 image: "pubimg/APPIcon.png",
                 title: "What You See is What You Expect: Rapid Scene Understanding Benefits from Prior Experience.",
@@ -2864,18 +2896,18 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Sebastian Schuster, Ranjay Krishna, Angel Chang, Li Fei-Fei, Christopher D. Manning.",
                 image: "pubimg/3571351_orig.png",
                 title: "Generating Semantically Precise Scene Graphs from Textual Descriptions for Improved Image Retrieval.",
                 info: "Empirical Methods in Natural Language Processing (EMNLP) - Vision and Language Workshop 2015 (oral).",
                 refs: [
-                    { href: "http://nlp.stanford.edu/pubs/schuster-krishna-chang-L.FeiFei-manning-vl15.pdf",
+                    { href: "http://nlp.stanford.edu/pubs/schuster-krishna-chang-feifei-manning-vl15.pdf",
                         text: "PDF",
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Marius Cătălin Iordan, Armand Joulin, Diane M. Beck, Li Fei-Fei.",
                 image: "pubimg/mci_nips2015.jpg",
                 title: "Locally-Optimized Inter-Subject Alignment of Functional Cortical Regions.",
@@ -2886,7 +2918,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Alexandre Alahi, Albert Haque, Li Fei-Fei.",
                 image: "pubimg/rgbw15_1.png",
                 title: "RGB-W: When Vision Meets Wireless.",
@@ -2900,7 +2932,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Kevin Tang, Manohar Paluri, Li Fei-Fei, Rob Fergus, Lubomir Bourdev.",
                 image: "pubimg/yfcc100m.png",
                 title: "Improving Image Classification with Location Context.",
@@ -2911,7 +2943,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Vignesh Ramanathan, Kevin Tang, Greg Mori and Li Fei-Fei.",
                 image: "pubimg/vig15.png",
                 title: "Learning temporal embeddings for complex video analysis.",
@@ -2922,7 +2954,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Justin Johnson*, Lamberto Ballan*, Li Fei-Fei.",
                 image: "pubimg/GraphNeighborhoodSmall.jpg",
                 title: "Love Thy Neighbors: Image Annotation by Exploiting Image Metadata.",
@@ -2933,7 +2965,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Justin Johnson, Ranjay Krishna, Michael Stark, Li-Jia Li, David Ayman Shamma, Michael Bernstein, Li Fei-Fei.",
                 image: "pubimg/justin15.png",
                 title: "Image Retrieval using Scene Graphs.",
@@ -2944,7 +2976,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Andrej Karpathy, Li Fei-Fei.",
                 image: "pubimg/rnn7.png",
                 title: "Deep Visual-Semantic Alignments for Generating Image Descriptions.",
@@ -2958,7 +2990,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Jonathan Krause, Hailin Jin, Jianchao Yang, Li Fei-Fei.",
                 image: "pubimg/jon_cvpr15.png",
                 title: "Fine-Grained Recognition without Part Annotations.",
@@ -2969,7 +3001,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Olga Russakovsky, Li-Jia Li, Li Fei-Fei.",
                 image: "pubimg/olga15.jpg",
                 title: "Best of both worlds: human-machine collaboration for dense object annotation.",
@@ -2983,7 +3015,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Christopher Baldassano, Diane M. Beck, Li Fei-Fei.",
                 image: "pubimg/brain.png",
                 title: "Parcellating connectivity in spatial maps.",
@@ -2994,7 +3026,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Olga Russakovsky*, Jia Deng*, Hao Su, Jonathan Krause, Sanjeev Satheesh, Sean Ma, Zhiheng Huang, Andrej Karpathy, Aditya Khosla, Michael Bernstein, Alexander C. Berg, Li Fei-Fei.",
                 image: "pubimg/ilsvrc.jpg",
                 title: "ImageNet Large Scale Visual Recognition Challenge.",
@@ -3005,7 +3037,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Marius Cătălin Iordan, Michelle R. Greene, Diane M. Beck, Li Fei-Fei.",
                 image: "pubimg/cogneuro15.jpeg",
                 title: "Basic Level Category Structure Emerges Gradually Across Human Ventral Visual Cortex.",
@@ -3208,7 +3240,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "Y. Bao, A. Furlan, L. Fei-Fei, S. Savarese,",
                 image: "",
                 title: "Understanding the 3D Layout of a Cluttered Room From Multiple Images",
@@ -3239,7 +3271,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Andrej Karpathy, Armand Joulin, Li Fei-Fei.",
                 image: "pubimg/nips_small.jpg",
                 title: "Deep Fragment Embeddings for Bidirectional Image-Sentence Mapping.",
@@ -3250,7 +3282,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Vignesh Ramanathan, Armand Joulin, Percy Liang and Li Fei-Fei.",
                 image: "pubimg/vignesh14.jpeg",
                 title: "Joint person naming in videos and coreference resolution in text.",
@@ -3261,7 +3293,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Yuke Zhu, Alireza Fathi, and Li Fei-Fei.",
                 image: "pubimg/zhuECCV2014.png",
                 title: "Reasoning About Object Affordances in a Knowledge Base Representation.",
@@ -3272,7 +3304,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Armand Joulin*, Kevin Tang*, Li Fei-Fei.",
                 image: "pubimg/kevin14.jpeg",
                 title: "Efficient Image and Video Co-localization with Frank-Wolfe Algorithm.",
@@ -3294,7 +3326,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Andrej Karpathy, George Toderici, Sanketh Shetty, Thomas Leung, Rahul Sukthankar, Li Fei-Fei.",
                 image: "pubimg/karpathy14.png",
                 title: "Large-Scale Video Classification with Convolutional Neural Networks.",
@@ -3305,7 +3337,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Alexandre Alahi, Vignesh Ramanathan, and Li Fei-Fei.",
                 image: "pubimg/alahi14.png",
                 title: "Socially-aware Large-scale Crowd Forecasting.",
@@ -3316,7 +3348,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Kevin Tang, Armand Joulin, Li-Jia Li, Li Fei-Fei.",
                 image: "pubimg/coloc14.jpeg",
                 title: "Co-localization in Real-World Images.",
@@ -3327,7 +3359,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Jia Deng, Olga Russakovsky, Jonathan Krause, Michael Bernstein, Alexander C. Berg and Li Fei-Fei..",
                 image: "pubimg/scalable14.jpeg",
                 title: "Scalable Multi-Label Annotation.",
@@ -3338,7 +3370,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Michelle Greene, Li Fei-Fei.",
                 image: "pubimg/visual14.jpeg",
                 title: "Visual Categorization is Automatic and Obligatory: Evidence from a Stroop-like Paradigm.",
@@ -3349,7 +3381,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Jonathan Krause, Timnit Gebru, Jia Deng, Li-Jia Li, Li Fei-Fei.",
                 image: "pubimg/icpr.png",
                 title: "Learning Features and Parts for Fine-Grained Recognition.",
@@ -3471,7 +3503,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "A. Furlan, S. Miller, D. G. Sorrenti, L. Fei-Fei, and S. Savarese,",
                 image: "",
                 title: "Free your Camera: 3D Indoor Scene Understanding from Arbitrary Camera Motion",
@@ -3635,7 +3667,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "Axel Furlan, Stephen Miller, Domenico Giorgio Sorrenti, Li Fei-Fei, Silvio Savarese.",
                 image: "pubimg/furlan13.png",
                 title: "Free your Camera: 3D Indoor Scene Understanding from Arbitrary Camera Motion.",
@@ -3646,7 +3678,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Jonathan Krause, Michael Stark, Jia Deng, Li Fei-Fei.",
                 image: "pubimg/3d13.jpeg",
                 title: "3D Object Representations for Fine-Grained Categorization.",
@@ -3657,7 +3689,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Kevin Tang, Bangpeng Yao, Li Fei-Fei, Daphne Koller.",
                 image: "pubimg/combining13.jpeg",
                 title: "Combining the Right Features for Complex Event Recognition.",
@@ -3668,7 +3700,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Vignesh Ramananthan, Percy Liang, and Li Fei-Fei.",
                 image: "pubimg/video13.jpeg",
                 title: "Video Event Understanding using Natural Language Descriptions.",
@@ -3679,7 +3711,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "O. Russakovsky, Jia Deng, Zhiheng Huang, Alexander C. Berg and Li Fei-Fei.",
                 image: "pubimg/detecting13.jpeg",
                 title: "Detecting avocados to zucchinis: what have we done, and where are we going?.",
@@ -3690,7 +3722,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Yao, J. Ma, and L. Fei-Fei.",
                 image: "pubimg/discovering13.jpeg",
                 title: "Discovering Object Functionality.",
@@ -3701,7 +3733,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L.-J. Li and H. Su and Y. Lim and L. Fei-Fei.",
                 image: "pubimg/object13.jpeg",
                 title: "Object Bank: An Object-Level Image Representation for High-Level Visual Recognition.",
@@ -3712,7 +3744,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "J. Deng, J. Krause, and L. Fei-Fei.",
                 image: "pubimg/fine13.jpeg",
                 title: "Fine-Grained Crowdsourcing for Fine-Grained Recognition.",
@@ -3723,7 +3755,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "V. Ramanathan, B. Yao, and L. Fei-Fei.",
                 image: "pubimg/social13.jpeg",
                 title: "Social Role Discovery in Human Events.",
@@ -3734,7 +3766,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "K. Tang, R. Sukthankar, J. Yagnik, and L. Fei-Fei.",
                 image: "pubimg/discrim13.jpeg",
                 title: "Discriminative Segment Annotation in Weakly Labeled Video.",
@@ -3745,7 +3777,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "A. Torralbo, D.B. Walther, B. Chai, E. Caddigan, L. Fei-Fei, and D.M. Beck.",
                 image: "pubimg/good13.jpeg",
                 title: "Good Exemplars of Natural Scene Categories Elicit Clearer Patterns than Bad Exemplars but not Greater BOLD Activity.",
@@ -3756,7 +3788,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "C. Baldassano, D.M. Beck, and L. Fei-Fei.",
                 image: "pubimg/diff13.jpeg",
                 title: "Differential Connectivity Within the Parahippocampal Place Area.",
@@ -3767,7 +3799,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "A. Karpathy, S. Miller, and L. Fei-Fei.",
                 image: "pubimg/objdisc13.jpeg",
                 title: "Object Discovery in 3D Scenes via Shape Analysis.",
@@ -4026,7 +4058,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "K. Tang, V. Ramanathan, L. Fei-Fei, and D. Koller.",
                 image: "",
                 title: "Shifting Weights: Adapting Object Detectors from Image to Video.",
@@ -4037,7 +4069,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Christopher Baldassano, Marius Cătălin Iordan, Diane M. Beck, Li Fei-Fei.",
                 image: "",
                 title: "Discovering Voxel-Level Connectivity Between Cortical Regions.",
@@ -4048,7 +4080,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "O. Russakovsky, Y. Lin, K. Yu, and L. Fei-Fei.",
                 image: "",
                 title: "Object-centric spatial pooling for image classification.",
@@ -4059,7 +4091,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Yao and L. Fei-Fei.",
                 image: "",
                 title: "Action Recognition with Exemplar Based 2.5D Graph Matching.",
@@ -4070,7 +4102,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Christopher Baldassano, Marius Cătălin Iordan, Diane M. Beck, and Li Fei-Fei.",
                 image: "",
                 title: "Voxel-Level Functional Connectivity using Spatial Regularization.",
@@ -4081,7 +4113,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "H. Su, J. Deng, and L. Fei-Fei.",
                 image: "",
                 title: "Crowdsourcing Annotations for Visual Object Detection.",
@@ -4092,7 +4124,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "G. Kim, L. Fei-Fei, and E. Xingi.",
                 image: "",
                 title: "Web Image Prediction Using Multivariate Point Processes.",
@@ -4103,7 +4135,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "H. Su*, A. Yu*, and L. Fei-Fei.",
                 image: "",
                 title: "Efficient Euclidean Projections onto the Intersection of Norm Balls.",
@@ -4128,7 +4160,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Yao, G. Bradski, and L. Fei-Fei.",
                 image: "",
                 title: "A Codebook-Free and Annotation-Free Approach for Fine-Grained Image Categorization.",
@@ -4139,7 +4171,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "K. Tang, L. Fei-Fei, and D. Koller.",
                 image: "",
                 title: "Learning Latent Temporal Structure for Complex Event Detection.",
@@ -4150,7 +4182,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "J. Deng, J. Krause, A. Berg, and L. Fei-Fei.",
                 image: "",
                 title: "Hedging Your Bets: Optimizing Accuracy-Specificity Trade-offs in Large Scale Visual Recognition.",
@@ -4161,7 +4193,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Yao and L. Fei-Fei.",
                 image: "",
                 title: "Recognizing Human Actions in Still Images by Modeling the Mutual Context of Objects and Human Poses.",
@@ -4176,7 +4208,7 @@ var SECTIONS = [
     },
     { name: "Publications 2011",
         publications: [
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "J. Deng, S. Satheesh, A. C. Berg, and L. Fei-Fei.",
                 image: "",
                 title: "Fast and Balanced: Efficient Label Tree Learning for Large Scale Object Recognition.",
@@ -4187,7 +4219,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Zhao, L. Fei-Fei and E. Xing.",
                 image: "",
                 title: "Large-Scale Category Structure Aware Image Categorization.",
@@ -4198,7 +4230,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Yao, X. Jiang, A. Khosla, A.L. Lin, L.J. Guibas, and L. Fei-Fei.",
                 image: "",
                 title: "Human Action Recognition by Learning Bases of Action Attributes and Parts.",
@@ -4209,7 +4241,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "G. Kim, E.P. Xing, L. Fei-Fei, and T. Kanade.",
                 image: "",
                 title: "Distributed cosegmentation vis submodular optimization on anisotropic diffusion.",
@@ -4220,7 +4252,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "M. Savva, N. Kong, A. Chhajta, L. Fei-Fei, M. Agrawala, and J. Heer.",
                 image: "",
                 title: "ReV ReVision: Automated Classification, Analysis and Redesign of Chart Imagesision: Automated Classification, Analysis and Redesign of Chart Images.",
@@ -4231,7 +4263,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Yao, A. Khosla, and L. Fei-Fei.",
                 image: "",
                 title: "Classifying Actions and Measuring Action Similarity by Modeling the Mutual Context of Objects and Human Poses.",
@@ -4242,7 +4274,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "D. B. Walther, B. Chai, E. Caddigan, D. M. Beck and L. Fei-Fei.",
                 image: "",
                 title: "Simple line drawings suffice for functional MRI decoding of natural scene categories.",
@@ -4253,7 +4285,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "J. Deng, A. Berg, and L. Fei-Fei.",
                 image: "",
                 title: "Hierarchical Semantic Indexing for Large Scale Image Retrieval.",
@@ -4264,24 +4296,24 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Yao*, A. Khosla*, and L. Fei-Fei.",
                 image: "",
                 title: "Combining Randomization and Discrimination for Fine-Grained Image Categorization.",
                 info: "CVPR 2011.",
                 refs: [
-                    { href: "http://vision.stanford.edu/pdf/YaoKhoslaL.FeiFei_CVPR2011.pdf",
+                    { href: "http://vision.stanford.edu/pdf/YaoKhoslaFeiFei_CVPR2011.pdf",
                         text: "PDF",
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Zhao, L. Fei-Fei, and E.P. Xing.",
                 image: "",
                 title: "Online Detection of Unusual Events in Videos via Dynamic Sparse Coding.",
                 info: "CVPR 2011.",
                 refs: [
-                    { href: "http://vision.stanford.edu/pdf/ZhaoL.FeiFeiXing_CVPR2011.pdf",
+                    { href: "http://vision.stanford.edu/pdf/ZhaoFeiFeiXing_CVPR2011.pdf",
                         text: "PDF",
                     },
                 ],
@@ -4535,29 +4567,29 @@ var SECTIONS = [
     },
     { name: "Publications 2010",
         publications: [
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L.-J. Li*, H. Su*, E.P. Xing and L. Fei-Fei.",
                 image: "",
                 title: "Object Bank: A High-Level Image Representation for Scene Classification and Semantic Feature Sparsification.",
                 info: "NIPS 2010.",
                 refs: [
-                    { href: "http://vision.stanford.edu/pdf/LiSuXingL.FeiFeiNIPS2010.pdf",
+                    { href: "http://vision.stanford.edu/pdf/LiSuXingFeiFeiNIPS2010.pdf",
                         text: "PDF",
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "J. Zhu, L.-J. Li, L. Fei-Fei and E.P. Xing.",
                 image: "",
                 title: "Large Margin Learning of Upstream Scene Understanding Models.",
                 info: "NIPS 2010.",
                 refs: [
-                    { href: "http://vision.stanford.edu/pdf/ZhuLiL.FeiFeiXingNIPS2010.pdf",
+                    { href: "http://vision.stanford.edu/pdf/ZhuLiFeiFeiXingNIPS2010.pdf",
                         text: "PDF",
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "J. Deng, A. Berg, K. Li and L. Fei-Fei.",
                 image: "",
                 title: "What does classifying more than 10,000 image categories tell us?.",
@@ -4568,7 +4600,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "Juan Carlos Niebles, Chih-Wei Chen and Li Fei-Fei..",
                 image: "NieblesChenFei-Fei_ECCV2010_icon.jpg",
                 title: "Modeling Temporal Structure of Decomposable Motion Segments for Activity Classification.",
@@ -4588,7 +4620,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Zhao, L. Fei-Fei and E. P. Xing.",
                 image: "",
                 title: "Image Segmentation with Topic Random Fields.",
@@ -4599,18 +4631,18 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L.J. Li*, H. Su*, Y. Lim and L. Fei-Fei.",
                 image: "",
                 title: "Objects as Attributes for Scene Classification.",
                 info: "ECCV 2010 workshop on Parts and Attributes.",
                 refs: [
-                    { href: "http://vision.stanford.edu/pdf/LiSuLimL.FeiFei_ECCV2010.pdf",
+                    { href: "http://vision.stanford.edu/pdf/LiSuLimFeiFei_ECCV2010.pdf",
                         text: "PDF",
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "O. Russakovsky and L. Fei-Fei.",
                 image: "",
                 title: "Attribute learning in large-scale datasets.",
@@ -4621,7 +4653,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "R. Fergus, L. Fei-Fei, P. Perona and A. Zisserman.",
                 image: "",
                 title: "Learning object categories from Internet image searches.",
@@ -4632,7 +4664,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L. Fei-Fei and L.-J. Li.",
                 image: "",
                 title: "What, Where and Who? Telling the Story of an Image by Activity Classification, Scene Recognition and Object Categorization.",
@@ -4643,7 +4675,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "S. Savarese, and L. Fei-Fei.",
                 image: "",
                 title: "Multi-view Object Categorization and Pose Estimation.",
@@ -4654,7 +4686,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "D. B. Walther, D. M. Beck, and L. Fei-Fei.",
                 image: "",
                 title: "To err is human: investigating neural function by correlating error patterns with human behavior.",
@@ -4665,7 +4697,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Yao and L. Fei-Fei.",
                 image: "",
                 title: "Grouplet: a Structured Image Representation for Recognizing Human and Object Interactions.",
@@ -4676,7 +4708,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Yao and L. Fei-Fei.",
                 image: "",
                 title: "Modeling Mutual Context of Object and Human Pose in Human-Object Interaction Activities.",
@@ -4687,7 +4719,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Li-Jia Li*, Chong Wang*, Yongwhan Lim, David Blei and Li Fei-Fei.",
                 image: "",
                 title: "Building and Using a Semantivisual Image Hierarchy.",
@@ -4698,7 +4730,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "Juan Carlos Niebles, Bohyung Han and Li Fei-Fei.",
                 image: "efficient_moving_people.jpg",
                 title: "Efficient Extraction of Human Motion Volumes by Tracking.",
@@ -4712,13 +4744,13 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "R. Socher and L. Fei-Fei.",
                 image: "",
                 title: "Connecting Modalities: Semi-supervised Segmentation and Annotation of Images Using Unaligned Text Corpora.",
                 info: "CVPR 2010.",
                 refs: [
-                    { href: "http://vision.stanford.edu/pdf/SocherL.FeiFei_CVPR2010.pdf",
+                    { href: "http://vision.stanford.edu/pdf/SocherFeiFei_CVPR2010.pdf",
                         text: "PDF",
                     },
                 ],
@@ -4860,7 +4892,7 @@ var SECTIONS = [
     },
     { name: "Publications 2009",
         publications: [
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Yao, D.B. Walther, D.M. Beck*, L. Fei-Fei*.",
                 image: "",
                 title: "Hierarchical Mixture of Classification Experts Uncovers Interactions between Brain Regions.",
@@ -4871,7 +4903,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B. Chai†, D.B. Walther†, D.M. Beck*, L. Fei-Fei*.",
                 image: "",
                 title: "Exploring Functional Connectivity of the Human Brain using Multivariate Information Analysis.",
@@ -4882,7 +4914,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L.-J. Li and L. Fei-Fei.",
                 image: "",
                 title: "OPTIMOL: automatic Online Picture collecTion via Incremental MOdel Learning.",
@@ -4904,7 +4936,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "D.B. Walther, E. Caddigan, L. Fei-Fei*, D.M. Beck*.",
                 image: "",
                 title: "Natural scene categories revealed in distributed patterns of activity in the human brain.",
@@ -4915,7 +4947,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L.-J. Li, R. Socher and L. Fei-Fei.",
                 image: "",
                 title: "Towards Total Scene Understanding:Classification, Annotation and Segmentation in an Automatic Framework.",
@@ -4926,7 +4958,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "Chong Wang, David Blei and L. Fei-Fei.",
                 image: "",
                 title: "Simultaneous Image Classification and Annotation.",
@@ -4937,7 +4969,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "J. Deng, W. Dong, R. Socher, L.-J. Li, K. Li and L. Fei-Fei.",
                 image: "",
                 title: "ImageNet: A Large-Scale Hierarchical Image Database.",
@@ -4948,7 +4980,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "*M. Sun, *H. Su, S. Savarese and L. Fei-Fei.",
                 image: "",
                 title: "A Multi-View Probabilistic Model for 3D Object Classes.",
@@ -4959,7 +4991,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "*H. Su, *M. Sun, L. Fei-Fei and S. Savarese.",
                 image: "",
                 title: "Learning a dense multi-view representation for detection, viewpoint classification and synthesis of object categories",
@@ -5015,7 +5047,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "*M. Sun, *H. Su, S. Savarese and L. Fei-Fei.",
                 image: "",
                 title: "A Multi-View Probabilistic Model for 3D Object Classes",
@@ -5061,7 +5093,7 @@ var SECTIONS = [
                 info: "Proc. of 2009 International Symposium on Automation and Robotics in Construction, 535-543, Austin, TX, June 24-27,2009",
                 refs: [],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "Bangpeng Yao, Juan Carlos Niebles and Li Fei-Fei.",
                 image: "mining.jpg",
                 title: "Mining Discriminative Adjectives and Prepositions for Natural Scene Recognition.",
@@ -5079,7 +5111,7 @@ var SECTIONS = [
     },
     { name: "Publications 2008",
         publications: [
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "J.C. Niebles, B. Han, A. Ferencz and L. Fei-Fei.",
                 image: "eccv08.jpg",
                 title: "Extracting Moving People from Internet Videos.",
@@ -5099,7 +5131,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "B.Collins, J. Deng, L. Kai and L. Fei-Fei.",
                 image: "",
                 title: "Towards scalable dataset construction: An active learning approach.",
@@ -5110,7 +5142,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "S.Savarese and L. Fei-Fei.",
                 image: "",
                 title: "View synthesis for recognizing unseen poses of object classes..",
@@ -5121,7 +5153,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "J.C. Niebles, H. Wang and L. Fei-Fei..",
                 image: "",
                 title: "Unsupervised learning of human action categories using spatial-temporal words.",
@@ -5132,7 +5164,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "S. Savarese, A. Del Pozo, J.C. Niebles and L. Fei-Fei..",
                 image: "",
                 title: "Spatial-temporal correlations for unsupervised action classification.",
@@ -5143,13 +5175,13 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "S.Savarese and L. Fei-Fei.",
                 image: "",
                 title: "View synthesis for recognizing unseen poses of object classes",
                 info: "Proc. of European Conference on Computer Vision (ECCV), 602-615, 2008",
                 refs: [
-                    { href: "https://amberxu.github.io/papers/savarese_L.FeiFei_eccv08.PDF",
+                    { href: "https://amberxu.github.io/papers/savarese_feifei_eccv08.PDF",
                         text: "PDF",
                     },
                     { href: "https://amberxu.github.io/bibtex/Savarese_ECCV2008_ViewSynth.bib",
@@ -5168,7 +5200,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "S. Savarese, A. Del Pozo, JC. Niebles, L. Fei-Fei,",
                 image: "correlatons.jpg",
                 title: "Spatial-Temporal Correlations for Unsupervised Action Classification,",
@@ -5186,7 +5218,7 @@ var SECTIONS = [
     },
     { name: "Publications 2007",
         publications: [
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L.-J. Li and L. Fei-Fei. .",
                 image: "",
                 title: "What, where and who? Classifying event by scene and object recognition.",
@@ -5197,7 +5229,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L. Cao and L. Fei-Fei..",
                 image: "",
                 title: "Spatially coherent latent topic model for concurrent object segmentation and classification.",
@@ -5208,7 +5240,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "D. Walther and L. Fei-Fei..",
                 image: "",
                 title: "Task-set switching with natural scenes: Measuring the cost of deploying top-down attention..",
@@ -5219,7 +5251,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "Li-Jia Li, Juan Carlos Niebles and Li Fei-Fei.",
                 image: "optimol.png",
                 title: "OPTIMOL: a framework for Online Picture collecTion via Incremental MOdel Learning.",
@@ -5236,7 +5268,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L.-J. Li, G. Wang and L. Fei-Fei..",
                 image: "",
                 title: "OPTIMOL: automatic Object Picture collecTion via Incremental MOdel Learning..",
@@ -5247,7 +5279,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "J. C. Niebles and L. Fei-Fei..",
                 image: "NieblesFei-Fei_CVPR2007.jpg",
                 title: "A hierarchical model of shape and appearance for human action classification..",
@@ -5261,7 +5293,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L. Fei-Fei, R. Fergus and P. Perona..",
                 image: "",
                 title: "Learning generative visual models for 101 object categories..",
@@ -5283,7 +5315,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "S. Savarese and L. Fei-Fei.",
                 image: "",
                 title: "3D generic object categorization, localization and pose estimation",
@@ -5312,7 +5344,7 @@ var SECTIONS = [
     },
     { name: "Publications 2006",
         publications: [
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["c" /* NIEBLES */]],
                 authorsText: "J.C. Niebles, H. Wang, L. Fei-Fei..",
                 image: "NieblesWangFei-Fei_BMVC2006.jpg",
                 title: "Unsupervised learning of human action categories using spatial-temporal words.",
@@ -5327,12 +5359,12 @@ var SECTIONS = [
                     { href: "http://www.bmva.org/bmvc/2006/papers/283.pdf",
                         text: "DOI",
                     },
-                    { href: "http://vision.stanford.edu/niebles/NieblesWangL.FeiFei_IMA-Workshop-06_poster.pdf",
+                    { href: "http://vision.stanford.edu/niebles/NieblesWangFeiFei_IMA-Workshop-06_poster.pdf",
                         text: "POSTER",
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L. Fei-Fei..",
                 image: "",
                 title: "Knowledge transfer in learning to recognize visual object classes..",
@@ -5343,7 +5375,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "G. Wang, Y. Zhang, and L. Fei-Fei..",
                 image: "",
                 title: "Using dependent regions for object categorization in a generative framework..",
@@ -5354,7 +5386,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L. Fei-Fei, R. Fergus and P. Perona.",
                 image: "",
                 title: "One-Shot learning of object categories.",
@@ -5402,7 +5434,7 @@ var SECTIONS = [
     },
     { name: "Publications 2005",
         publications: [
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "R. VanRullen, L. Reddy and L. Fei-Fei..",
                 image: "",
                 title: "Binding is local problem for natural objects and scenes..",
@@ -5413,7 +5445,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L. Fei-Fei, R. VanRuellen, C. Koch and P. Perona..",
                 image: "",
                 title: "Why does natural scene categorization require little attention? Exploring attentional requirements for natural and synthetic stimuli..",
@@ -5424,7 +5456,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "R. Fergus, L. Fei-Fei, P. Perona and A. Zisserman.",
                 image: "",
                 title: "Learning Object Categories from Google's Image Search.",
@@ -5435,7 +5467,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L. Fei-Fei and P. Perona.",
                 image: "",
                 title: "A Bayesian Hierarchical Model for Learning Natural Scene Categories.",
@@ -5472,7 +5504,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "S. Savarese, L. Fei-Fei and P. Perona,",
                 image: "",
                 title: "What do reflections tell us about the shape of a mirror?",
@@ -5549,7 +5581,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L. Fei-Fei, R. Fergus, and P. Perona..",
                 image: "",
                 title: "Learning generative visual models from few training examples: an incremental Bayesian approach tested on 101 object categories.",
@@ -5560,7 +5592,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */]],
                 authorsText: "L. Fei-Fei, R. Fergus, and P. Perona.",
                 image: "",
                 title: "A Bayesian approach to.",
@@ -5621,7 +5653,7 @@ var SECTIONS = [
                 info: "Proc. of Vision Science Society, Florida, May 2008",
                 refs: [],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "S. Savarese, L. Fei-Fei and P. Perona,",
                 image: "",
                 title: "Can We See the Shape of a Mirror?",
@@ -5661,7 +5693,7 @@ var SECTIONS = [
     },
     { name: "Books and Book Chapters",
         publications: [
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "A. Alahi, V. Ramanathan, K. Goel, A. Robicquet, A. Sadeghian, L. Fei-Fei, S. Savarese,",
                 image: "",
                 title: "Learning to predict in crowds",
@@ -5756,7 +5788,7 @@ var SECTIONS = [
                     },
                 ],
             },
-            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* L.FeiFeiLI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
+            { authors: [__WEBPACK_IMPORTED_MODULE_0__publications__["b" /* FEIFEILI */], __WEBPACK_IMPORTED_MODULE_0__publications__["d" /* SILVIO */]],
                 authorsText: "S. Savarese, and L. Fei-Fei,",
                 image: "",
                 title: "Multi-view Object Categorization and Pose Estimation",
@@ -5810,14 +5842,14 @@ PublicationsService = __decorate([
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ALL; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return L.FeiFeiLI; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return FEIFEILI; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return NIEBLES; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SILVIO; });
 /* unused harmony export Aref */
 /* unused harmony export Publication */
 /* unused harmony export Section */
 var ALL = "All";
-var L.FeiFeiLI = "L.Fei Fei";
+var FEIFEILI = "Fei-Fei Li";
 var NIEBLES = "Juan Carlos Niebles";
 var SILVIO = "Silvio Savarese";
 var Aref = (function () {
@@ -5845,7 +5877,7 @@ var Section = (function () {
 /***/ "../../../../../src/app/research/research.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"bg-color-sky-light section-seperator\">\n  <div class=\"content container\">\n    <div class=\"row\">\n      <div id=\"sidebar\" class=\"sidebar-wrap col-md-4 col-xs-10 sm-margin-b-30\">\n        <ul class=\"sidebar list-unstyled sidenav-position\">\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Highlight\" (click)=\"onAnchorClick()\">Highlighted Projects</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Vision\" (click)=\"onAnchorClick()\">Vision & Language</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"2D\" (click)=\"onAnchorClick()\">2D Image Understanding</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"3D\" (click)=\"onAnchorClick()\">3D Scene and Object Understanding</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Robotics\" (click)=\"onAnchorClick()\">Robotics</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Reinforcement\" (click)=\"onAnchorClick()\">Reinforcement Learning</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Video\" (click)=\"onAnchorClick()\">Video and Activity Understanding</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Learning\" (click)=\"onAnchorClick()\">Learning Theory</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Societal\" (click)=\"onAnchorClick()\">Societal Understanding</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Visual\" (click)=\"onAnchorClick()\">Visual Reasoning</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Data\" (click)=\"onAnchorClick()\">Data and Label Generation</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Human\" (click)=\"onAnchorClick()\">Human Perception</a></li>\n        </ul>\n      </div>\n      \n      <div id=\"content\" class=\"col-md-8 col-xs-12 sm-margin-b-30\">\n        <h2 class=\"top-seprates\" id=\"Highlight\">Highlighted Projects</h2>\n           <ul class=\"row list-unstyled\">\n             <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">JackRabbot</p>\n           <p>Our work at the SVL is making practical a new generation of autonomous agents that can operate safely alongside humans in dynamic crowded environments such as terminals, malls, or campuses. The Stanford “Jackrabbot”, which takes it name from the nimble yet shy Jackrabbit, is a self-navigating automated electric delivery cart capable of carrying small payloads.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/jackrabbot/\">Link</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/jackrabbot/cvgl_files/quartz_jr.mp4\">Video</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ActivityNet: A Large-Scale Video Benchmark for Human Activity Understanding</p>\n           <p>Our benchmark aims at covering a wide range of complex human activities that are of interest to people in their daily living. We illustrate three scenarios in which ActivityNet can be used to compare algorithms for human activity understanding: global video classification, trimmed activity classification and activity detection.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://activity-net.org/\">Link</a> and <a class=\"link-sytle\" href=\"http://www.niebles.net/images/anet_cvpr15b.jpg\">Video</a></p>\n           </li>\n           \n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">AI-Assisted Care</p>\n           <p>The Partnership in AI-Assisted Care (PAC) is an interdisciplinary collaboration between the School of Medicine and the Computer Science department focusing on cutting edge computer vision and machine learning technologies to solve some of healthcare's most important problems.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://aicare.stanford.edu/\">Link</a> and <a class=\"link-sytle\" href=\"https://aicare.stanford.edu/projects/hand_hygiene/video/dispenser.mp4\">Video</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual Genome</p>\n           <p>Short Description: To achieve success at cognitive tasks, models need to understand the interactions and relationships between objects in an image. Visual Genome is a new dataset to connect dense, structured image concepts to language.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://visualgenome.org/\">Link</a> and <a class=\"link-sytle\" href=\"http://visualgenome.org/static/images/front-page/interconnected_images.png\">Image</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ObjectNet3D</p>\n           <p>ObjectNet3D is a large scale database for 3D object recognition. With 90,127 images, 201,888 objects in these images and 44,147 3D shapes, ObjectNet3D offers a powerful tool for learning to recognize 3D pose and 3D shape of objects from 2D images.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/objectnet3d/\">Link</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/research/ObjectNet3D\">Video</a></p>\n           </li>     \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ImageNet Challenge</p>\n           <p>The ImageNet Large Scale Visual Recognition Challenge (ILSVRC) evaluates algorithms for object detection and image classification at large scale. One high level motivation is to allow researchers to compare progress in computer vision across a wider variety of objects -- taking advantage of the quite expensive labeling efforts.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://www.image-net.org/challenges/LSVRC/\">Link</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/ilsvrc_proj.jpg\">Image</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ImageNet</p>\n           <p>ImageNet is an image database organized according to the WordNet hierarchy (currently only the nouns), in which each node of the hierarchy is depicted by hundreds and thousands of images. As the largest labelled image data set at the time of its release in 2009, ImageNet has helped to pave the way for today’s advances in visual recognition.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://www.image-net.org/\">Link</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/imagenet_proj.png.jpg\">Image</a></p>\n           </li>\n           </ul>\n\n           <h2 id=\"Vision\" class=\"top-seprates jumptarget\">Visual Reasoning (visual question answering)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">A Hierarchical Approach for Generating Descriptive Image Paragraphs</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/ranjaykrishna/im2p/index.html\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/krause2017cvpr.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://visualgenome.org/\">Project Page</a>, <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/visualgenome.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://visualgenome.org/api/v0/api_home.html\">Data</a>, <a class=\"link-sytle\" href=\"https://github.com/ranjaykrishna/visual_genome_python_driver\">API</a>, <a class=\"link-sytle\" href=\"https://twitter.com/visualgenome\">Twitter</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual Relationship Detection with Language Priors</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/ranjaykrishna/vrd/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/lu2016eccv.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">DenseCap: Fully Convolutional Localization Networks for Dense Captioning</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/karpathy/densecap/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/johnson2016cvpr.pdff\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Generating Semantically Precise Scene Graphs from Textual Descriptions for Improved Image Retrieval</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://nlp.stanford.edu/pubs/schuster-krishna-chang-L.FeiFei-manning-vl15.pdf\">Project Page</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Love Thy Neighbors: Image Annotation by Exploiting Image Metadata</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/jcjohns/papers/iccv15/JohnsonICCV2015.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Image Retrieval using Scene Graphs</p>\n           <p>Check out our<a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/jcjohns/papers/iccv15/JohnsonICCV2015.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Deep Fragment Embeddings for Bidirectional Image-Sentence Mapping</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://feedbacknet.stanford.edu/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/karpathy/nips2014.pdf\">Paper</a></p>\n           </li>\n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"2D\">2D Image Understanding (segmentation, detection, depth incorporation, image matching)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">What's the point: Semantic segmentation with point supervision</p>\n           <p>Check out our<a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\"> Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Recurrent Attention Models for Depth-Based Person Identification</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/haque2016cvpr.pdf\">Project Page</a> and <a class=\"link-sytle\" href=\"http://www.albert.cm/projects/ram_person_id/\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Subcategory-aware Convolutional Neural Networks for Object Proposals and Detection</p>\n           <p>Check out out <a class=\"link-sytle\" href=\"http://yuxng.github.io/xiang_wacv17.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://arxiv.org/abs/1604.04693\">arXiv</a>, <a class=\"link-sytle\" href=\"http://yuxng.github.io/xiang_wacv17_tr.pdf\">Technical Report</a>, <a class=\"link-sytle\" href=\"http://www.cvlibs.net/datasets/kitti/eval_object_detail.php?result=5e17cbbabbf775d8cc376793168be49bd6f01608\">KITTI Results</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Robust Single-View Instance Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/held_icra16.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/held_icra16.bib\">bibtex</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Deep View Morphing</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://arxiv.org/abs/1703.02168\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Universal Correspondence Network</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/ucn\">Project Page</a>, <a class=\"link-sytle\" href=\"https://papers.nips.cc/paper/6487-universal-correspondence-network\">Paper</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/choy2016universal.bib\">bibtex</a></p>\n           </li>           \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"3D\">3D Scene and Object Understanding (3D shape recognition, 3D reconstruction)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Towards Viewpoint Invariant 3D Human Pose Estimation</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://www.albert.cm/projects/viewpoint_3d_pose/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/haque2016eccv.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Free your Camera: 3D Indoor Scene Understanding from Arbitrary Camera Motion</p>\n           <p>Check out our<a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/furlan13.pdf\"> Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">3D Object Representations for Fine-Grained Categorization</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://feedbacknet.stanford.edu/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/3drr13.pdf\">Paper</a></p>\n           </li>\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Joint 2D-3D-Semantic Data for Indoor Scene Understanding</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://3dsemantics.stanford.edu/\">Project Page</a>, <a class=\"link-sytle\" href=\"https://arxiv.org/pdf/1702.01105.pdf\">Paper</a> and <a class=\"Link-sytle\" href=\"http://buildingparser.stanford.edu/images/2D-3D-S.txt\"></a>bibtex</p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">3D-R2N2: A Unified Approach for Single and Multi-view 3D Object Reconstruction</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://3d-r2n2.stanford.edu/\">Project Page</a>, <a class=\"link-sytle\" href=\"http://download.springer.com/static/pdf/315/chp%253A10.1007%252F978-3-319-46484-8_38.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-319-46484-8_38&token2=exp=1488871345~acl=%2Fstatic%2Fpdf%2F315%2Fchp%25253A10.1007%25252F978-3-319-46484-8_38.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Fchapter%252F10.1007%252F978-3-319-46484-8_38*~hmac=87c4725a5031e36a5ede8b411ccaef0d38be69b891589f900bbd384d51728f73\">Paper</a> <a class=\"link-sytle\" href=\"https://github.com/chrischoy/3D-R2N2\">Code</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/choy20163d.bib\">bibtex</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ObjectNet3D: A Large Scale Database for 3D Object Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/objectnet3d\">Project Page</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_eccv16.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_eccv16_tr.pdf\">Technical Report</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/xiang_eccv16.bib\">bibtex</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">3D Semantic Parsing of Large-Scale Indoor Spaces</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://buildingparser.stanford.edu/\">Project Page</a>, <a class=\"link-sytle\" href=\"http://buildingparser.stanford.edu/images/3D_Semantic_Parsing.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://buildingparser.stanford.edu/images/supp_mat.pdf\">Technical Report</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/armeni_cvpr16.bib\">bibtex</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ShapeNet: An Information-Rich 3D Model Repository</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://dblp.uni-trier.de/rec/bibtex/journals/corr/ChangFGHHLSSSSX15\">bibtex</a> and <a class=\"link-sytle\" href=\"http://arxiv.org/pdf/1512.03012v1.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Indoor Scene Understanding with Geometric and Semantic Contexts</p>\n           <p>Check out our <a class=\"link-sytle\" href=\" http://cvgl.stanford.edu/bibtex/choi_ijcv15.bib\">Project Page</a> and <a class=\"link-sytle\" href=\"http://link.springer.com/article/10.1007%2Fs11263-014-0779-4\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">A Coarse-to-Fine Model for 3D Pose Estimation and Sub-category Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/C2F\">Project Page</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/Mottaghi15cvpr.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/mottaghi_cvpr15.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/Mottaghi15cvpr-sm.pdf\">Technical Report</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Data-Driven 3D Voxel Patterns for Object Category Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/3DVP\">Project Page</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_cvpr15_3dvp.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/xiang_cvpr15.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_cvpr15_3dvp_tr.pdf\">Technical Report</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Beyond PASCAL: A Benchmark for 3D Object Detection in the Wild</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"Project: http://cvgl.stanford.edu/projects/pascal3d.html\">Project Page</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_wacv14.pdf\">Paper</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/xiang_wacv14.bib\">bibtex</a></p>\n           </li>             \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Robotics\">Robotics (tracking, prediction, and localization)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Tracking Millions of Humans in Crowded Space</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/alahi2017gcbcv2.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning to Predict Human Behaviour in Crowded Scenes</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/alahi2017gcbcv.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Unsupervised Camera Localization in Crowded Spaces</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/alahi2017icra.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Social LSTM: Human Trajectory Prediction in Crowded Spaces</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/CVPR16_N_LSTM.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Socially-aware Large-scale Crowd Forecasting</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/alahi14.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Social Scene Understanding: End-to-End Multi-Person Action Localization and Collective Activity Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://arxiv.org/abs/1611.09078\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Tracking The Untrackable: Learning To Track Multiple Cues with Long-Term Dependencies</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://arxiv.org/abs/1701.01909\"> arXiv</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning Social Etiquette: Human Trajectory Prediction</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/uav_data/\">Project Page</a>, <a class=\"link-sytle\" href=\"http://web.stanford.edu/~alahi/downloads/ECCV16social.pdf\">Paper</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/robicquet2016learning.bib\">bibtex</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning to Track at 100 FPS with Deep Regression Networks</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"arXiv: http://arxiv.org/abs/1604.01802\">arXiv</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">A Probabilistic Framework for Real-time 3D Segmentation using Spatial, Temporal, and Semantic Cues</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/held_rss16.bib\">arXiv</a> and <a class=\"link-sytle\" href=\"http://davheld.github.io/segmentation3D/segmentation3D.htmlf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning to Track: Online Multi-Object Tracking by Decision Making</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/MDP_tracking\">Project Page</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_iccv15.pdf\">Paper</a>,<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/xiang_iccv15.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_iccv15_tr.pdf\">Technical Report</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Combining 3D Shape, Color, and Motion for Robust Anytime Tracking</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/held_rss2014.bib\">Technical Report</a></p>\n           </li>             \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Reinforcement\">Reinforcement Learning (policy & deep reinforcement learning)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual Semantic Planning using Deep Successor Representations</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/zhu2017iccv.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Adversarially Robust Policy Learning through Active Construction of Physically-Plausible Perturbations</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/mandlekar2017iros.pdf\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/zhu2017icra.pdf\">Paper</a></p>\n           </li>            \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Video\">Video and Activity Understanding (action recognition, video captioning)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Dense-Captioning Events in Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/ranjaykrishna/densevid/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Towards Vision-Based Smart Hospitals: A System for Tracking and Monitoring Hand Hygiene Compliance</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://aicare.stanford.edu/projects/hand_hygiene/\">Project Page</a> and <a class=\"link-sytle\" href=\"https://arxiv.org/pdf/1708.00163.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Unsupervised Visual-Linguistic Reference Resolution in Instructional Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://ai.stanford.edu/~dahuang/projects/vlrr/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/huang2017cvpr.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning to learn from noisy web videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">SST: Single-Stream Temporal Action Proposals</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/buch2017cvpr.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Unsupervised Learning of Long-Term Motion Dynamics for Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/luo2017cvpr.pdf\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Connectionist Temporal Modeling for Weakly Supervised Action Labeling</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">End-to-end Learning of Action Detection from Frame Glimpses in Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://ai.stanford.edu/~syyeung/frameglimpses.html\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/yeung2016cvpr.pdf\">Paper</a></p>\n           </li>  \n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Detecting Events and Key Actors in Multi-person Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://basketballattention.appspot.com/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/ramanathan2016cvpr.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning temporal embeddings for complex video analysis</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/RamanathanICCV2015.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Joint person naming in videos and coreference resolution in text</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/vignesh14.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Video Event Understanding using Natural Language Descriptions</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/vigneshICCV13.pdf\">Paper</a></p>\n           </li>     \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Action Recognition with Exemplar Based 2.5D Graph Matching</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/YaoFei-Fei_ECCV12.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Watch-n-Patch: Unsupervised Learning of Actions and Relations</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://arxiv.org/pdf/1603.03541.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Watch-Bot: Unsupervised Learning for Reminding Humans of Forgotten Actions</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/wu_icra16.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/wu_icra16.pdf\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual Forecasting by Imitating Dynamics in Natural Sequences</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://ai.stanford.edu/~dahuang/papers/iccv17-vfid.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">End-to-End, Single-Stream Temporal Action Detection in Untrimmed Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://www.dropbox.com/s/9n90etsu6jubiax/0144.pdf?dl=1\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Sparse composition of body poses and atomic actions for human activity recognition in RGB-D videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://ialillo.sitios.ing.uc.cl/ActionsCVPR2014/\">Data</a> and <a class=\"link-sytle\" href=\"http://dx.doi.org/10.1016/j.imavis.2016.11.004\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">DAPs: Deep Action Proposals for Action Understanding</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://ivul.kaust.edu.sa/Pages/pub-Daps.aspx\">Project Page</a>, <a class=\"link-sytle\" href=\"https://link.springer.com/chapter/10.1007/978-3-319-46487-9_47\">Paper</a>, <a class=\"link-sytle\" href=\"https://drive.google.com/open?id=0B0ZXjo_p8lHBRGlnZ0Q1dFk2SUk\">Video</a> and <a class=\"link-sytle\" href=\" https://github.com/escorciav/daps\">Code</a></p>\n           </li>                                                                                         \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Title Generation for User Generated Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://ug-video.com/\">Project Page</a>, <a class=\"link-sytle\" href=\"https://link.springer.com/chapter/10.1007/978-3-319-46475-6_38\">Paper</a>, <a class=\"link-sytle\" href=\"https://arxiv.org/abs/1608.07068\">arXiv</a>,<a class=\"link-sytle\" href=\"https://www.youtube.com/watch?v=KCTQ0vMsyDc\">Video</a> and <a class=\"link-sytle\" href=\" http://ug-video.com/\">Data</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Fast Temporal Activity Proposals for Efficient Detection of Human Actions in Untrimmed Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://www.cabaf.net/temporalproposals/index.html\">Project Page</a>, <a class=\"link-sytle\" href=\"https://github.com/cabaf/sparseprop\">Code</a> and <a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2016.211\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">A Hierarchical Pose-Based Approach to Complex Action Understanding Using Dictionaries of Actionlets and Motion Poselets</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://ialillo.sitios.ing.uc.cl/ActionsCVPR2014/\">Data</a>, <a class=\"link-sytle\" href=\"https://arxiv.org/abs/1606.04992\">arXiv</a> and <a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2016.218\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ActivityNet: A Large-Scale Video Benchmark for Human Activity Understanding Unsupervised Semantic Parsing of Video Collections</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://activity-net.org/\">Project Page</a>, <a class=\"link-sytle\" href=\"https://github.com/activitynet/ActivityNet\">Code</a>, <a class=\"link-sytle\" href=\"http://activity-net.org/download.html\">Data</a> and <a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2015.7298698\">Paper</a></p>\n           </li>                                                    \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Action Recognition by Hierarchical Mid-level Action Elements</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/lan_iccv2015.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/tian2015.pdf\">Paper</a></p>\n           </li>   \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Learning\">Learning Theory (metric learning, style transfer, domain adaptation)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Characterizing and Improving Stability in Neural Style Transfer</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Perceptual Losses for Real-time Style Transfer and Single Image Super-Resolution</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visualizing and Understanding Recurrent Networks</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/KarpathyICLR2016.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Feedback Networks</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://feedbacknet.stanford.edu/\">Project Page</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/zamir2016feedback.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"https://arxiv.org/pdf/1612.09508\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning Transferrable Representations for Unsupervised Domain Adaptation</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/soner2016learning.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"https://papers.nips.cc/paper/6360-learning-transferrable-representations-for-unsupervised-domain-adaptation.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Deep Metric Learning via Lifted Structured Feature Embedding</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/lifted_struct\">Project Page</a>, <a class=\"link-sytle\" href=\"https://github.com/rksltnl/Deep-Metric-Learning-CVPR16\">Code</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/song_cvpr16_supp.pdf\">Technical Report</a>, <a class=\"link-sytle\" href=\"http://ai.stanford.edu/~hsong/bibs/Song-CVPR16.txt\">bibtex</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/song_cvpr16.pdf\">Paper</a></p>\n           </li>   \n           </ul> \n\n           <h2 class=\"top-seprates jumptarget\" id=\"Societal\">Societal Understanding (street view detection for census estimation)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Fine-Grained Car Detection for Visual Census Estimation</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/gebru2017aaai.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Vision-Based Classification of Developmental Disorders Using Eye-Movements</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/pusiol2016miccai.pdf\">Paper</a></p>\n           </li>            \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Visual\">Visual Reasoning (visual question answering)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Inferring and Executing Programs for Visual Reasoning</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/jcjohns/iep\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Knowledge Acquisition for Visual Question Answering via Iterative Querying</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/zhu2017cvpr.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">CLEVR: A Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/jcjohns/clevr/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/johnson2017cvpr.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual7W: Grounded Question Answering in Images</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://web.stanford.edu/~yukez/visual7w/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/zhu2016cvpr.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Leveraging Video Descriptions to Learn Video Question Answering</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://aliensunmin.github.io/project/video-language/index.html#VideoQA\">Project Page</a>, <a class=\"link-sytle\" href=\"http://ug-video.com/\">Data</a>, <a class=\"link-sytle\" href=\"https://arxiv.org/abs/1611.04021\">arXiv</a> and <a class=\"link-sytle\" href=\"https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14906\">Paper</a></p>\n           </li>                                               \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Data\">Data and Label Generation</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Scalable Annotation of Fine-Grained Objects Without Experts</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/gebru2017chi.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">A Glimpse Far into the Future: Understanding Long-term Crowd Worker Accuracy</p>\n           <p>Check out our <a class=\"link-sytle\" href=\" http://cs.stanford.edu/people/ranjaykrishna/glimpse/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/hata2017cscw.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">The Unreasonable Effectiveness of Noisy Data for Fine-Grained Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://arxiv.org/abs/1511.06789\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Embracing Error to Enable Rapid Crowdsourcing</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://hci.stanford.edu/publications/2016/rsvp/rsvp.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ImageNet Large Scale Visual Recognition Challenge</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://image-net.org/challenges/LSVRC/\">Project Page</a>, <a class=\"link-sytle\" href=\"http://ai.stanford.edu/~olga/bibtex/ILSVRC15.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"http://arxiv.org/abs/1409.0575\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ImageNet: A Large-Scale Hierarchical Image Database</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/ImageNet_CVPR2009.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Scalable Multi-Label Annotation</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/chi2014-MultiLabel.pdf\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Fine-Grained Crowdsourcing for Fine-Grained Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://feedbacknet.stanford.edu/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/DengKrauseFei-Fei_CVPR2013.pdf\">Paper</a></p>\n           </li>                                                         \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Human\">Human Perception</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Human-object Interactions are More than the Sum of Their Parts</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/CC2016.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Typicality Sharpens Category Representations in Object-Selective Cortex</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/iordan-etal-neuroimage-2016.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual Categorization is Automatic and Obligatory: Evidence from a Stroop-like Paradigm</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://feedbacknet.stanford.edu/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/14.full.pdf\">Paper</a></p>\n           </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"bg-color-sky-light section-seperator\">\n  <div class=\"content container\">\n    <div class=\"row\">\n      <div id=\"sidebar\" class=\"sidebar-wrap col-md-4 col-xs-10 sm-margin-b-30\">\n        <ul class=\"sidebar list-unstyled sidenav-position\">\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Highlight\" (click)=\"onAnchorClick()\">Highlighted Projects</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Vision\" (click)=\"onAnchorClick()\">Vision & Language</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"2D\" (click)=\"onAnchorClick()\">2D Image Understanding</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"3D\" (click)=\"onAnchorClick()\">3D Scene and Object Understanding</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Robotics\" (click)=\"onAnchorClick()\">Robotics</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Reinforcement\" (click)=\"onAnchorClick()\">Reinforcement Learning</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Video\" (click)=\"onAnchorClick()\">Video and Activity Understanding</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Learning\" (click)=\"onAnchorClick()\">Learning Theory</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Societal\" (click)=\"onAnchorClick()\">Societal Understanding</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Visual\" (click)=\"onAnchorClick()\">Visual Reasoning</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Data\" (click)=\"onAnchorClick()\">Data and Label Generation</a></li>\n          <li class=\"side-nav\"><a [routerLink]=\"['/research']\" fragment=\"Human\" (click)=\"onAnchorClick()\">Human Perception</a></li>\n        </ul>\n      </div>\n      \n      <div id=\"content\" class=\"col-md-8 col-xs-12 sm-margin-b-30\">\n        <h2 class=\"top-seprates\" id=\"Highlight\">Highlighted Projects</h2>\n           <ul class=\"row list-unstyled\">\n             <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">JackRabbot</p>\n           <p>Our work at the SVL is making practical a new generation of autonomous agents that can operate safely alongside humans in dynamic crowded environments such as terminals, malls, or campuses. The Stanford “Jackrabbot”, which takes it name from the nimble yet shy Jackrabbit, is a self-navigating automated electric delivery cart capable of carrying small payloads.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/jackrabbot/\">Link</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/jackrabbot/cvgl_files/quartz_jr.mp4\">Video</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ActivityNet: A Large-Scale Video Benchmark for Human Activity Understanding</p>\n           <p>Our benchmark aims at covering a wide range of complex human activities that are of interest to people in their daily living. We illustrate three scenarios in which ActivityNet can be used to compare algorithms for human activity understanding: global video classification, trimmed activity classification and activity detection.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://activity-net.org/\">Link</a> and <a class=\"link-sytle\" href=\"http://www.niebles.net/images/anet_cvpr15b.jpg\">Image</a></p>\n           </li>\n           \n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">AI-Assisted Care</p>\n           <p>The Partnership in AI-Assisted Care (PAC) is an interdisciplinary collaboration between the School of Medicine and the Computer Science department focusing on cutting edge computer vision and machine learning technologies to solve some of healthcare's most important problems.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://aicare.stanford.edu/\">Link</a> and <a class=\"link-sytle\" href=\"https://aicare.stanford.edu/projects/hand_hygiene/video/dispenser.mp4\">Video</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual Genome</p>\n           <p>Short Description: To achieve success at cognitive tasks, models need to understand the interactions and relationships between objects in an image. Visual Genome is a new dataset to connect dense, structured image concepts to language.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://visualgenome.org/\">Link</a> and <a class=\"link-sytle\" href=\"http://visualgenome.org/static/images/front-page/interconnected_images.png\">Image</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ObjectNet3D</p>\n           <p>ObjectNet3D is a large scale database for 3D object recognition. With 90,127 images, 201,888 objects in these images and 44,147 3D shapes, ObjectNet3D offers a powerful tool for learning to recognize 3D pose and 3D shape of objects from 2D images.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/objectnet3d/\">Link</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/research/ObjectNet3D\">Video</a></p>\n           </li>     \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ImageNet Challenge</p>\n           <p>The ImageNet Large Scale Visual Recognition Challenge (ILSVRC) evaluates algorithms for object detection and image classification at large scale. One high level motivation is to allow researchers to compare progress in computer vision across a wider variety of objects -- taking advantage of the quite expensive labeling efforts.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://www.image-net.org/challenges/LSVRC/\">Link</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/ilsvrc_proj.jpg\">Image</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ImageNet</p>\n           <p>ImageNet is an image database organized according to the WordNet hierarchy (currently only the nouns), in which each node of the hierarchy is depicted by hundreds and thousands of images. As the largest labelled image data set at the time of its release in 2009, ImageNet has helped to pave the way for today’s advances in visual recognition.</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://www.image-net.org/\">Link</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/imagenet_proj.png.jpg\">Image</a></p>\n           </li>\n           </ul>\n\n           <h2 id=\"Vision\" class=\"top-seprates jumptarget\">Visual Reasoning (visual question answering)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">A Hierarchical Approach for Generating Descriptive Image Paragraphs</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/ranjaykrishna/im2p/index.html\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/krause2017cvpr.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual Genome: Connecting Language and Vision Using Crowdsourced Dense Image Annotations</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://visualgenome.org/\">Project Page</a>, <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/visualgenome.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://visualgenome.org/api/v0/api_home.html\">Data</a>, <a class=\"link-sytle\" href=\"https://github.com/ranjaykrishna/visual_genome_python_driver\">API</a>, <a class=\"link-sytle\" href=\"https://twitter.com/visualgenome\">Twitter</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual Relationship Detection with Language Priors</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/ranjaykrishna/vrd/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/lu2016eccv.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">DenseCap: Fully Convolutional Localization Networks for Dense Captioning</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/karpathy/densecap/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/johnson2016cvpr.pdff\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Generating Semantically Precise Scene Graphs from Textual Descriptions for Improved Image Retrieval</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://nlp.stanford.edu/pubs/schuster-krishna-chang-feifei-manning-vl15.pdf\">Project Page</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Love Thy Neighbors: Image Annotation by Exploiting Image Metadata</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/jcjohns/papers/iccv15/JohnsonICCV2015.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Image Retrieval using Scene Graphs</p>\n           <p>Check out our<a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/jcjohns/papers/iccv15/JohnsonICCV2015.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Deep Fragment Embeddings for Bidirectional Image-Sentence Mapping</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://feedbacknet.stanford.edu/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/karpathy/nips2014.pdf\">Paper</a></p>\n           </li>\n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"2D\">2D Image Understanding (segmentation, detection, depth incorporation, image matching)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">What's the point: Semantic segmentation with point supervision</p>\n           <p>Check out our<a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\"> Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Recurrent Attention Models for Depth-Based Person Identification</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/haque2016cvpr.pdf\">Project Page</a> and <a class=\"link-sytle\" href=\"http://www.albert.cm/projects/ram_person_id/\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Subcategory-aware Convolutional Neural Networks for Object Proposals and Detection</p>\n           <p>Check out out <a class=\"link-sytle\" href=\"http://yuxng.github.io/xiang_wacv17.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://arxiv.org/abs/1604.04693\">arXiv</a>, <a class=\"link-sytle\" href=\"http://yuxng.github.io/xiang_wacv17_tr.pdf\">Technical Report</a>, <a class=\"link-sytle\" href=\"http://www.cvlibs.net/datasets/kitti/eval_object_detail.php?result=5e17cbbabbf775d8cc376793168be49bd6f01608\">KITTI Results</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Robust Single-View Instance Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/held_icra16.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/held_icra16.bib\">bibtex</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Deep View Morphing</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://arxiv.org/abs/1703.02168\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Universal Correspondence Network</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/ucn\">Project Page</a>, <a class=\"link-sytle\" href=\"https://papers.nips.cc/paper/6487-universal-correspondence-network\">Paper</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/choy2016universal.bib\">bibtex</a></p>\n           </li>           \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"3D\">3D Scene and Object Understanding (3D shape recognition, 3D reconstruction)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Towards Viewpoint Invariant 3D Human Pose Estimation</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://www.albert.cm/projects/viewpoint_3d_pose/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/haque2016eccv.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Free your Camera: 3D Indoor Scene Understanding from Arbitrary Camera Motion</p>\n           <p>Check out our<a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/furlan13.pdf\"> Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">3D Object Representations for Fine-Grained Categorization</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://feedbacknet.stanford.edu/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/3drr13.pdf\">Paper</a></p>\n           </li>\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Joint 2D-3D-Semantic Data for Indoor Scene Understanding</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://3dsemantics.stanford.edu/\">Project Page</a>, <a class=\"link-sytle\" href=\"https://arxiv.org/pdf/1702.01105.pdf\">Paper</a> and <a class=\"Link-sytle\" href=\"http://buildingparser.stanford.edu/images/2D-3D-S.txt\"></a>bibtex</p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">3D-R2N2: A Unified Approach for Single and Multi-view 3D Object Reconstruction</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://3d-r2n2.stanford.edu/\">Project Page</a>, <a class=\"link-sytle\" href=\"http://download.springer.com/static/pdf/315/chp%253A10.1007%252F978-3-319-46484-8_38.pdf?originUrl=http%3A%2F%2Flink.springer.com%2Fchapter%2F10.1007%2F978-3-319-46484-8_38&token2=exp=1488871345~acl=%2Fstatic%2Fpdf%2F315%2Fchp%25253A10.1007%25252F978-3-319-46484-8_38.pdf%3ForiginUrl%3Dhttp%253A%252F%252Flink.springer.com%252Fchapter%252F10.1007%252F978-3-319-46484-8_38*~hmac=87c4725a5031e36a5ede8b411ccaef0d38be69b891589f900bbd384d51728f73\">Paper</a> <a class=\"link-sytle\" href=\"https://github.com/chrischoy/3D-R2N2\">Code</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/choy20163d.bib\">bibtex</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ObjectNet3D: A Large Scale Database for 3D Object Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/objectnet3d\">Project Page</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_eccv16.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_eccv16_tr.pdf\">Technical Report</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/xiang_eccv16.bib\">bibtex</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">3D Semantic Parsing of Large-Scale Indoor Spaces</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://buildingparser.stanford.edu/\">Project Page</a>, <a class=\"link-sytle\" href=\"http://buildingparser.stanford.edu/images/3D_Semantic_Parsing.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://buildingparser.stanford.edu/images/supp_mat.pdf\">Technical Report</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/armeni_cvpr16.bib\">bibtex</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ShapeNet: An Information-Rich 3D Model Repository</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://dblp.uni-trier.de/rec/bibtex/journals/corr/ChangFGHHLSSSSX15\">bibtex</a> and <a class=\"link-sytle\" href=\"http://arxiv.org/pdf/1512.03012v1.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Indoor Scene Understanding with Geometric and Semantic Contexts</p>\n           <p>Check out our <a class=\"link-sytle\" href=\" http://cvgl.stanford.edu/bibtex/choi_ijcv15.bib\">Project Page</a> and <a class=\"link-sytle\" href=\"http://link.springer.com/article/10.1007%2Fs11263-014-0779-4\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">A Coarse-to-Fine Model for 3D Pose Estimation and Sub-category Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/C2F\">Project Page</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/Mottaghi15cvpr.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/mottaghi_cvpr15.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/Mottaghi15cvpr-sm.pdf\">Technical Report</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Data-Driven 3D Voxel Patterns for Object Category Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/3DVP\">Project Page</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_cvpr15_3dvp.pdf\">Paper</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/xiang_cvpr15.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_cvpr15_3dvp_tr.pdf\">Technical Report</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Beyond PASCAL: A Benchmark for 3D Object Detection in the Wild</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"Project: http://cvgl.stanford.edu/projects/pascal3d.html\">Project Page</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_wacv14.pdf\">Paper</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/xiang_wacv14.bib\">bibtex</a></p>\n           </li>             \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Robotics\">Robotics (tracking, prediction, and localization)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Tracking Millions of Humans in Crowded Space</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/alahi2017gcbcv2.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning to Predict Human Behaviour in Crowded Scenes</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/alahi2017gcbcv.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Unsupervised Camera Localization in Crowded Spaces</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/alahi2017icra.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Social LSTM: Human Trajectory Prediction in Crowded Spaces</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/CVPR16_N_LSTM.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Socially-aware Large-scale Crowd Forecasting</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/alahi14.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Social Scene Understanding: End-to-End Multi-Person Action Localization and Collective Activity Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://arxiv.org/abs/1611.09078\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Tracking The Untrackable: Learning To Track Multiple Cues with Long-Term Dependencies</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://arxiv.org/abs/1701.01909\"> arXiv</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning Social Etiquette: Human Trajectory Prediction</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/uav_data/\">Project Page</a>, <a class=\"link-sytle\" href=\"http://web.stanford.edu/~alahi/downloads/ECCV16social.pdf\">Paper</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/robicquet2016learning.bib\">bibtex</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning to Track at 100 FPS with Deep Regression Networks</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"arXiv: http://arxiv.org/abs/1604.01802\">arXiv</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">A Probabilistic Framework for Real-time 3D Segmentation using Spatial, Temporal, and Semantic Cues</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/held_rss16.bib\">arXiv</a> and <a class=\"link-sytle\" href=\"http://davheld.github.io/segmentation3D/segmentation3D.htmlf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning to Track: Online Multi-Object Tracking by Decision Making</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/MDP_tracking\">Project Page</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_iccv15.pdf\">Paper</a>,<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/xiang_iccv15.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/xiang_iccv15_tr.pdf\">Technical Report</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Combining 3D Shape, Color, and Motion for Robust Anytime Tracking</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/held_rss2014.bib\">Technical Report</a></p>\n           </li>             \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Reinforcement\">Reinforcement Learning (policy & deep reinforcement learning)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual Semantic Planning using Deep Successor Representations</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/zhu2017iccv.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Adversarially Robust Policy Learning through Active Construction of Physically-Plausible Perturbations</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/mandlekar2017iros.pdf\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Target-driven Visual Navigation in Indoor Scenes using Deep Reinforcement Learning</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/zhu2017icra.pdf\">Paper</a></p>\n           </li>            \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Video\">Video and Activity Understanding (action recognition, video captioning)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Dense-Captioning Events in Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/ranjaykrishna/densevid/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Towards Vision-Based Smart Hospitals: A System for Tracking and Monitoring Hand Hygiene Compliance</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://aicare.stanford.edu/projects/hand_hygiene/\">Project Page</a> and <a class=\"link-sytle\" href=\"https://arxiv.org/pdf/1708.00163.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Unsupervised Visual-Linguistic Reference Resolution in Instructional Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://ai.stanford.edu/~dahuang/projects/vlrr/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/huang2017cvpr.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning to learn from noisy web videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">SST: Single-Stream Temporal Action Proposals</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/buch2017cvpr.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Unsupervised Learning of Long-Term Motion Dynamics for Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/luo2017cvpr.pdf\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Connectionist Temporal Modeling for Weakly Supervised Action Labeling</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">End-to-end Learning of Action Detection from Frame Glimpses in Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://ai.stanford.edu/~syyeung/frameglimpses.html\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/yeung2016cvpr.pdf\">Paper</a></p>\n           </li>  \n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Detecting Events and Key Actors in Multi-person Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://basketballattention.appspot.com/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/ramanathan2016cvpr.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning temporal embeddings for complex video analysis</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/RamanathanICCV2015.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Joint person naming in videos and coreference resolution in text</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/vignesh14.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Video Event Understanding using Natural Language Descriptions</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/vigneshICCV13.pdf\">Paper</a></p>\n           </li>     \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Action Recognition with Exemplar Based 2.5D Graph Matching</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/YaoFei-Fei_ECCV12.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Watch-n-Patch: Unsupervised Learning of Actions and Relations</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://arxiv.org/pdf/1603.03541.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Watch-Bot: Unsupervised Learning for Reminding Humans of Forgotten Actions</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/wu_icra16.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/wu_icra16.pdf\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual Forecasting by Imitating Dynamics in Natural Sequences</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://ai.stanford.edu/~dahuang/papers/iccv17-vfid.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">End-to-End, Single-Stream Temporal Action Detection in Untrimmed Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://www.dropbox.com/s/9n90etsu6jubiax/0144.pdf?dl=1\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Sparse composition of body poses and atomic actions for human activity recognition in RGB-D videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://ialillo.sitios.ing.uc.cl/ActionsCVPR2014/\">Data</a> and <a class=\"link-sytle\" href=\"http://dx.doi.org/10.1016/j.imavis.2016.11.004\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">DAPs: Deep Action Proposals for Action Understanding</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"https://ivul.kaust.edu.sa/Pages/pub-Daps.aspx\">Project Page</a>, <a class=\"link-sytle\" href=\"https://link.springer.com/chapter/10.1007/978-3-319-46487-9_47\">Paper</a>, <a class=\"link-sytle\" href=\"https://drive.google.com/open?id=0B0ZXjo_p8lHBRGlnZ0Q1dFk2SUk\">Video</a> and <a class=\"link-sytle\" href=\" https://github.com/escorciav/daps\">Code</a></p>\n           </li>                                                                                         \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Title Generation for User Generated Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://ug-video.com/\">Project Page</a>, <a class=\"link-sytle\" href=\"https://link.springer.com/chapter/10.1007/978-3-319-46475-6_38\">Paper</a>, <a class=\"link-sytle\" href=\"https://arxiv.org/abs/1608.07068\">arXiv</a>,<a class=\"link-sytle\" href=\"https://www.youtube.com/watch?v=KCTQ0vMsyDc\">Video</a> and <a class=\"link-sytle\" href=\" http://ug-video.com/\">Data</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Fast Temporal Activity Proposals for Efficient Detection of Human Actions in Untrimmed Videos</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://www.cabaf.net/temporalproposals/index.html\">Project Page</a>, <a class=\"link-sytle\" href=\"https://github.com/cabaf/sparseprop\">Code</a> and <a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2016.211\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">A Hierarchical Pose-Based Approach to Complex Action Understanding Using Dictionaries of Actionlets and Motion Poselets</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://ialillo.sitios.ing.uc.cl/ActionsCVPR2014/\">Data</a>, <a class=\"link-sytle\" href=\"https://arxiv.org/abs/1606.04992\">arXiv</a> and <a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2016.218\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ActivityNet: A Large-Scale Video Benchmark for Human Activity Understanding Unsupervised Semantic Parsing of Video Collections</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://activity-net.org/\">Project Page</a>, <a class=\"link-sytle\" href=\"https://github.com/activitynet/ActivityNet\">Code</a>, <a class=\"link-sytle\" href=\"http://activity-net.org/download.html\">Data</a> and <a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2015.7298698\">Paper</a></p>\n           </li>                                                    \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Action Recognition by Hierarchical Mid-level Action Elements</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/lan_iccv2015.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/tian2015.pdf\">Paper</a></p>\n           </li>   \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Learning\">Learning Theory (metric learning, style transfer, domain adaptation)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Characterizing and Improving Stability in Neural Style Transfer</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Perceptual Losses for Real-time Style Transfer and Single Image Super-Resolution</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visualizing and Understanding Recurrent Networks</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/KarpathyICLR2016.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Feedback Networks</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://feedbacknet.stanford.edu/\">Project Page</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/zamir2016feedback.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"https://arxiv.org/pdf/1612.09508\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Learning Transferrable Representations for Unsupervised Domain Adaptation</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/bibtex/soner2016learning.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"https://papers.nips.cc/paper/6360-learning-transferrable-representations-for-unsupervised-domain-adaptation.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Deep Metric Learning via Lifted Structured Feature Embedding</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/lifted_struct\">Project Page</a>, <a class=\"link-sytle\" href=\"https://github.com/rksltnl/Deep-Metric-Learning-CVPR16\">Code</a>, <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/song_cvpr16_supp.pdf\">Technical Report</a>, <a class=\"link-sytle\" href=\"http://ai.stanford.edu/~hsong/bibs/Song-CVPR16.txt\">bibtex</a> and <a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/papers/song_cvpr16.pdf\">Paper</a></p>\n           </li>   \n           </ul> \n\n           <h2 class=\"top-seprates jumptarget\" id=\"Societal\">Societal Understanding (street view detection for census estimation)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Fine-Grained Car Detection for Visual Census Estimation</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/gebru2017aaai.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Vision-Based Classification of Developmental Disorders Using Eye-Movements</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/pusiol2016miccai.pdf\">Paper</a></p>\n           </li>            \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Visual\">Visual Reasoning (visual question answering)</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Inferring and Executing Programs for Visual Reasoning</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/jcjohns/iep\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/publications.html#\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Knowledge Acquisition for Visual Question Answering via Iterative Querying</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/zhu2017cvpr.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">CLEVR: A Diagnostic Dataset for Compositional Language and Elementary Visual Reasoning</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://cs.stanford.edu/people/jcjohns/clevr/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/johnson2017cvpr.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual7W: Grounded Question Answering in Images</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://web.stanford.edu/~yukez/visual7w/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/zhu2016cvpr.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Leveraging Video Descriptions to Learn Video Question Answering</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://aliensunmin.github.io/project/video-language/index.html#VideoQA\">Project Page</a>, <a class=\"link-sytle\" href=\"http://ug-video.com/\">Data</a>, <a class=\"link-sytle\" href=\"https://arxiv.org/abs/1611.04021\">arXiv</a> and <a class=\"link-sytle\" href=\"https://aaai.org/ocs/index.php/AAAI/AAAI17/paper/view/14906\">Paper</a></p>\n           </li>                                               \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Data\">Data and Label Generation</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Scalable Annotation of Fine-Grained Objects Without Experts</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/gebru2017chi.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">A Glimpse Far into the Future: Understanding Long-term Crowd Worker Accuracy</p>\n           <p>Check out our <a class=\"link-sytle\" href=\" http://cs.stanford.edu/people/ranjaykrishna/glimpse/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/hata2017cscw.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">The Unreasonable Effectiveness of Noisy Data for Fine-Grained Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://arxiv.org/abs/1511.06789\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Embracing Error to Enable Rapid Crowdsourcing</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://hci.stanford.edu/publications/2016/rsvp/rsvp.pdf\">Paper</a></p>\n           </li> \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ImageNet Large Scale Visual Recognition Challenge</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://image-net.org/challenges/LSVRC/\">Project Page</a>, <a class=\"link-sytle\" href=\"http://ai.stanford.edu/~olga/bibtex/ILSVRC15.bib\">bibtex</a> and <a class=\"link-sytle\" href=\"http://arxiv.org/abs/1409.0575\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">ImageNet: A Large-Scale Hierarchical Image Database</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/ImageNet_CVPR2009.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Scalable Multi-Label Annotation</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/chi2014-MultiLabel.pdf\">Paper</a></p>\n           </li>   \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Fine-Grained Crowdsourcing for Fine-Grained Recognition</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://feedbacknet.stanford.edu/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/DengKrauseFei-Fei_CVPR2013.pdf\">Paper</a></p>\n           </li>                                                         \n           </ul>\n\n           <h2 class=\"top-seprates jumptarget\" id=\"Human\">Human Perception</h2>\n           <ul class=\"row list-unstyled\">\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Human-object Interactions are More than the Sum of Their Parts</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/CC2016.pdf\">Paper</a></p>\n           </li>\n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Typicality Sharpens Category Representations in Object-Selective Cortex</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/iordan-etal-neuroimage-2016.pdf\">Paper</a></p>\n           </li>  \n\n           <li class=\"col-md-11 col-xs-12\">\n           <p class=\"name-title article-seprates\">Visual Categorization is Automatic and Obligatory: Evidence from a Stroop-like Paradigm</p>\n           <p>Check out our <a class=\"link-sytle\" href=\"http://feedbacknet.stanford.edu/\">Project Page</a> and <a class=\"link-sytle\" href=\"http://vision.stanford.edu/pdf/14.full.pdf\">Paper</a></p>\n           </li>\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -5898,7 +5930,7 @@ var _a;
 /***/ "../../../../../src/app/resources/resources.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"bg-color-sky-light section-seperator\">\n  <div class=\"content container\">\n    <div class=\"row\">\n      <div id=\"sidebar\" class=\"sidebar-wrap col-md-2 col-xs-10 sm-margin-b-30\">\n        <div class=\"sidebar\">\n        </div>\n      </div>\n\n      <div id=\"content\" class=\"col-md-8 col-xs-12 sm-margin-b-30\">\n        <!-- Datasets -->\n        <h2 class=\"top-seprates\">Datasets</h2>\n        <ul class=\"row list-unstyled\">\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://doi.org/10.1109/CVPR.2015.7298698\"><img class=\"img-responsive article-seprates\" src=\"http://www.niebles.net/images/anet_cvpr15b.jpg\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\" >ActivityNet</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2015.7298698\">ActivityNet: A Large-Scale Video Benchmark for Human Activity Understanding</a></p>\n                <p>Authors: Fabian Caba, Victor Escorcia, Bernard Ghanem, Juan Carlos Niebles</p>\n                <p>Venue: IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</p>\n                <span>Location: Boston, USA | Date: June 2015</span>\n                <p>[<a class=\"link-sytle\" href=\"http://activity-net.org/\">Project</a>] [<a class=\"link-sytle\" href=\"https://github.com/activitynet/ActivityNet\">Code</a>] [<a class=\"link-sytle\" href=\"http://activity-net.org/download.html\">Data</a>]</p>\n              </div>\n            </div>\n          </li>\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://doi.org/10.1109/CVPR.2015.7299001\"><img class=\"img-responsive article-seprates\" src=\"http://www.niebles.net/images/manhattan.jpg\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\" >Robustness to Outliers in Manhattan Frame Estimation</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2015.7299001\">Robust Manhattan Frame Estimation from a Single RGB-D Image</a></p>\n                <p>Authors: Bernard Ghanem, Ali Thabet, Juan Carlos Niebles, Fabian Caba</p>\n                <p>Venue: IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</p>\n                <span>Location: Boston, USA | Date: June 2015</span>\n                <p>[<a class=\"link-sytle\" href=\"https://ivul.kaust.edu.sa/Pages/Pub-Manhattan-Frame-Estimation-CVPR-2015.aspx\">Project</a>] [<a class=\"link-sytle\" href=\"https://ivul.kaust.edu.sa/Documents/more/code/MFE.zip\">Code</a>] [<a class=\"link-sytle\" href=\"https://ivul.kaust.edu.sa/Documents/Data/Robust%20Manhattan%20Frame%20Estimation%20from%20a%20Single%20RGB-D%20Image.zip\">Data</a>]</p>\n              </div>\n            </div>\n          </li>\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://doi.org/10.1109/CVPR.2014.109\"><img class=\"img-responsive article-seprates\" src=\"http://www.niebles.net/images/cvpr2014.png\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Composable Activities</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2014.109\">Discriminative Hierarchical Modeling of Spatio-Temporally Composable Human Activities</a></p>\n                <p>Authors: Ivan Lillo, Alvaro Soto, Juan Carlos Niebles</p>\n                <p>Venue: IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</p>\n                <span>Location: Columbus, USA | Date: June 2014</span>\n                <p>[<a class=\"link-sytle\" href=\"http://ialillo.sitios.ing.uc.cl/ActionsCVPR2014/\">Project</a>] [<a class=\"link-sytle\" href=\"http://ialillo.sitios.ing.uc.cl/ActionsCVPR2014/\">Data</a>] [<a class=\"link-sytle\" href=\"https://www.youtube.com/watch?v=_pdfLrie0_8\">Video</a>]</p>\n              </div>\n            </div>\n          </li>\n\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://link.springer.com/chapter/10.1007/978-3-642-15552-9_29\" src=\"http://www.niebles.net/images/NieblesChenFei-Fei_ECCV2010_icon.jpg\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Olympic Sports</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2014.109\">Modeling Temporal Structure of Decomposable Motion Segments for Activity Classification</a></p>\n                <p>Authors: Juan Carlos Niebles, Chih-Wei Chen and Li Fei-Fei</p>\n                <p>Venue: European Conference on Computer Vision (ECCV)</p>\n                <span>Location: Hersonissos, Crete, Greece | Date: September 2010</span>\n                <p>[<a class=\"link-sytle\" href=\"http://vision.stanford.edu/Datasets/OlympicSports/\">Data</a>] [<a class=\"link-sytle\" href=\"http://vision.stanford.edu/documents/NieblesChenFei-Fei_ECCV2010.zip\">Slides</a>]</p>\n              </div>\n            </div>\n          </li>\n\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://link.springer.com/chapter/10.1007/978-3-540-88693-8_39\"><img class=\"img-responsive article-seprates\" src=\"http://www.niebles.net/images/eccv08.jpg\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Moving People</p>\n                <p><a class=\"link-sytle\" href=\"https://link.springer.com/chapter/10.1007/978-3-540-88693-8_39\">Extracting Moving People from Internet Videos</a></p>\n                <p>Authors: Juan Carlos Niebles, Bohyung Han, Andras Ferencz and Li Fei-Fei</p>\n                <p>Venue: European Conference on Computer Vision (ECCV)</p>\n                <span>Location: Marseilles, France | Date: 2008</span>\n                <p>[<a class=\"link-sytle\" href=\"http://vision.stanford.edu/projects/extractingPeople.html\">Project</a>] [<a class=\"link-sytle\" href=\"http://vision.stanford.edu/projects/extractingPeople.html\">Data</a>] [<a class=\"link-sytle\" href=\"http://vision.stanford.edu/projects/extractingPeople/NieblesHanFerenczFei-Fei_ECCV2008_poster.pdf\">Poster</a>]</p>\n              </div>\n            </div>\n          </li>\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"http://buildingparser.stanford.edu/images/equirect.png\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">The Joint 2D-3D-Semantic (2D-3D-S) Dataset</p>\n                <p>Stanford 2D-3D-Semantics Dataset (2D-3D-S)</p>\n                <p>Authors: Iro Armeni, Alexander Sax, Amir R. Zamir, Silvio Savarese</p>\n                <span>Location: Columbus, USA | Date: June 2014</span>\n                <p>[<a class=\"link-sytle\" href=\"http://3dsemantics.stanford.edu\">Project</a>] [<a class=\"link-sytle\" href=\"https://github.com/alexsax/2D-3D-Semantics\">Data</a>]</p>\n              </div>\n            </div>\n          </li>\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"assets/img/cvpr2014.png\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">ObjectNet3D</p>\n                <p><a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/objectnet3d/ObjectNet3D.png\">Title: ObjectNet3D: A Large Scale Database for 3D Object Recognition</a></p>\n                <p>Authors: Yu Xiang, Wonhui Kim, Wei Chen, Jingwei Ji, Christopher Choy, Hao Su, Roozbeh Mottaghi, Leonidas Guibas, and Silvio Savarese</p>\n                <p>Venue: European Conference on Computer Vision (ECCV)</p>\n                <span>Location: Amsterdam, Netherlands | Date: October, 2016</span>\n                <p>[<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/objectnet3d/\">Project</a>] [<a class=\"link-sytle\" href=\"https://github.com/yuxng/ObjectNet3D_toolbox\">Code</a>] [<a class=\"link-sytle\" href=\"ftp://cs.stanford.edu/cs/cvgl/ObjectNet3D/ObjectNet3D_images.zip\">Data</a>]</p>\n              </div>\n            </div>\n          </li>\n          \n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://doi.org/10.1109/CVPR.2014.109\"><img class=\"img-responsive article-seprates\" src=\"http://cvgl.stanford.edu/projects/uav_data/hyang.jpg\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Human Trajectory</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2014.109\">Stanford Drone Dataset, in Learning Social Etiquette: Human Trajectory Prediction In Crowded Scenes</a></p>\n                <p>Authors: A. Robicquet, A. Sadeghian, A. Alahi, S. Savarese</p>\n                <p>Venue: European Conference on Computer Vision (ECCV)</p>\n                <span>Location: Amsterdam, Netherlands | Date: October, 2016</span>\n                <p>[<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/uav_data/\">Project</a>] [<a class=\"link-sytle\" href=\"http://vatic2.stanford.edu/stanford_campus_dataset.zip\">Data</a>] [<a class=\"link-sytle\" href=\"https://www.youtube.com/watch?v=c6xQ6iz6wH8\">Video</a>]</p>\n              </div>\n            </div>\n          </li>  \n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://goo.gl/forms/4SoGp4KtH1jfRqEj2\"><img class=\"img-responsive article-seprates\" src=\"#\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Stanford Large-Scale Indoor Spaces 3D (S3DIS)</p>\n                <p><a class=\"link-sytle\" href=\"https://goo.gl/forms/4SoGp4KtH1jfRqEj2\">3D Semantic Parsing of Large-Scale Indoor Space</a></p>\n                <p>Authors: Iro Armeni, Ozan Sener, Amir R. Zamir, Helen Jiang, Ioannis Brilakis, Martin Fischer and Silvio Savarese</p>\n                <p>Venue: IEEE International Conference on Computer Vision and Pattern Recognition (CVPR)</p>\n                <span>Location: Las Vegas, Nevada | Date: June 2016</span>\n              </div>\n            </div>\n          </li>  \n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"http://cvgl.stanford.edu/projects/multiview_tracking/multiview_tracking.png\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Multiview Tracking dataset</p>\n                <p>Monocular Multiview Object Tracking with 3D Aspect Parts</p>\n                <p>Authors: Yu Xiang*, Changkyu Song*, Roozbeh Mottaghi and Silvio Savarese</p>\n                <p>Venue: European Conference on Computer Vision (ECCV)</p>\n                <span>Location: Zurich, Switzerland | Date: September, 2014</span>\n                <p>[<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/multiview_tracking\">Project</a>] [<a class=\"link-sytle\" href=\"https://github.com/changkyu/eccv2014_changkyu\">Code</a>] [<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/data/multiview_tracking_dataset.zip\">Data</a>]</p>\n              </div>\n            </div>\n          </li>                    \n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"http://cvgl.stanford.edu/projects/pascal3d+/pascal3d.png\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">PASCAL3D+</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2014.109\">Beyond PASCAL: A Benchmark for 3D Object Detection in the Wild</a></p>\n                <p>Authors: Yu Xiang, Roozbeh Mottaghi and Silvio Savarese</p>\n                <p>Venue: IEEE Winter Conference on Applications of Computer Vision (WACV)</p>\n                <span>Date: 2014</span>\n                <p>[<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/pascal3d.html\">Project</a>] [<a class=\"link-sytle\" href=\"ftp://cs.stanford.edu/cs/cvgl/PASCAL3D+_release1.1.zip\">Data</a>] [<a class=\"link-sytle\" href=\"https://www.youtube.com/watch?v=5Yeus0x6fo0\">Video</a>]</p>\n              </div>\n            </div>\n          </li>  \n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://doi.org/10.1109/CVPR.2014.109\"><img class=\"img-responsive article-seprates\" src=\"http://vhosts.eecs.umich.edu/vision//projects/ssfm/figures/main_figure_webpage.jpg\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Semantic Structure From Motion</p>\n                <p>Semantic Structure from Motion with Points, Regions, and Objects</p>\n                <p>Authors: Sid Yingze Bao, Mohit Bagra, Yu-Wei Chao, and Silvio Savarese</p>\n                <p>Venue: IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</p>\n                <span>Location: Providence, RI, USA | Date: June 2012</span>\n                <p>[<a class=\"link-sytle\" href=\"http://www.eecs.umich.edu/vision/projects/ssfm/index.html\">Project</a>] [<a class=\"link-sytle\" href=\"https://www.youtube.com/watch?v=bG5SZOzVis8\">Video</a>]</p>\n              </div>\n            </div>\n          </li>  \n\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"#\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">3D Object Dataset</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2014.109\">The 3D Object Dataset</a></p>\n                <span>Location: Columbus, USA | Date: June 2014</span>\n                <p>[<a class=\"link-sytle\" href=\"\">Data</a>]</p>\n              </div>\n            </div>\n          </li>  \n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"http://cvgl.stanford.edu/projects/collective/images/exwait.jpg\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Collective Activity</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2014.109\">Collective Activity Classification Using Spatio-Temporal Relationship Among People</a></p>\n                <p>Authors: Wongun Choi, Khuram Shahid, Silvio Savarese</p>\n                <p>Venue: 9th International Workshop on Visual Surveillance (VSWS09) in conjuction with ICCV</p>\n                <span>Location: Kyoto, Japan | Date: 2009</span>\n                <p>[<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/collective/collectiveActivity.html\">Project</a>] [<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/data/ActivityDataset.zip\">Data</a>]</p>\n              </div>\n            </div>\n          </li>  \n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"bg-color-sky-light section-seperator\">\n  <div class=\"content container\">\n    <div class=\"row\">\n      <div id=\"sidebar\" class=\"sidebar-wrap col-md-2 col-xs-10 sm-margin-b-30\">\n        <div class=\"sidebar\">\n        </div>\n      </div>\n\n      <div id=\"content\" class=\"col-md-8 col-xs-12 sm-margin-b-30\">\n        <!-- Datasets -->\n        <h2 class=\"top-seprates\">Datasets</h2>\n        <ul class=\"row list-unstyled\">\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"http://vision.stanford.edu/ilsvrc_proj.jpg\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">ImageNet</p>\n                <p><a class=\"link-sytle\" href=\"http://www.image-net.org\">ImageNet: a Large-Scale Hierarchical Image Database</a></p>\n                <p>Authors: Jia Deng, Wei Dong, Richard Socher, Li-Jia Li, Kai Li and Li Fei-Fei.</p>\n                <p>Venue: IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR)</p>\n                <span>Location: Miami Beach, Florida, USA | Date: June 2009</span>\n                <p>[<a class=\"link-sytle\" href=\"http://www.image-net.org/\">Project</a>]</p>\n              </div>\n            </div>\n          </li>\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://doi.org/10.1109/CVPR.2015.7298698\"><img class=\"img-responsive article-seprates\" src=\"http://www.niebles.net/images/anet_cvpr15b.jpg\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\" >ActivityNet</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2015.7298698\">ActivityNet: A Large-Scale Video Benchmark for Human Activity Understanding</a></p>\n                <p>Authors: Fabian Caba, Victor Escorcia, Bernard Ghanem, Juan Carlos Niebles</p>\n                <p>Venue: IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</p>\n                <span>Location: Boston, USA | Date: June 2015</span>\n                <p>[<a class=\"link-sytle\" href=\"http://activity-net.org/\">Project</a>] [<a class=\"link-sytle\" href=\"https://github.com/activitynet/ActivityNet\">Code</a>] [<a class=\"link-sytle\" href=\"http://activity-net.org/download.html\">Data</a>]</p>\n              </div>\n            </div>\n          </li>\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://doi.org/10.1109/CVPR.2015.7299001\"><img class=\"img-responsive article-seprates\" src=\"http://www.niebles.net/images/manhattan.jpg\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\" >Robustness to Outliers in Manhattan Frame Estimation</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2015.7299001\">Robust Manhattan Frame Estimation from a Single RGB-D Image</a></p>\n                <p>Authors: Bernard Ghanem, Ali Thabet, Juan Carlos Niebles, Fabian Caba</p>\n                <p>Venue: IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</p>\n                <span>Location: Boston, USA | Date: June 2015</span>\n                <p>[<a class=\"link-sytle\" href=\"https://ivul.kaust.edu.sa/Pages/Pub-Manhattan-Frame-Estimation-CVPR-2015.aspx\">Project</a>] [<a class=\"link-sytle\" href=\"https://ivul.kaust.edu.sa/Documents/more/code/MFE.zip\">Code</a>] [<a class=\"link-sytle\" href=\"https://ivul.kaust.edu.sa/Documents/Data/Robust%20Manhattan%20Frame%20Estimation%20from%20a%20Single%20RGB-D%20Image.zip\">Data</a>]</p>\n              </div>\n            </div>\n          </li>\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://doi.org/10.1109/CVPR.2014.109\"><img class=\"img-responsive article-seprates\" src=\"http://www.niebles.net/images/cvpr2014.png\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Composable Activities</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2014.109\">Discriminative Hierarchical Modeling of Spatio-Temporally Composable Human Activities</a></p>\n                <p>Authors: Ivan Lillo, Alvaro Soto, Juan Carlos Niebles</p>\n                <p>Venue: IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</p>\n                <span>Location: Columbus, USA | Date: June 2014</span>\n                <p>[<a class=\"link-sytle\" href=\"http://ialillo.sitios.ing.uc.cl/ActionsCVPR2014/\">Project</a>] [<a class=\"link-sytle\" href=\"http://ialillo.sitios.ing.uc.cl/ActionsCVPR2014/\">Data</a>] [<a class=\"link-sytle\" href=\"https://www.youtube.com/watch?v=_pdfLrie0_8\">Video</a>]</p>\n              </div>\n            </div>\n          </li>\n\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://link.springer.com/chapter/10.1007/978-3-642-15552-9_29\" src=\"http://www.niebles.net/images/NieblesChenFei-Fei_ECCV2010_icon.jpg\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Olympic Sports</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2014.109\">Modeling Temporal Structure of Decomposable Motion Segments for Activity Classification</a></p>\n                <p>Authors: Juan Carlos Niebles, Chih-Wei Chen and Li Fei-Fei</p>\n                <p>Venue: European Conference on Computer Vision (ECCV)</p>\n                <span>Location: Hersonissos, Crete, Greece | Date: September 2010</span>\n                <p>[<a class=\"link-sytle\" href=\"http://vision.stanford.edu/Datasets/OlympicSports/\">Data</a>] [<a class=\"link-sytle\" href=\"http://vision.stanford.edu/documents/NieblesChenFei-Fei_ECCV2010.zip\">Slides</a>]</p>\n              </div>\n            </div>\n          </li>\n\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://link.springer.com/chapter/10.1007/978-3-540-88693-8_39\"><img class=\"img-responsive article-seprates\" src=\"http://www.niebles.net/images/eccv08.jpg\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Moving People</p>\n                <p><a class=\"link-sytle\" href=\"https://link.springer.com/chapter/10.1007/978-3-540-88693-8_39\">Extracting Moving People from Internet Videos</a></p>\n                <p>Authors: Juan Carlos Niebles, Bohyung Han, Andras Ferencz and Li Fei-Fei</p>\n                <p>Venue: European Conference on Computer Vision (ECCV)</p>\n                <span>Location: Marseilles, France | Date: 2008</span>\n                <p>[<a class=\"link-sytle\" href=\"http://vision.stanford.edu/projects/extractingPeople.html\">Project</a>] [<a class=\"link-sytle\" href=\"http://vision.stanford.edu/projects/extractingPeople.html\">Data</a>] [<a class=\"link-sytle\" href=\"http://vision.stanford.edu/projects/extractingPeople/NieblesHanFerenczFei-Fei_ECCV2008_poster.pdf\">Poster</a>]</p>\n              </div>\n            </div>\n          </li>\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"http://buildingparser.stanford.edu/images/equirect.png\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">The Joint 2D-3D-Semantic (2D-3D-S) Dataset</p>\n                <p>Stanford 2D-3D-Semantics Dataset (2D-3D-S)</p>\n                <p>Authors: Iro Armeni, Alexander Sax, Amir R. Zamir, Silvio Savarese</p>\n                <span>Location: Columbus, USA | Date: June 2014</span>\n                <p>[<a class=\"link-sytle\" href=\"http://3dsemantics.stanford.edu\">Project</a>] [<a class=\"link-sytle\" href=\"https://github.com/alexsax/2D-3D-Semantics\">Data</a>]</p>\n              </div>\n            </div>\n          </li>\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"assets/img/cvpr2014.png\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">ObjectNet3D</p>\n                <p><a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/objectnet3d/ObjectNet3D.png\">Title: ObjectNet3D: A Large Scale Database for 3D Object Recognition</a></p>\n                <p>Authors: Yu Xiang, Wonhui Kim, Wei Chen, Jingwei Ji, Christopher Choy, Hao Su, Roozbeh Mottaghi, Leonidas Guibas, and Silvio Savarese</p>\n                <p>Venue: European Conference on Computer Vision (ECCV)</p>\n                <span>Location: Amsterdam, Netherlands | Date: October, 2016</span>\n                <p>[<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/objectnet3d/\">Project</a>] [<a class=\"link-sytle\" href=\"https://github.com/yuxng/ObjectNet3D_toolbox\">Code</a>] [<a class=\"link-sytle\" href=\"ftp://cs.stanford.edu/cs/cvgl/ObjectNet3D/ObjectNet3D_images.zip\">Data</a>]</p>\n              </div>\n            </div>\n          </li>\n          \n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://doi.org/10.1109/CVPR.2014.109\"><img class=\"img-responsive article-seprates\" src=\"http://cvgl.stanford.edu/projects/uav_data/hyang.jpg\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Human Trajectory</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2014.109\">Stanford Drone Dataset, in Learning Social Etiquette: Human Trajectory Prediction In Crowded Scenes</a></p>\n                <p>Authors: A. Robicquet, A. Sadeghian, A. Alahi, S. Savarese</p>\n                <p>Venue: European Conference on Computer Vision (ECCV)</p>\n                <span>Location: Amsterdam, Netherlands | Date: October, 2016</span>\n                <p>[<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/uav_data/\">Project</a>] [<a class=\"link-sytle\" href=\"http://vatic2.stanford.edu/stanford_campus_dataset.zip\">Data</a>] [<a class=\"link-sytle\" href=\"https://www.youtube.com/watch?v=c6xQ6iz6wH8\">Video</a>]</p>\n              </div>\n            </div>\n          </li>  \n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://goo.gl/forms/4SoGp4KtH1jfRqEj2\"><img class=\"img-responsive article-seprates\" src=\"#\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Stanford Large-Scale Indoor Spaces 3D (S3DIS)</p>\n                <p><a class=\"link-sytle\" href=\"https://goo.gl/forms/4SoGp4KtH1jfRqEj2\">3D Semantic Parsing of Large-Scale Indoor Space</a></p>\n                <p>Authors: Iro Armeni, Ozan Sener, Amir R. Zamir, Helen Jiang, Ioannis Brilakis, Martin Fischer and Silvio Savarese</p>\n                <p>Venue: IEEE International Conference on Computer Vision and Pattern Recognition (CVPR)</p>\n                <span>Location: Las Vegas, Nevada | Date: June 2016</span>\n              </div>\n            </div>\n          </li>  \n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"http://cvgl.stanford.edu/projects/multiview_tracking/multiview_tracking.png\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Multiview Tracking dataset</p>\n                <p>Monocular Multiview Object Tracking with 3D Aspect Parts</p>\n                <p>Authors: Yu Xiang*, Changkyu Song*, Roozbeh Mottaghi and Silvio Savarese</p>\n                <p>Venue: European Conference on Computer Vision (ECCV)</p>\n                <span>Location: Zurich, Switzerland | Date: September, 2014</span>\n                <p>[<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/multiview_tracking\">Project</a>] [<a class=\"link-sytle\" href=\"https://github.com/changkyu/eccv2014_changkyu\">Code</a>] [<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/data/multiview_tracking_dataset.zip\">Data</a>]</p>\n              </div>\n            </div>\n          </li>                    \n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"http://cvgl.stanford.edu/projects/pascal3d+/pascal3d.png\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">PASCAL3D+</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2014.109\">Beyond PASCAL: A Benchmark for 3D Object Detection in the Wild</a></p>\n                <p>Authors: Yu Xiang, Roozbeh Mottaghi and Silvio Savarese</p>\n                <p>Venue: IEEE Winter Conference on Applications of Computer Vision (WACV)</p>\n                <span>Date: 2014</span>\n                <p>[<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/pascal3d.html\">Project</a>] [<a class=\"link-sytle\" href=\"ftp://cs.stanford.edu/cs/cvgl/PASCAL3D+_release1.1.zip\">Data</a>] [<a class=\"link-sytle\" href=\"https://www.youtube.com/watch?v=5Yeus0x6fo0\">Video</a>]</p>\n              </div>\n            </div>\n          </li>  \n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <a href=\"https://doi.org/10.1109/CVPR.2014.109\"><img class=\"img-responsive article-seprates\" src=\"http://vhosts.eecs.umich.edu/vision//projects/ssfm/figures/main_figure_webpage.jpg\"></a>\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Semantic Structure From Motion</p>\n                <p>Semantic Structure from Motion with Points, Regions, and Objects</p>\n                <p>Authors: Sid Yingze Bao, Mohit Bagra, Yu-Wei Chao, and Silvio Savarese</p>\n                <p>Venue: IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</p>\n                <span>Location: Providence, RI, USA | Date: June 2012</span>\n                <p>[<a class=\"link-sytle\" href=\"http://www.eecs.umich.edu/vision/projects/ssfm/index.html\">Project</a>] [<a class=\"link-sytle\" href=\"https://www.youtube.com/watch?v=bG5SZOzVis8\">Video</a>]</p>\n              </div>\n            </div>\n          </li>  \n\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"#\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">3D Object Dataset</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2014.109\">The 3D Object Dataset</a></p>\n                <span>Location: Columbus, USA | Date: June 2014</span>\n                <p>[<a class=\"link-sytle\" href=\"\">Data</a>]</p>\n              </div>\n            </div>\n          </li>\n\n          <li class=\"col-md-11 col-xs-12\">\n            <div class=\"row top-seprates\">\n              <div class=\"col-md-3 col-xs-3\">\n                <img class=\"img-responsive article-seprates\" src=\"http://cvgl.stanford.edu/projects/collective/images/exwait.jpg\">\n              </div>\n              <div class=\"col-md-9 col-xs-9\">\n                <p class=\"name-title\">Collective Activity</p>\n                <p><a class=\"link-sytle\" href=\"https://doi.org/10.1109/CVPR.2014.109\">Collective Activity Classification Using Spatio-Temporal Relationship Among People</a></p>\n                <p>Authors: Wongun Choi, Khuram Shahid, Silvio Savarese</p>\n                <p>Venue: 9th International Workshop on Visual Surveillance (VSWS09) in conjuction with ICCV</p>\n                <span>Location: Kyoto, Japan | Date: 2009</span>\n                <p>[<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/projects/collective/collectiveActivity.html\">Project</a>] [<a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/data/ActivityDataset.zip\">Data</a>]</p>\n              </div>\n            </div>\n          </li>\n\n        </ul>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -5930,10 +5962,52 @@ ResourcesComponent = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/app/teaching/teaching-filter.pipe.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CoursesFilterByProfessorPipe; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+/**
+ * Filters a list of courses by Professor.
+ * Takes a string for the professor name that defaults to 'All'.
+ * Usage:
+ *   value | coursesFilterByProfessor:professorName
+ * Example:
+ *   {{ courses | coursesFilterByProfessor:'L. Fei-Fei' }}
+ *   returns all courses by Fei-Fei Li.
+ */
+var CoursesFilterByProfessorPipe = (function () {
+    function CoursesFilterByProfessorPipe() {
+    }
+    CoursesFilterByProfessorPipe.prototype.transform = function (value, professorName) {
+        if (professorName == 'All')
+            return value;
+        return value.filter(function (course) {
+            return course.professor == professorName;
+        });
+    };
+    return CoursesFilterByProfessorPipe;
+}());
+CoursesFilterByProfessorPipe = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Pipe"])({ name: 'coursesFilterByProfessor' })
+], CoursesFilterByProfessorPipe);
+
+//# sourceMappingURL=teaching-filter.pipe.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/teaching/teaching.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"bg-color-sky-light section-seperator\">\n  <div class=\"content container\">\n    <div class=\"row\">\n      <div id=\"sidebar\" class=\"sidebar-wrap col-md-4 col-xs-10 sm-margin-b-30\">\n        <div class=\"sidebar\">\n          <ul class=\"sidebar list-unstyled sidenav-position\">\n            <li class=\"side-nav\"><a [routerLink]=\"['/teaching']\" fragment=\"SilvioClass\" (click)=\"onAnchorClick()\">Silvio Savarese's Courses</a></li>\n            <li class=\"side-nav\"><a [routerLink]=\"['/teaching']\" fragment=\"Fei-FeiClass\" (click)=\"onAnchorClick()\">L.Fei Fei’s Courses</a></li>  \n            <li class=\"side-nav\"><a [routerLink]=\"['/teaching']\" fragment=\"JuanClass\" (click)=\"onAnchorClick()\">Juan Carlos Niebles's Courses</a></li>\n          </ul>\n        </div>\n      </div>\n\n      <div id=\"content\" class=\"content col-md-8 col-xs-12 sm-margin-b-30\">\n        <div class=\"row\"><h2 id=\"SilvioClass\">Silvio Savarese's Courses</h2></div>\n        <div class=\"row list-unstyled\">\n          <table class=\"bigger-padding\">\n            <tr>\n              <td><div align=\"left\">Autumn, 2017-18 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://web.stanford.edu/class/cs331b/\">CS 331B: Representation Learning in Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Winter, 2017-18 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://web.stanford.edu/class/cs231a/\">CS 231A: Computer Vision: From 3D Reconstruction to Recognition</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Spring, 2016-17 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://cs331b.stanford.edu/\">CS 331B: Representation Learning in Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Spring, 2015-16 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://cs231a.stanford.edu/\">CS 231A: Mobile Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Winter, 2013-14 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/teaching/cs231a_winter1415/\">CS 231A: Introduction to Computer Vision</a>\n              </td>\n            </tr>\n\n\n            <tr>\n              <td><div align=\"left\">Spring, 2013-14 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://web.stanford.edu/class/cs231m\">CS 231M: Mobile Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Winter, 2013-14 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://cvgl.stanford.edu/teaching/cs231a_winter1314/\">CS 231A: Introduction to Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Autumn, 2013-14 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://www.stanford.edu/class/archive/cs/cs331b/cs331b.1142/cgi-bin/mediawiki/index.php/Main_Page\">CS 331B: Advanced Reading in Computer Vision: 3D Representation and Recognition</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Winter, 2013-14 (Michigan)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://www.eecs.umich.edu/courses/eecs598.007\">EECS 598: Special Topics in Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Fall, 2011-12 (Michigan)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://www.eecs.umich.edu/vision/teaching/EECS442_2011/eecs442.html\">EECS 442: Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Fall, 2010-11 (Michigan)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://web.eecs.umich.edu/~silvio/teaching/EECS598_2010/eecs598.html\">EECS 598: Advanced Topics in Mobile Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Fall, 2010-11 (Michigan)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://web.eecs.umich.edu/~silvio/teaching/EECS442_2010/eecs442.html\">EECS 442: Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Winter, 2010 (Michigan)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://web.eecs.umich.edu/~silvio/teaching/EECS556_2009/eecs556.html\">EECS 556: Image Processing</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Fall, 2009-10 (Michigan)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://web.eecs.umich.edu/~silvio/teaching/EECS442_2009/eecs442.html\">EECS 442: Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Winter, 2009-10 (Michigan)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://web.eecs.umich.edu/~silvio/teaching/EECS598/eecs598.html\">EECS 598: Special Topics in Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Fall, 2008-09 (Michigan)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://web.eecs.umich.edu/~silvio/teaching/eecs442.html\">EECS 442: Computer Vision</a>\n              </td>\n            </tr>\n          </table>\n        </div>\n        <!-- End of Silvio's -->   \n\n\n        <!-- Fei-Fei's -->  \n        <div class=\"row\"><h2 class=\"top-seprates jumptarget\" id=\"Fei-FeiClass\">L.Fei Fei’s Courses</h2></div>\n        <div class=\"row list-unstyled\">\n          <table class=\"bigger-padding\">\n            <tr>\n              <td><div align=\"left\">Spring, 2016-17 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs231n/2017\">CS231n: Convolutional Neural Networks for Visual Recognition</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Fall, 2016-17 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs131_fall1617/index.html\">CS131: Computer Vision: Foundations and Applications</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Winter, 2015-16 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://cs231n.stanford.edu/2016\">CS231n: Convolutional Neural Networks for Visual Recognition</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Fall, 2015-16 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs131_fall1516/index.html\">CS131: Computer Vision: Foundations and Applications</a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Spring, 2014-15 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs231b_spring1415/\">CS231B: The Cutting Edge of Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Winter, 2014-15 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs231n/2015\">CS231n: Convolutional Neural Networks for Visual Recognition</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Fall, 2014-15 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs131_fall1415/index.html\">CS131: Computer Vision: Foundations and Applications\n              </a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Spring, 2013-14 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td ><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs431_spring1314/\">CS431: High-level Vision: Behaviors, Neurons and Computational Models\n              </a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Winter, 2013-14 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs331_winter14/\">CS331: Advanced Reading in Computer Vision\n              </a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Fall, 2013-14 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs131_fall1314/\">CS131: Computer Vision: Foundations and Applications\n              </a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Spring, 2012-13 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs231b_spring1213/\">CS231B: The Cutting Edge of Computer Vision\n              </a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Autumn, 2012-13 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs231a_autumn1213/\">CS231A: Introduction to Computer Vision\n              </a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Autumn, 2012-13 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs331_fall12/\">CS331: Advanced Reading in Computer Vision\n              </a></td>\n            </tr>\n            <tr>\n              <td><div align=\"left\">Autumn, 2011-12 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs231a_autumn1112/\">CS231A: Introduction to Computer Vision\n              </a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Spring, 2010-11 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs223c_spring1011/\">CS223C: The Cutting Edge of Computer Vision\n              </a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Winter, 2010-11 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs223b/\">CS223B: Introduction to Computer Vision\n              </a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Winter, 2009-10 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs423_spring0910/\">CS423: High-level Vision: Behaviors, Neurons and Computational Models\n              </a></td>\n            </tr>\n            <tr>\n              <td><div align=\"left\">Spring, 2009-10 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs223b_winter0910/\">CS223B: Introduction to Computer Vision\n              </a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">ICCV 2009 short course </div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://people.csail.mit.edu/torralba/shortCourseRLOC/index.html\">Recognizing and Learning Object Categories: Year 2009</a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Fall, 2009-10 (Stanford)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs323_fall09/\">CS323: Recognizing and Learning High-Level Visual Concepts\n              </a></td>\n            </tr>\n\n\n            <tr>\n              <td><div align=\"left\">VLPR 2009 (Beijing)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/VLPR2009/\">Summer School in Vision, Learning and Pattern Recognition</a></td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Fall, 2008-09 (Princeton)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://www.cs.princeton.edu/courses/archive/fall08/cos429/\">COS 429: Computer Vision</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Spring, 2007-08 (Princeton)</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://www.cs.princeton.edu/courses/archive/spring08/cos598B/\">COS 598b/PSY 594: From Neuronal Mechanisms to Computational Models</a></td>\n            </tr>\n            <tr>\n              <td><div align=\"left\">Fall, 2007-08 (Princeton)</div></td>\n              <td></td>\n              <td>\n                <a class=\"link-sytle\" href=\"http://www.cs.princeton.edu/courses/archive/fall07/cos429/index.html\">COS 429: Computer Vision</a>\n              </td>\n            </tr>\n            <tr>\n              <td><div align=\"left\">CVPR 2007 short course</div></td>\n              <td></td>\n              <td><a class=\"link-sytle\" href=\"http://people.csail.mit.edu/torralba/shortCourseRLOC/index.html\">Recognizing and Learning Object Categories: Year 2007</a></td>\n            </tr>\n            <tr>\n              <td><div align=\"left\">ICVSS 2007</div></td>\n              <td></td>\n              <td><a class=\"link-sytle\" href=\"documents/Fei-Fei_ICVSS07_ObjectRecognition_web.pdf\">Computer Vision summer school: Object Recognition </a></td>\n            </tr>\n            <tr>\n              <td><div align=\"left\">Spring, 2007 (Princeton)</div></td>\n              <td></td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/cs598_spring07/\">COS 598D: High-Level Recognition in Computer Vision</a></td>\n            </tr>\n            <tr>\n              <td><div align=\"left\">Fall, 2006-07 (UIUC)</div></td>\n              <td></td>\n              <td><a class=\"link-sytle\" href=\"http://courses.ece.uiuc.edu/ece549/\">ECE 549: Computer Vision</a></td>\n            </tr>\n            <tr>\n              <td><div align=\"left\"><a href=\"http://research.microsoft.com/iccv2005/\">ICCV 2005</a> short course</div></td>\n              <td></td>\n              <td><a class=\"link-sytle\" href=\"http://people.csail.mit.edu/torralba/shortCourseRLOC/index.html\">Recognizing and Learning Object Categories</a></td>\n            </tr>\n            <tr>\n              <td><div align=\"left\">Fall, 2005-06 (UIUC)</div></td>\n              <td></td>\n              <td><a class=\"link-sytle\" href=\"http://courses.ece.uiuc.edu/ece598/ffl/\">ECE 598FL: Readings in Computer Vision and Learning</a></td>\n            </tr>\n          </table>\n        </div>\n        <!-- End of Fei-Fei -->  \n\n        <!-- carlos classes -->  \n        <div class=\"row\"><h2 class=\"top-seprates jumptarget\" id=\"JuanClass\">Juan Carlos Niebles' Courses</h2></div>\n        <div class=\"row list-unstyled\">\n          <table class=\"bigger-padding\">\n            <tr>\n              <td><div align=\"left\">Autumn, 2017-18</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs131_fall1718/cs231n/2017\">CS 131: Computer Vision: Foundations and Applications</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Autumn, 2016-17</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs131_fall1617/\">CS 131: Computer Vision: Foundations and Applications</a>\n              </td>\n            </tr>\n\n            <tr>\n              <td><div align=\"left\">Autumn, 2015-16</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"http://vision.stanford.edu/teaching/cs131_fall1516/\">CS 131: Computer Vision: Foundations and Applications</a>\n              </td>\n            </tr>\n            <!-- End of Carlos -->  \n          </table>\n        </div>\n\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"bg-color-sky-light section-seperator\">\n  <div class=\"content container\">\n    <div class=\"row\">\n      <div id=\"sidebar\" class=\"sidebar-wrap col-md-4 col-xs-10 sm-margin-b-30\">\n        <form>\n          <ul class=\"sidebar list-unstyled sidenav-position\">\n            <li class=\"side-nav\">\n              <label>\n                <input [(ngModel)]=\"professor\"\n                       type=\"radio\"\n                       name=\"professor\"\n                       value=\"All\"><div>All Professors</div>\n              </label>\n            </li>\n            <li class=\"side-nav\">\n              <label>\n                <input [(ngModel)]=\"professor\"\n                       type=\"radio\"\n                       name=\"professor\"\n                       value=\"Silvio Savarese\"><div>Silvio Saverese</div>\n              </label>\n            </li>\n            <li class=\"side-nav\">\n              <label>\n                <input [(ngModel)]=\"professor\"\n                       type=\"radio\"\n                       name=\"professor\"\n                       value=\"L. Fei-Fei\"><div>L. Fei-Fei</div>\n              </label>\n            </li>\n            <li class=\"side-nav\">\n              <label>\n                <input [(ngModel)]=\"professor\"\n                       type=\"radio\"\n                       name=\"professor\"\n                       value=\"Juan Carlos Niebles\"><div>Juan Carlos Niebles</div>\n              </label>\n            </li>\n          </ul>\n        </form>\n      </div>\n\n      <div id=\"content\" class=\"content col-md-8 col-xs-12 sm-margin-b-30\">\n        <div *ngIf=\"professor != 'All'; else allBlock\"\n             class=\"row list-unstyled\">\n          <h2>{{ professor }} Courses</h2>\n\n          <table class=\"bigger-padding\">\n            <tr *ngFor=\"let c of courses | coursesFilterByProfessor:professor\">\n              <td><div align=\"left\">{{ c.event }}</div></td>\n              <td>&nbsp;</td>\n              <td><a class=\"link-sytle\" href=\"{{c.url}}\">{{ c.title }}</a></td>\n            </tr>\n          </table>\n        </div>\n        <ng-template #allBlock>\n          <div *ngFor=\"let p of ['Silvio Savarese', 'L. Fei-Fei', 'Juan Carlos Niebles']\"\n               style=\"padding-bottom: 20px\">\n            <h2>{{ p }} Courses</h2>\n            <table class=\"bigger-padding\">\n              <tr *ngFor=\"let c of courses | coursesFilterByProfessor:p\">\n                <td><div align=\"left\">{{ c.event }}</div></td>\n                <td>&nbsp;</td>\n                <td><a class=\"link-sytle\" href=\"{{c.url}}\">{{ c.title }}</a></td>\n              </tr>\n            </table>\n          </div>\n        </ng-template>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -5944,6 +6018,7 @@ module.exports = "<div class=\"bg-color-sky-light section-seperator\">\n  <div c
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeachingComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__teaching_service__ = __webpack_require__("../../../../../src/app/teaching/teaching.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -5955,9 +6030,12 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var TeachingComponent = (function () {
-    function TeachingComponent(route) {
+    function TeachingComponent(teachingService, route) {
+        this.teachingService = teachingService;
         this.route = route;
+        this.professor = 'All';
     }
     TeachingComponent.prototype.onAnchorClick = function () {
         this.route.fragment.subscribe(function (f) {
@@ -5969,17 +6047,337 @@ var TeachingComponent = (function () {
             }
         });
     };
+    TeachingComponent.prototype.getCourses = function () {
+        var _this = this;
+        this.teachingService.getCourses().then(function (courses) { return _this.courses = courses; });
+    };
+    TeachingComponent.prototype.ngOnInit = function () {
+        this.getCourses();
+    };
     return TeachingComponent;
 }());
 TeachingComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
-        template: __webpack_require__("../../../../../src/app/teaching/teaching.component.html")
+        template: __webpack_require__("../../../../../src/app/teaching/teaching.component.html"),
+        providers: [__WEBPACK_IMPORTED_MODULE_2__teaching_service__["a" /* TeachingService */]]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__teaching_service__["a" /* TeachingService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__teaching_service__["a" /* TeachingService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _b || Object])
 ], TeachingComponent);
 
-var _a;
+var _a, _b;
 //# sourceMappingURL=teaching.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/teaching/teaching.data.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return COURSES; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__teaching__ = __webpack_require__("../../../../../src/app/teaching/teaching.ts");
+
+var COURSES = [
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'CS 331B: Representation Learning in Computer Vision',
+        url: 'http://web.stanford.edu/class/cs331b/',
+        event: 'Autumn, 2017-18 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'CS 231A: Computer Vision: From 3D Reconstruction to Recognition',
+        url: 'http://web.stanford.edu/class/cs231a/',
+        event: 'Winter, 2017-18 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'CS 331B: Representation Learning in Computer Vision',
+        url: 'http://cs331b.stanford.edu/',
+        event: 'Spring, 2016-17 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'CS 231A: Mobile Computer Vision',
+        url: 'http://cs231a.stanford.edu/',
+        event: 'Spring, 2015-16 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'CS 231A: Introduction to Computer Vision',
+        url: 'http://cvgl.stanford.edu/teaching/cs231a_winter1415/',
+        event: 'Winter, 2013-14 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'CS 231M: Mobile Computer Vision',
+        url: 'http://web.stanford.edu/class/cs231m',
+        event: 'Spring, 2013-14 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'CS 231A: Introduction to Computer Vision',
+        url: 'http://cvgl.stanford.edu/teaching/cs231a_winter1314/',
+        event: 'Winter, 2013-14 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'CS 331B: Advanced Reading in Computer Vision: 3D Representation and Recognition',
+        url: 'http://www.stanford.edu/class/archive/cs/cs331b/cs331b.1142/cgi-bin/mediawiki/index.php/Main_Page',
+        event: 'Autumn, 2013-14'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'EECS 598: Special Topics in Computer Vision',
+        url: 'http://www.eecs.umich.edu/courses/eecs598.007',
+        event: 'Winter, 2013-14 (Michigan)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'EECS 442: Computer Vision',
+        url: 'http://www.eecs.umich.edu/vision/teaching/EECS442_2011/eecs442.html',
+        event: 'Fall, 2011-12 (Michigan)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'EECS 598: Advanced Topics in Mobile Computer Vision',
+        url: 'http://web.eecs.umich.edu/~silvio/teaching/EECS598_2010/eecs598.html',
+        event: 'Fall, 2010-11 (Michigan)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'EECS 442: Computer Vision',
+        url: 'http://web.eecs.umich.edu/~silvio/teaching/EECS442_2010/eecs442.html',
+        event: 'Fall, 2010-11 (Michigan)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'EECS 556: Image Processing',
+        url: 'http://web.eecs.umich.edu/~silvio/teaching/EECS556_2009/eecs556.html',
+        event: 'Winter, 2010 (Michigan)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'EECS 442: Computer Vision',
+        url: 'http://web.eecs.umich.edu/~silvio/teaching/EECS442_2009/eecs442.html',
+        event: 'Fall, 2009-10 (Michigan)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'EECS 598: Special Topics in Computer Vision',
+        url: 'http://web.eecs.umich.edu/~silvio/teaching/EECS598/eecs598.html',
+        event: 'Winter, 2009-10 (Michigan)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["c" /* SILVIO */],
+        title: 'EECS 442: Computer Vision',
+        url: 'http://web.eecs.umich.edu/~silvio/teaching/eecs442.html',
+        event: 'Fall, 2008-09 (Michigan)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS231n: Convolutional Neural Networks for Visual Recognition',
+        url: 'http://vision.stanford.edu/teaching/cs231n/2017',
+        event: 'Spring, 2016-17 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS131: Computer Vision: Foundations and Applications',
+        url: 'http://vision.stanford.edu/teaching/cs131_fall1617/index.html',
+        event: 'Fall, 2016-17 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS231n: Convolutional Neural Networks for Visual Recognition',
+        url: 'http://cs231n.stanford.edu/2016',
+        event: 'Winter, 2015-16 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS131: Computer Vision: Foundations and Applications',
+        url: 'http://vision.stanford.edu/teaching/cs131_fall1516/index.html',
+        event: 'Fall, 2015-16 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS231B: The Cutting Edge of Computer Vision',
+        url: 'http://vision.stanford.edu/teaching/cs231b_spring1415/',
+        event: 'Spring, 2014-15 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS231n: Convolutional Neural Networks for Visual Recognition',
+        url: 'http://vision.stanford.edu/teaching/cs231n/2015',
+        event: 'Winter, 2014-15 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS131: Computer Vision: Foundations and Applications',
+        url: 'http://vision.stanford.edu/teaching/cs131_fall1415/index.html',
+        event: 'Fall, 2014-15 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS431: High-level Vision: Behaviors, Neurons and Computational Models',
+        url: 'http://vision.stanford.edu/teaching/cs431_spring1314/',
+        event: 'Spring, 2013-14 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS331: Advanced Reading in Computer Vision',
+        url: 'http://vision.stanford.edu/teaching/cs331_winter14/',
+        event: 'Winter, 2013-14 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS131: Computer Vision: Foundations and Applications',
+        url: 'http://vision.stanford.edu/teaching/cs131_fall1314/',
+        event: 'Fall, 2014-14 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS231B: The Cutting Edge of Computer Vision',
+        url: 'http://vision.stanford.edu/teaching/cs231b_spring1213/',
+        event: 'Spring, 2012-13 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS231A: Introduction to Computer Vision',
+        url: 'http://vision.stanford.edu/teaching/cs231a_autumn1213/',
+        event: 'Autumn, 2012-13 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS331: Advanced Reading in Computer Vision',
+        url: 'http://vision.stanford.edu/teaching/cs331_fall12/',
+        event: 'Autumn, 2012-13 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS231A: Introduction to Computer Vision',
+        url: 'http://vision.stanford.edu/teaching/cs231a_autumn1112/',
+        event: 'Autumn, 2011-12 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS223C: The Cutting Edge of Computer Vision',
+        url: 'http://vision.stanford.edu/teaching/cs223c_spring1011/',
+        event: 'Spring, 2010-11 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS223B: Introduction to Computer Vision',
+        url: 'http://vision.stanford.edu/teaching/cs223b/',
+        event: 'Winter, 2010-11 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS423: High-level Vision: Behaviors, Neurons and Computational Models',
+        url: 'http://vision.stanford.edu/teaching/cs423_spring0910/',
+        event: 'Winter, 2009-10 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS223B: Introduction to Computer Vision',
+        url: 'http://vision.stanford.edu/teaching/cs223b_winter0910/',
+        event: 'Spring, 2009-10 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'Recognizing and Learning Object Categories: Year 2009',
+        url: 'http://people.csail.mit.edu/torralba/shortCourseRLOC/index.html',
+        event: 'ICCV 2009 short course'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'CS323: Recognizing and Learning High-Level Visual Concepts',
+        url: 'http://vision.stanford.edu/teaching/cs323_fall09/',
+        event: 'Fall, 2009-10 (Stanford)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'Summer School in Vision, Learning and Pattern Recognition',
+        url: 'http://vision.stanford.edu/VLPR2009/',
+        event: 'VLPR 2009 (Beijing)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'COS 429: Computer Vision',
+        url: 'http://www.cs.princeton.edu/courses/archive/fall08/cos429/',
+        event: 'Fall, 2008-09 (Princeton)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'COS 598b/PSY 594: From Neuronal Mechanisms to Computational Models',
+        url: 'http://www.cs.princeton.edu/courses/archive/spring08/cos598B/',
+        event: 'Spring, 2007-09 (Princeton)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'COS 429: Computer Vision',
+        url: 'http://www.cs.princeton.edu/courses/archive/fall07/cos429/index.html',
+        event: 'Fall, 2007-08 (Princeton)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'Recognizing and Learning Object Categories: Year 2007',
+        url: 'http://people.csail.mit.edu/torralba/shortCourseRLOC/index.html',
+        event: 'CVPR 2007 short course'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'Computer Vision summer school: Object Recognition',
+        url: 'http://localhost:4200/documents/Fei-Fei_ICVSS07_ObjectRecognition_web.pdf',
+        event: 'ICVSS 2007'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'COS 598D: High-Level Recognition in Computer Vision',
+        url: 'http://vision.stanford.edu/cs598_spring07/',
+        event: 'Spring, 2007 (Princeton)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'ECE 549: Computer Vision',
+        url: 'http://courses.ece.uiuc.edu/ece549/',
+        event: 'Fall, 2006-07 (UIUC)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'Recognizing and Learning Object Categories',
+        url: 'http://people.csail.mit.edu/torralba/shortCourseRLOC/index.html',
+        event: 'ICCV 2005 short course'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["a" /* FEIFEILI */],
+        title: 'ECE 598FL: Readings in Computer Vision and Learning',
+        url: 'http://courses.ece.uiuc.edu/ece598/ffl/',
+        event: 'Fall, 2005-06 (UIUC)'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["b" /* NIEBLES */],
+        title: 'CS 131: Computer Vision: Foundations and Applications',
+        url: 'http://vision.stanford.edu/teaching/cs131_fall1718/cs231n/2017',
+        event: 'Autumn, 2017-18'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["b" /* NIEBLES */],
+        title: 'CS 131: Computer Vision: Foundations and Applications',
+        url: 'http://vision.stanford.edu/teaching/cs131_fall1617/',
+        event: 'Autumn, 2016-17'
+    },
+    { professor: __WEBPACK_IMPORTED_MODULE_0__teaching__["b" /* NIEBLES */],
+        title: 'CS 131: Computer Vision: Foundations and Applications',
+        url: 'http://vision.stanford.edu/teaching/cs131_fall1516/',
+        event: 'Autumn, 2015-16'
+    }
+];
+//# sourceMappingURL=teaching.data.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/teaching/teaching.service.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TeachingService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__teaching_data__ = __webpack_require__("../../../../../src/app/teaching/teaching.data.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+var TeachingService = (function () {
+    function TeachingService() {
+    }
+    TeachingService.prototype.getCourses = function () {
+        return Promise.resolve(__WEBPACK_IMPORTED_MODULE_1__teaching_data__["a" /* COURSES */]);
+    };
+    return TeachingService;
+}());
+TeachingService = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])()
+], TeachingService);
+
+//# sourceMappingURL=teaching.service.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/teaching/teaching.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export ALL */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return SILVIO; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FEIFEILI; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return NIEBLES; });
+/* unused harmony export Course */
+var ALL = 'All';
+var SILVIO = 'Silvio Savarese';
+var FEIFEILI = 'L. Fei-Fei';
+var NIEBLES = 'Juan Carlos Niebles';
+var Course = (function () {
+    function Course() {
+    }
+    return Course;
+}());
+
+//# sourceMappingURL=teaching.js.map
 
 /***/ }),
 
@@ -5988,8 +6386,13 @@ var _a;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return environment; });
+// The file contents for the current environment will overwrite these during build.
+// The build system defaults to the dev environment which uses `environment.ts`, but if you do
+// `ng build --env=prod` then `environment.prod.ts` will be used instead.
+// The list of which env maps to which file can be found in `.angular-cli.json`.
+// The file contents for the current environment will overwrite these during build.
 var environment = {
-    production: true
+    production: false
 };
 //# sourceMappingURL=environment.js.map
 

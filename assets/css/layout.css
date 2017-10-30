@@ -180,7 +180,7 @@ h4 {
 }
 
 .side-nav {
-  padding: 0.42em;
+  padding: 0.4em;
 }
 
 .people-image {
@@ -213,6 +213,9 @@ table.bigger-padding tr > td {
 
 .sidebar-wrap {
   max-width: 300px;
+  height: 100%;
+  overflow-x: auto;
+  direction: rtl;
   padding-top: 45px;
   padding-left: 0;
 }
@@ -297,6 +300,24 @@ input[type="radio"]:checked:after {
   display: inline-block;
   visibility: visible;
   border: 2px solid white;
+}
+
+.side-nav label {
+  margin: 0;
+}
+
+.side-nav input[type="radio"] {
+  display: none;
+}
+
+.side-nav input[type="radio"] + div {
+  font-weight: 400;
+}
+
+.side-nav input[type="radio"]:checked + div {
+  width: 100%;
+  color: #B1060E;
+  font-weight: 400;
 }
 
 /*------------------------------------------------------------------
@@ -943,7 +964,6 @@ fieldset[disabled] .btn-theme {
 
 swiper {
   width: 100%;
-  height: 300px;
 }
 
 .swiper-slide {
