@@ -36,12 +36,12 @@ body {
 }
 
 p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   font-family: "Noto Sans", sans-serif;
   color: #4E4B4B;
   line-height: 1.5;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 
 em,
@@ -67,7 +67,7 @@ a:focus, a:hover, a:active {
 
 .link {
   position: relative;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
   font-family: "Noto Sans", sans-serif;
   text-transform: uppercase;
@@ -84,7 +84,7 @@ a:focus, a:hover, a:active {
 }
 
 span {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   font-family: "Noto Sans", sans-serif;
   color: #707176;
@@ -734,7 +734,7 @@ fieldset[disabled] .btn-theme {
   z-index: 9;
   width: 60px;
   height: 60px;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 700;
   color: #fff;
   text-align: center;
